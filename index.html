@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>绿皮书单词背诵</title>
-    <link rel="stylesheet" href="style.css?v=20260518_3">
+    <link rel="stylesheet" href="style.css?v=20260518_5">
 </head>
 <body>
     <div class="container">
@@ -20,13 +20,20 @@
                     <!-- Options will be populated by JS -->
                 </select>
             </div>
+
+            <div class="control-group search-group">
+                <label for="search-input">搜索单词:</label>
+                <input type="text" id="search-input" placeholder="输入单词后回车">
+                <button id="search-btn" class="secondary-btn" type="button">搜索跳转</button>
+                <div id="search-results" class="search-results hidden"></div>
+            </div>
             
             <div class="control-group mode-group">
-                <label for="repeat-toggle">
+                <label for="repeat-toggle" class="mode-toggle">
                     <input type="checkbox" id="repeat-toggle"> 重复背诵模式
                 </label>
-                <label for="favorites-only-toggle" class="sub-toggle">
-                    <input type="checkbox" id="favorites-only-toggle"> 只刷收藏
+                <label for="favorites-only-toggle" class="mode-toggle">
+                    <input type="checkbox" id="favorites-only-toggle"> 收藏背诵模式
                 </label>
             </div>
 
@@ -97,6 +104,6 @@
     </div>
 
     <script src="words.js?v=20260518_1"></script>
-    <script src="script.js?v=20260518_3"></script>
+    <script src="script.js?v=20260518_5"></script>
 </body>
 </html>

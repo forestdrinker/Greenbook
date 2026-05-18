@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const unitSelect = document.getElementById('unit-select');
     const repeatToggle = document.getElementById('repeat-toggle');
     const favoritesOnlyToggle = document.getElementById('favorites-only-toggle');
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+    const searchResults = document.getElementById('search-results');
     const resetBtn = document.getElementById('reset-btn');
     const wordText = document.getElementById('word-text');
     const wordPhonetic = document.getElementById('word-phonetic');
@@ -113,10 +116,34 @@ document.addEventListener('DOMContentLoaded', () => {
         updateProgress();
     });
 
+    bind(searchBtn, 'click', () => {
+        searchWords();
+    });
+
+    bind(searchInput, 'keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            searchWords();
+        }
+    });
+
+    bind(searchResults, 'click', (e) => {
+        const target = e.target.closest('button[data-word-id]');
+        if (!target) {
+            return;
+        }
+
+        const found = allWords.find((word) => word._wordId === target.dataset.wordId);
+        if (!found) {
+            return;
+        }
+        jumpToWord(found);
+    });
+
     const onFavoritesOnlyToggle = () => {
         initSession();
         if (favoritesOnlyToggle && favoritesOnlyToggle.checked) {
-            showStatus('只刷收藏已开启');
+            showStatus('收藏背诵模式已开启');
         } else {
             showStatus('');
         }
@@ -234,6 +261,94 @@ document.addEventListener('DOMContentLoaded', () => {
         nextWord(true);
     }
 
+    function searchWords() {
+        const rawQuery = (searchInput?.value || '').trim();
+        if (!rawQuery) {
+            showStatus('请输入要搜索的单词');
+            clearSearchResults();
+            return;
+        }
+        const query = rawQuery.toLowerCase();
+
+        const matches = findSearchMatches(query);
+        if (matches.length === 0) {
+            renderSearchResults([]);
+            showStatus('无此单词');
+            return;
+        }
+
+        renderSearchResults(matches);
+        showStatus(`找到 ${matches.length} 个匹配，请点击跳转`);
+    }
+
+    function findSearchMatches(query) {
+        const exactMatches = allWords.filter((word) =>
+            String(word.word || '').toLowerCase() === query
+        );
+        const fuzzyMatches = allWords.filter((word) =>
+            String(word.word || '').toLowerCase().includes(query) &&
+            String(word.word || '').toLowerCase() !== query
+        );
+        return [...exactMatches, ...fuzzyMatches].slice(0, 50);
+    }
+
+    function renderSearchResults(matches) {
+        if (!searchResults) {
+            return;
+        }
+        searchResults.innerHTML = '';
+        searchResults.classList.remove('hidden');
+
+        if (!matches || matches.length === 0) {
+            const empty = document.createElement('span');
+            empty.className = 'search-empty';
+            empty.textContent = '无此单词';
+            searchResults.appendChild(empty);
+            return;
+        }
+
+        matches.forEach((item) => {
+            const resultBtn = document.createElement('button');
+            resultBtn.type = 'button';
+            resultBtn.className = 'search-result-item';
+            resultBtn.dataset.wordId = item._wordId;
+            resultBtn.textContent = `${item.word} (${item.unit})`;
+            searchResults.appendChild(resultBtn);
+        });
+    }
+
+    function clearSearchResults() {
+        if (!searchResults) {
+            return;
+        }
+        searchResults.innerHTML = '';
+        searchResults.classList.add('hidden');
+    }
+
+    function jumpToWord(found) {
+        if (unitSelect.value !== found.unit) {
+            unitSelect.value = found.unit;
+        }
+
+        if (favoritesOnlyToggle.checked && !isWordFavorited(found)) {
+            favoritesOnlyToggle.checked = false;
+        }
+
+        initSession();
+
+        const matchIndex = currentQueue.findIndex((w) => w._wordId === found._wordId);
+        if (matchIndex === -1) {
+            showStatus('该词当前筛选条件下不可见');
+            return;
+        }
+
+        currentIndex = matchIndex;
+        currentWord = currentQueue[currentIndex];
+        renderCurrentWord();
+        showStatus(`已跳转到: ${found.word}`);
+        searchInput.select?.();
+    }
+
     function nextWord(isFirst = false) {
         if (currentQueue.length === 0) {
             showEmptyState();
@@ -308,11 +423,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (favoritesOnly) {
             wordText.textContent = '暂无收藏单词';
             if (selectedUnit === 'all') {
-                wordMeaning.textContent = '先点亮星标收藏一些单词，再开启“只刷收藏”。';
+                wordMeaning.textContent = '先点亮星标收藏一些单词，再开启“收藏背诵模式”。';
             } else {
                 wordMeaning.textContent = `当前单元（${selectedUnit}）还没有收藏单词。`;
             }
-            showStatus('只刷收藏已开启');
+            showStatus('收藏背诵模式已开启');
         } else {
             wordText.textContent = '无单词';
             wordMeaning.textContent = '当前筛选条件没有可学习的单词。';
@@ -362,7 +477,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setWordFavorited(currentWord, nextValue);
         updateFavoriteButton();
         updateProgress();
-        showStatus(nextValue ? '已收藏当前单词' : '已取消收藏');
 
         if (favoritesOnlyToggle.checked && !nextValue) {
             initSession();
@@ -390,9 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
             delete favoriteStore[id];
         }
 
-        if (!persistFavoriteStore()) {
-            showStatus('浏览器限制了本地存储，收藏仅当前会话有效');
-        }
+        persistFavoriteStore();
     }
 
     function loadFavoriteStore() {
@@ -547,7 +659,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateProgress() {
         const favoritesOnly = favoritesOnlyToggle.checked;
         const favoriteCount = getFavoriteCountByUnit(unitSelect.value);
-        const favoriteHint = favoritesOnly ? ' | 只刷收藏' : '';
+        const favoriteHint = favoritesOnly ? ' | 收藏背诵模式' : '';
 
         if (isRepeatMode) {
             progressText.textContent = `当前: ${currentWord ? currentWord.unit : '-'} (无限模式) | 收藏: ${favoriteCount}${favoriteHint}`;
