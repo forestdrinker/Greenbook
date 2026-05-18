@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿皮书单词背诵</title>
+    <link rel="stylesheet" href="style.css?v=20260518_3">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>绿皮书单词背诵</h1>
+        </header>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="unit-select">选择单元:</label>
+                <select id="unit-select">
+                    <option value="all">所有单元</option>
+                    <!-- Options will be populated by JS -->
+                </select>
+            </div>
+            
+            <div class="control-group mode-group">
+                <label for="repeat-toggle">
+                    <input type="checkbox" id="repeat-toggle"> 重复背诵模式
+                </label>
+                <label for="favorites-only-toggle" class="sub-toggle">
+                    <input type="checkbox" id="favorites-only-toggle"> 只刷收藏
+                </label>
+            </div>
+
+            <div class="control-group">
+                 <button id="reset-btn">重置进度</button>
+                 <button id="export-reflections-btn" class="secondary-btn">查看/导出心得</button>
+            </div>
+        </div>
+
+        <div class="card-container" id="card-container">
+            <div class="card" id="word-card">
+                <div class="word-content">
+                    <h2 id="word-text">点击开始</h2>
+                    <div class="word-phonetic" id="word-phonetic"></div>
+                    <p id="word-meaning" class="hidden"></p>
+                    <div id="confusing-section" class="confusing-section hidden">
+                        <hr>
+                        <h4>😈 易混淆坏蛋：</h4>
+                        <p id="confusing-text"></p>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="action-row">
+                        <button id="confusing-btn" class="secondary-btn hidden">易混淆坏蛋</button>
+                        <button id="favorite-btn" class="favorite-star-btn" type="button" aria-label="收藏单词">☆</button>
+                    </div>
+                    <div class="action-row">
+                        <button id="show-answer-btn">显示释义</button>
+                        <button id="next-btn">下一个</button>
+                    </div>
+                </div>
+            </div>
+            <div id="status-msg"></div>
+        </div>
+        
+        <div class="progress">
+            <span id="progress-text">0 / 0</span>
+        </div>
+    </div>
+
+    <!-- 心得体会弹窗 -->
+    <div id="reflection-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>📖 背诵结束！留下一份心得吧</h3>
+            <p>记录下今天的收获或难点（可选）</p>
+            <input type="text" id="user-name-input" placeholder="你好同志，请留下你的芳名" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:8px;box-sizing:border-box">
+            <textarea id="reflection-input" placeholder="写点什么吧... (将自动发送至后台)"></textarea>
+            <div class="modal-actions">
+                <button id="skip-reflection-btn" class="text-btn">跳过</button>
+                <button id="save-reflection-btn" class="primary-btn">保存心得</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导出管理弹窗 -->
+    <div id="export-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>📂 心得管理</h3>
+            <div id="reflection-list" class="reflection-list">
+                <!-- Reflections will be listed here -->
+            </div>
+            <div class="modal-actions">
+                <button id="clear-reflections-btn" class="text-btn" style="color:red;margin-right:auto">清空所有</button>
+                <button id="close-export-btn" class="text-btn">关闭</button>
+                <button id="download-all-btn" class="primary-btn">一键下载所有心得</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="words.js?v=20260518_1"></script>
+    <script src="script.js?v=20260518_3"></script>
+</body>
+</html>
