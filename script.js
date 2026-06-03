@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchBtn = document.getElementById('search-btn');
     const searchResults = document.getElementById('search-results');
     const searchGroup = document.getElementById('search-group');
+    const bulkFavoriteGroup = document.getElementById('bulk-favorite-group');
+    const bulkFavoriteInput = document.getElementById('bulk-favorite-input');
+    const bulkFavoriteSummary = document.getElementById('bulk-favorite-summary');
+    const openBulkFavoriteBtn = document.getElementById('open-bulk-favorite-btn');
+    const applyBulkFavoriteBtn = document.getElementById('apply-bulk-favorite-btn');
+    const closeBulkFavoriteBtn = document.getElementById('close-bulk-favorite-btn');
     const resetBtn = document.getElementById('reset-btn');
     const wordText = document.getElementById('word-text');
     const wordPhonetic = document.getElementById('word-phonetic');
@@ -88,6 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (found) {
             jumpToWord(found);
         }
+    });
+
+    bind(openBulkFavoriteBtn, 'click', openBulkFavoritePanel);
+    bind(applyBulkFavoriteBtn, 'click', applyBulkFavoriteWords);
+    bind(closeBulkFavoriteBtn, 'click', () => {
+        bulkFavoriteGroup.classList.add('hidden');
+        clearBulkFavoriteSummary();
     });
 
     bind(resetBtn, 'click', () => {
@@ -315,6 +328,109 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         searchResults.innerHTML = '';
         searchResults.classList.add('hidden');
+    }
+
+    function openBulkFavoritePanel() {
+        if (!bulkFavoriteGroup || !bulkFavoriteInput) {
+            return;
+        }
+
+        bulkFavoriteGroup.classList.remove('hidden');
+        bulkFavoriteInput.focus();
+        clearBulkFavoriteSummary();
+        showStatus('粘贴多行单词后可一键加入收藏');
+    }
+
+    function applyBulkFavoriteWords() {
+        if (!bulkFavoriteInput) {
+            return;
+        }
+
+        const rawLines = String(bulkFavoriteInput.value || '')
+            .split(/\r?\n/)
+            .map(normalizeWordForLookup)
+            .filter(Boolean);
+
+        const uniqueTerms = Array.from(new Set(rawLines));
+        if (uniqueTerms.length === 0) {
+            renderBulkFavoriteSummary('请输入至少一个英文单词，每行一个。');
+            showStatus('请输入要收藏的单词');
+            return;
+        }
+
+        const wordMap = buildWordLookupMap();
+        const missingTerms = [];
+        let matchedTerms = 0;
+        let addedEntries = 0;
+        let alreadyEntries = 0;
+
+        uniqueTerms.forEach((term) => {
+            const matches = wordMap.get(term) || [];
+            if (matches.length === 0) {
+                missingTerms.push(term);
+                return;
+            }
+
+            matchedTerms += 1;
+            matches.forEach((word) => {
+                if (isWordFavorited(word)) {
+                    alreadyEntries += 1;
+                    return;
+                }
+                setWordFavorited(word, true);
+                addedEntries += 1;
+            });
+        });
+
+        updateFavoriteButton();
+        if (favoritesOnlyToggle.checked) {
+            initSession();
+        } else {
+            updateProgress();
+            updateDashboardMeta();
+        }
+
+        const missingPreview = missingTerms.length
+            ? ` 未找到：${missingTerms.slice(0, 8).join('、')}${missingTerms.length > 8 ? ' 等' : ''}。`
+            : '';
+        const summary = `已处理 ${uniqueTerms.length} 个输入，匹配 ${matchedTerms} 个，新增收藏 ${addedEntries} 个词条，原本已收藏 ${alreadyEntries} 个词条。${missingPreview}`;
+        renderBulkFavoriteSummary(summary);
+        showStatus(`批量收藏完成：新增 ${addedEntries} 个词条`);
+    }
+
+    function buildWordLookupMap() {
+        const wordMap = new Map();
+        allWords.forEach((word) => {
+            const term = normalizeWordForLookup(word.word);
+            if (!term) {
+                return;
+            }
+            if (!wordMap.has(term)) {
+                wordMap.set(term, []);
+            }
+            wordMap.get(term).push(word);
+        });
+        return wordMap;
+    }
+
+    function normalizeWordForLookup(value) {
+        return String(value || '')
+            .trim()
+            .replace(/^[\s\d.、\-*]+/, '')
+            .replace(/\s+/g, ' ')
+            .toLowerCase();
+    }
+
+    function renderBulkFavoriteSummary(text) {
+        if (!bulkFavoriteSummary) {
+            return;
+        }
+        bulkFavoriteSummary.textContent = text;
+        bulkFavoriteSummary.classList.toggle('hidden', !text);
+    }
+
+    function clearBulkFavoriteSummary() {
+        renderBulkFavoriteSummary('');
     }
 
     function openSearchPanel() {

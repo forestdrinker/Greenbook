@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Book 学习平台</title>
-    <link rel="stylesheet" href="style.css?v=20260603_known">
+    <link rel="stylesheet" href="style.css?v=20260603_bulk">
 </head>
 <body>
     <div class="page-shell">
@@ -64,6 +64,16 @@
                             <div id="search-results" class="search-results hidden"></div>
                         </div>
 
+                        <div class="field-block hidden" id="bulk-favorite-group">
+                            <label for="bulk-favorite-input">一键收藏单词</label>
+                            <textarea id="bulk-favorite-input" class="compact-textarea" placeholder="每行输入一个英文单词，例如：&#10;apple&#10;book&#10;green"></textarea>
+                            <div class="bulk-action-row">
+                                <button id="apply-bulk-favorite-btn" class="secondary-btn" type="button">加入收藏</button>
+                                <button id="close-bulk-favorite-btn" class="ghost-btn" type="button">收起</button>
+                            </div>
+                            <div id="bulk-favorite-summary" class="bulk-favorite-summary hidden"></div>
+                        </div>
+
                         <div class="toggle-grid">
                             <label for="repeat-toggle" class="mode-toggle">
                                 <input type="checkbox" id="repeat-toggle">
@@ -89,6 +99,7 @@
                         </div>
 
                         <div class="button-stack">
+                            <button id="open-bulk-favorite-btn" class="ghost-btn" type="button">一键收藏单词</button>
                             <button id="reset-btn" class="secondary-btn" type="button">重新开始本轮学习</button>
                         </div>
                     </div>
@@ -169,6 +180,6 @@
     </div>
 
     <script src="words.js?v=20260518_1"></script>
-    <script src="script.js?v=20260603_known"></script>
+    <script src="script.js?v=20260603_bulk"></script>
 </body>
 </html>

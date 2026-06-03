@@ -302,6 +302,26 @@ textarea:focus {
     color: var(--muted);
 }
 
+.compact-textarea {
+    min-height: 132px;
+}
+
+.bulk-action-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+.bulk-favorite-summary {
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    background: #f1f8ff;
+    border: 1px solid #cfe0fb;
+    color: #1e3a8a;
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
 .toggle-grid {
     display: grid;
     gap: 12px;
@@ -681,6 +701,7 @@ button:disabled {
     }
 
     .search-bar,
+    .bulk-action-row,
     .action-row,
     .progress-copy,
     .stage-topbar {
