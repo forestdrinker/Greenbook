@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Book 学习平台</title>
-    <link rel="stylesheet" href="style.css?v=20260603_edu">
+    <link rel="stylesheet" href="style.css?v=20260603_known">
 </head>
 <body>
     <div class="page-shell">
@@ -79,6 +79,13 @@
                                     <small>只练你标记过的重要单词</small>
                                 </span>
                             </label>
+                            <label for="hide-known-toggle" class="mode-toggle">
+                                <input type="checkbox" id="hide-known-toggle">
+                                <span>
+                                    <strong>不看熟词</strong>
+                                    <small>过滤已经标熟的单词，专注未掌握内容</small>
+                                </span>
+                            </label>
                         </div>
 
                         <div class="button-stack">
@@ -95,6 +102,7 @@
                             <li><span>D</span> 下一个单词</li>
                             <li><span>J</span> 显示或隐藏释义</li>
                             <li><span>K</span> 显示或隐藏易混词</li>
+                            <li><span>H</span> 标熟 / 取消标熟</li>
                             <li><span>S</span> 打开搜索面板</li>
                         </ul>
                     </div>
@@ -114,7 +122,10 @@
                             <div class="word-card-inner">
                                 <div class="word-meta">
                                     <span class="unit-pill" id="current-unit-pill">准备开始</span>
-                                    <button id="favorite-btn" class="favorite-star-btn" type="button" aria-label="收藏单词">☆</button>
+                                    <div class="word-mark-actions">
+                                        <button id="known-btn" class="known-word-btn" type="button" aria-label="标熟单词">熟</button>
+                                        <button id="favorite-btn" class="favorite-star-btn" type="button" aria-label="收藏单词">☆</button>
+                                    </div>
                                 </div>
 
                                 <div class="word-content">
@@ -181,6 +192,6 @@
     </div>
 
     <script src="words.js?v=20260518_1"></script>
-    <script src="script.js?v=20260603_edu"></script>
+    <script src="script.js?v=20260603_known"></script>
 </body>
 </html>

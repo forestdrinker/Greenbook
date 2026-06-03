@@ -496,7 +496,14 @@ button:disabled {
     font-weight: 700;
 }
 
-.favorite-star-btn {
+.word-mark-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.favorite-star-btn,
+.known-word-btn {
     width: 52px;
     min-width: 52px;
     height: 52px;
@@ -509,10 +516,23 @@ button:disabled {
     font-size: 1.4rem;
 }
 
+.known-word-btn {
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
 .favorite-star-btn.favorite-active {
     color: #f59e0b;
     background: #fff7e8;
     border-color: #f6c978;
+}
+
+.known-word-btn.known-active {
+    color: #0f766e;
+    background: #dff7ef;
+    border-color: #7dd3bc;
 }
 
 .word-content {

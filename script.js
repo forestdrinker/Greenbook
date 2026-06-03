@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const REFLECTION_STORAGE_KEY = 'wordReflections';
     const FAVORITE_STORAGE_KEY = 'wordFavorites';
+    const KNOWN_STORAGE_KEY = 'wordKnown';
     const FORMSPREE_URL = 'https://formspree.io/f/mvzwzrdn';
 
     let allWords = [];
@@ -9,10 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let isRepeatMode = false;
     let currentIndex = 0;
     let favoriteStore = loadFavoriteStore();
+    let knownStore = loadKnownStore();
 
     const unitSelect = document.getElementById('unit-select');
     const repeatToggle = document.getElementById('repeat-toggle');
     const favoritesOnlyToggle = document.getElementById('favorites-only-toggle');
+    const hideKnownToggle = document.getElementById('hide-known-toggle');
     const searchInput = document.getElementById('search-input');
     const searchBtn = document.getElementById('search-btn');
     const searchResults = document.getElementById('search-results');
@@ -30,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressFill = document.getElementById('progress-fill');
     const statusMsg = document.getElementById('status-msg');
     const favoriteBtn = document.getElementById('favorite-btn');
+    const knownBtn = document.getElementById('known-btn');
     const heroMode = document.getElementById('hero-mode');
     const heroUnit = document.getElementById('hero-unit');
     const heroProgress = document.getElementById('hero-progress');
@@ -84,6 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    bind(hideKnownToggle, 'change', () => {
+        initSession();
+        showStatus(hideKnownToggle.checked ? '已开启不看熟词模式' : '已关闭不看熟词模式');
+    });
+
     bind(searchBtn, 'click', searchWords);
     bind(searchInput, 'keydown', (event) => {
         if (event.key === 'Enter') {
@@ -128,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     bind(favoriteBtn, 'click', toggleCurrentFavorite);
+    bind(knownBtn, 'click', toggleCurrentKnown);
 
     bind(skipReflectionBtn, 'click', () => {
         reflectionModal.classList.add('hidden');
@@ -197,6 +207,11 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleCurrentFavorite();
             return;
         }
+        if (key === 'h') {
+            event.preventDefault();
+            toggleCurrentKnown();
+            return;
+        }
         if (key === 's') {
             event.preventDefault();
             openSearchPanel();
@@ -246,6 +261,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (favoritesOnlyToggle.checked) {
             scopedWords = scopedWords.filter(isWordFavorited);
+        }
+
+        if (hideKnownToggle.checked) {
+            scopedWords = scopedWords.filter((word) => !isWordKnown(word));
         }
 
         currentQueue = scopedWords;
@@ -368,7 +387,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const matchIndex = currentQueue.findIndex((word) => word._wordId === found._wordId);
         if (matchIndex === -1) {
-            showStatus('该单词在当前筛选条件下不可见');
+            showStatus(hideKnownToggle.checked && isWordKnown(found)
+                ? '该单词已标熟，在不看熟词模式下不可见'
+                : '该单词在当前筛选条件下不可见');
             return;
         }
 
@@ -471,6 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         confusingSection.classList.add('hidden');
         updateFavoriteButton();
+        updateKnownButton();
         updateProgress();
         updateDashboardMeta();
     }
@@ -479,24 +501,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedUnit = unitSelect.value;
         currentWord = null;
 
-        wordText.textContent = favoritesOnlyToggle.checked ? '还没有收藏单词' : '当前没有可学习的单词';
+        wordText.textContent = getEmptyStateTitle();
         wordPhonetic.textContent = '';
         wordPhonetic.classList.add('hidden');
         confusingText.innerHTML = '';
         confusingBtn.classList.add('hidden');
         confusingSection.classList.add('hidden');
 
-        if (favoritesOnlyToggle.checked) {
-            wordMeaning.textContent = selectedUnit === 'all'
-                ? '先为一些重点单词点亮星标，再开启收藏模式进行集中复习。'
-                : `当前单元 ${selectedUnit} 里还没有收藏的单词。`;
-        } else {
-            wordMeaning.textContent = '请切换单元或调整筛选条件后再试。';
-        }
+        wordMeaning.textContent = getEmptyStateMessage(selectedUnit);
 
         currentUnitPill.textContent = selectedUnit === 'all' ? '全部单元' : selectedUnit;
         wordMeaning.classList.remove('hidden');
         updateFavoriteButton();
+        updateKnownButton();
     }
 
     function showFinished() {
@@ -512,6 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentUnitPill.textContent = '已完成';
         showStatus('恭喜，当前学习队列已完成');
         updateFavoriteButton();
+        updateKnownButton();
         updateProgress();
         updateDashboardMeta();
 
@@ -555,6 +573,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function updateKnownButton() {
+        const hasWord = Boolean(currentWord);
+        knownBtn.disabled = !hasWord;
+
+        if (!hasWord) {
+            knownBtn.textContent = '熟';
+            knownBtn.classList.remove('known-active');
+            knownBtn.setAttribute('aria-label', '标熟单词');
+            return;
+        }
+
+        const isKnown = isWordKnown(currentWord);
+        knownBtn.textContent = isKnown ? '已熟' : '熟';
+        knownBtn.classList.toggle('known-active', isKnown);
+        knownBtn.setAttribute('aria-label', isKnown ? '取消标熟单词' : '标熟单词');
+    }
+
+    function toggleCurrentKnown() {
+        if (!currentWord) {
+            return;
+        }
+
+        const nextValue = !isWordKnown(currentWord);
+        setWordKnown(currentWord, nextValue);
+        updateKnownButton();
+        updateProgress();
+        updateDashboardMeta();
+        showStatus(nextValue ? '已标记为熟词' : '已取消熟词标记');
+
+        if (hideKnownToggle.checked && nextValue) {
+            initSession();
+        }
+    }
+
     function getWordId(word) {
         return word && word._wordId ? word._wordId : '';
     }
@@ -577,6 +629,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         persistFavoriteStore();
+    }
+
+    function isWordKnown(word) {
+        const id = getWordId(word);
+        return Boolean(id && knownStore[id]);
+    }
+
+    function setWordKnown(word, isKnown) {
+        const id = getWordId(word);
+        if (!id) {
+            return;
+        }
+
+        if (isKnown) {
+            knownStore[id] = true;
+        } else {
+            delete knownStore[id];
+        }
+
+        persistKnownStore();
     }
 
     function loadFavoriteStore() {
@@ -611,6 +683,41 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem(FAVORITE_STORAGE_KEY, JSON.stringify(favoriteStore));
         } catch (error) {
             console.warn('收藏数据保存失败。', error);
+        }
+    }
+
+    function loadKnownStore() {
+        try {
+            const raw = localStorage.getItem(KNOWN_STORAGE_KEY);
+            if (!raw) {
+                return {};
+            }
+
+            const parsed = JSON.parse(raw);
+            if (!parsed || typeof parsed !== 'object') {
+                return {};
+            }
+
+            const normalized = {};
+            Object.entries(parsed).forEach(([wordId, value]) => {
+                if (value === true) {
+                    normalized[wordId] = true;
+                } else if (value && typeof value === 'object' && value.known) {
+                    normalized[wordId] = true;
+                }
+            });
+            return normalized;
+        } catch (error) {
+            console.warn('熟词数据读取失败，已重置。', error);
+            return {};
+        }
+    }
+
+    function persistKnownStore() {
+        try {
+            localStorage.setItem(KNOWN_STORAGE_KEY, JSON.stringify(knownStore));
+        } catch (error) {
+            console.warn('熟词数据保存失败。', error);
         }
     }
 
@@ -713,21 +820,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return scopedWords.filter(isWordFavorited).length;
     }
 
+    function getKnownCountByUnit(unit) {
+        const scopedWords = unit === 'all'
+            ? allWords
+            : allWords.filter((word) => word.unit === unit);
+        return scopedWords.filter(isWordKnown).length;
+    }
+
     function updateProgress() {
         const favoriteCount = getFavoriteCountByUnit(unitSelect.value);
+        const knownCount = getKnownCountByUnit(unitSelect.value);
         const modeLabel = isRepeatMode ? '重复练习' : '顺序学习';
         const favoriteLabel = favoritesOnlyToggle.checked ? ' · 收藏模式' : '';
+        const hideKnownLabel = hideKnownToggle.checked ? ' · 不看熟词' : '';
 
         if (isRepeatMode) {
             const currentUnitText = currentWord ? currentWord.unit : '-';
-            progressText.textContent = `当前单元：${currentUnitText} · ${modeLabel} · 收藏 ${favoriteCount}${favoriteLabel}`;
-            heroProgress.textContent = `循环练习 · 收藏 ${favoriteCount}`;
+            progressText.textContent = `当前单元：${currentUnitText} · ${modeLabel} · 收藏 ${favoriteCount} · 熟词 ${knownCount}${favoriteLabel}${hideKnownLabel}`;
+            heroProgress.textContent = `循环练习 · 熟词 ${knownCount}`;
             progressFill.style.width = currentQueue.length ? '100%' : '0%';
             return;
         }
 
         const current = currentQueue.length === 0 ? 0 : Math.min(currentIndex + 1, currentQueue.length);
-        progressText.textContent = `进度：${current} / ${currentQueue.length} · 收藏 ${favoriteCount}${favoriteLabel}`;
+        progressText.textContent = `进度：${current} / ${currentQueue.length} · 收藏 ${favoriteCount} · 熟词 ${knownCount}${favoriteLabel}${hideKnownLabel}`;
         heroProgress.textContent = `${current} / ${currentQueue.length}`;
         const percent = currentQueue.length === 0 ? 0 : (current / currentQueue.length) * 100;
         progressFill.style.width = `${percent}%`;
@@ -735,15 +851,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateDashboardMeta() {
         const unitLabel = unitSelect.value === 'all' ? '全部单元' : unitSelect.value;
-        heroMode.textContent = favoritesOnlyToggle.checked
-            ? (isRepeatMode ? '收藏循环练习' : '收藏顺序学习')
-            : (isRepeatMode ? '重复练习' : '顺序学习');
+        const modeParts = [];
+
+        if (favoritesOnlyToggle.checked) {
+            modeParts.push('收藏');
+        }
+        modeParts.push(isRepeatMode ? '重复练习' : '顺序学习');
+        if (hideKnownToggle.checked) {
+            modeParts.push('不看熟词');
+        }
+
+        heroMode.textContent = modeParts.join(' · ');
         heroUnit.textContent = unitLabel;
         currentUnitPill.textContent = currentWord ? currentWord.unit : unitLabel;
 
         if (!currentWord && currentQueue.length === 0) {
             heroProgress.textContent = '0 / 0';
         }
+    }
+
+    function getEmptyStateTitle() {
+        if (favoritesOnlyToggle.checked && hideKnownToggle.checked) {
+            return '当前没有收藏且未标熟的单词';
+        }
+        if (favoritesOnlyToggle.checked) {
+            return '还没有收藏单词';
+        }
+        if (hideKnownToggle.checked) {
+            return '当前没有未标熟的单词';
+        }
+        return '当前没有可学习的单词';
+    }
+
+    function getEmptyStateMessage(selectedUnit) {
+        const unitText = selectedUnit === 'all' ? '当前范围' : `当前单元 ${selectedUnit}`;
+
+        if (favoritesOnlyToggle.checked && hideKnownToggle.checked) {
+            return `${unitText} 里没有“已收藏且未标熟”的单词；已标熟的收藏词会被不看熟词模式过滤。`;
+        }
+        if (favoritesOnlyToggle.checked) {
+            return selectedUnit === 'all'
+                ? '先为一些重点单词点亮星标，再开启收藏模式进行集中复习。'
+                : `当前单元 ${selectedUnit} 里还没有收藏的单词。`;
+        }
+        if (hideKnownToggle.checked) {
+            return `${unitText} 里的单词都已标熟，关闭不看熟词模式即可再次查看。`;
+        }
+        return '请切换单元或调整筛选条件后再试。';
     }
 
     function showStatus(text) {
