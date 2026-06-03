@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const searchBtn = document.getElementById('search-btn');
     const searchResults = document.getElementById('search-results');
+    const searchGroup = document.getElementById('search-group');
     const resetBtn = document.getElementById('reset-btn');
     const wordText = document.getElementById('word-text');
     const wordPhonetic = document.getElementById('word-phonetic');
@@ -202,6 +203,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
+        const targetTag = String(e.target?.tagName || '').toLowerCase();
+        if (targetTag === 'input' || targetTag === 'textarea' || targetTag === 'select' || targetTag === 'button') {
+            return;
+        }
+
+        const key = String(e.key || '').toLowerCase();
+        if (key === 'a') {
+            e.preventDefault();
+            previousWord();
+            return;
+        }
+        if (key === 'd') {
+            e.preventDefault();
+            nextWord(false);
+            return;
+        }
+        if (key === 'j') {
+            e.preventDefault();
+            toggleMeaning();
+            return;
+        }
+        if (key === 'k') {
+            e.preventDefault();
+            toggleConfusingSection();
+            return;
+        }
+        if (key === 'l') {
+            e.preventDefault();
+            markCurrentWordLearned();
+            return;
+        }
+        if (key === 's') {
+            e.preventDefault();
+            openSearchPanel();
+            return;
+        }
+
         if (e.code !== 'Space') {
             return;
         }
@@ -285,11 +323,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const exactMatches = allWords.filter((word) =>
             String(word.word || '').toLowerCase() === query
         );
-        const fuzzyMatches = allWords.filter((word) =>
+        const fuzzyWordMatches = allWords.filter((word) =>
             String(word.word || '').toLowerCase().includes(query) &&
             String(word.word || '').toLowerCase() !== query
         );
-        return [...exactMatches, ...fuzzyMatches].slice(0, 50);
+        const meaningMatches = allWords.filter((word) =>
+            String(word.meaning || '').toLowerCase().includes(query)
+        );
+
+        const uniqueMatches = [];
+        const seenWordIds = new Set();
+
+        [...exactMatches, ...fuzzyWordMatches, ...meaningMatches].forEach((word) => {
+            if (!word || seenWordIds.has(word._wordId)) {
+                return;
+            }
+            seenWordIds.add(word._wordId);
+            uniqueMatches.push(word);
+        });
+
+        return uniqueMatches.slice(0, 50);
     }
 
     function renderSearchResults(matches) {
@@ -323,6 +376,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         searchResults.innerHTML = '';
         searchResults.classList.add('hidden');
+    }
+
+    function openSearchPanel() {
+        if (!searchGroup || !searchInput) {
+            return;
+        }
+
+        searchGroup.classList.remove('hidden');
+        searchInput.focus();
+        searchInput.select?.();
     }
 
     function jumpToWord(found) {
@@ -375,6 +438,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentWord = currentQueue[currentIndex];
         renderCurrentWord();
+    }
+
+    function previousWord() {
+        if (currentQueue.length === 0 || !currentWord || isRepeatMode) {
+            return;
+        }
+
+        if (currentIndex <= 0) {
+            currentIndex = 0;
+        } else {
+            currentIndex--;
+        }
+
+        currentWord = currentQueue[currentIndex];
+        renderCurrentWord();
+        showStatus(`已返回到: ${currentWord.word}`);
+    }
+
+    function toggleMeaning() {
+        if (!currentWord) {
+            return;
+        }
+
+        wordMeaning.classList.toggle('hidden');
+    }
+
+    function toggleConfusingSection() {
+        if (!currentWord || confusingBtn.classList.contains('hidden')) {
+            return;
+        }
+
+        confusingSection.classList.toggle('hidden');
+    }
+
+    function markCurrentWordLearned() {
+        if (!currentWord) {
+            return;
+        }
+
+        toggleCurrentFavorite();
     }
 
     function renderCurrentWord() {
