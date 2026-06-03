@@ -73,24 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bind(unitSelect, 'change', initSession);
     bind(repeatToggle, 'change', () => {
-        isRepeatMode = repeatToggle.checked;
-        if (isRepeatMode && currentQueue.length === 0 && allWords.length > 0) {
-            initSession();
-        }
-        updateProgress();
-        updateDashboardMeta();
+        applyRepeatModeChange();
     });
 
     bind(favoritesOnlyToggle, 'change', () => {
-        initSession();
-        if (favoritesOnlyToggle.checked) {
-            showStatus('已切换到收藏模式');
-        }
+        applyFavoritesOnlyModeChange();
     });
 
     bind(hideKnownToggle, 'change', () => {
-        initSession();
-        showStatus(hideKnownToggle.checked ? '已开启不看熟词模式' : '已关闭不看熟词模式');
+        applyHideKnownModeChange();
     });
 
     bind(searchBtn, 'click', searchWords);
@@ -210,6 +201,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (key === 'h') {
             event.preventDefault();
             toggleCurrentKnown();
+            return;
+        }
+        if (key === 'y') {
+            event.preventDefault();
+            toggleRepeatMode();
+            return;
+        }
+        if (key === 'u') {
+            event.preventDefault();
+            toggleFavoritesOnlyMode();
+            return;
+        }
+        if (key === 'i') {
+            event.preventDefault();
+            toggleHideKnownMode();
             return;
         }
         if (key === 's') {
@@ -455,6 +461,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
         confusingSection.classList.toggle('hidden');
         showStatus(confusingSection.classList.contains('hidden') ? '已收起易混词' : '已展开易混词');
+    }
+
+    function applyRepeatModeChange() {
+        isRepeatMode = repeatToggle.checked;
+        if (isRepeatMode && currentQueue.length === 0 && allWords.length > 0) {
+            initSession();
+            return;
+        }
+        updateProgress();
+        updateDashboardMeta();
+    }
+
+    function toggleRepeatMode() {
+        repeatToggle.checked = !repeatToggle.checked;
+        applyRepeatModeChange();
+        showStatus(repeatToggle.checked ? '已开启重复模式' : '已关闭重复模式');
+    }
+
+    function applyFavoritesOnlyModeChange() {
+        initSession();
+        showStatus(favoritesOnlyToggle.checked ? '已切换到收藏模式' : '已关闭收藏模式');
+    }
+
+    function toggleFavoritesOnlyMode() {
+        favoritesOnlyToggle.checked = !favoritesOnlyToggle.checked;
+        applyFavoritesOnlyModeChange();
+    }
+
+    function applyHideKnownModeChange() {
+        initSession();
+        showStatus(hideKnownToggle.checked ? '已开启不看熟词模式' : '已关闭不看熟词模式');
+    }
+
+    function toggleHideKnownMode() {
+        hideKnownToggle.checked = !hideKnownToggle.checked;
+        applyHideKnownModeChange();
     }
 
     function renderCurrentWord() {
