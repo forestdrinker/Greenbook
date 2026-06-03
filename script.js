@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const REFLECTION_STORAGE_KEY = 'wordReflections';
     const FAVORITE_STORAGE_KEY = 'wordFavorites';
     const KNOWN_STORAGE_KEY = 'wordKnown';
-    const FORMSPREE_URL = 'https://formspree.io/f/mvzwzrdn';
 
     let allWords = [];
     let currentQueue = [];
@@ -38,18 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroUnit = document.getElementById('hero-unit');
     const heroProgress = document.getElementById('hero-progress');
     const currentUnitPill = document.getElementById('current-unit-pill');
-
-    const reflectionModal = document.getElementById('reflection-modal');
-    const userNameInput = document.getElementById('user-name-input');
-    const reflectionInput = document.getElementById('reflection-input');
-    const skipReflectionBtn = document.getElementById('skip-reflection-btn');
-    const saveReflectionBtn = document.getElementById('save-reflection-btn');
-    const exportReflectionsBtn = document.getElementById('export-reflections-btn');
-    const exportModal = document.getElementById('export-modal');
-    const closeExportBtn = document.getElementById('close-export-btn');
-    const downloadAllBtn = document.getElementById('download-all-btn');
-    const clearReflectionsBtn = document.getElementById('clear-reflections-btn');
-    const reflectionList = document.getElementById('reflection-list');
 
     function bind(el, eventName, handler) {
         if (el) {
@@ -129,42 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bind(favoriteBtn, 'click', toggleCurrentFavorite);
     bind(knownBtn, 'click', toggleCurrentKnown);
-
-    bind(skipReflectionBtn, 'click', () => {
-        reflectionModal.classList.add('hidden');
-        reflectionInput.value = '';
-        userNameInput.value = '';
-    });
-
-    bind(saveReflectionBtn, 'click', () => {
-        const text = reflectionInput.value.trim();
-        const userName = userNameInput.value.trim() || '匿名同学';
-        if (text) {
-            saveReflection(text, userName);
-        }
-        reflectionModal.classList.add('hidden');
-        reflectionInput.value = '';
-        userNameInput.value = '';
-    });
-
-    bind(exportReflectionsBtn, 'click', () => {
-        updateReflectionList();
-        exportModal.classList.remove('hidden');
-    });
-
-    bind(closeExportBtn, 'click', () => {
-        exportModal.classList.add('hidden');
-    });
-
-    bind(downloadAllBtn, 'click', downloadAllReflections);
-
-    bind(clearReflectionsBtn, 'click', () => {
-        if (confirm('确定要清空全部学习心得吗？此操作无法撤销。')) {
-            localStorage.removeItem(REFLECTION_STORAGE_KEY);
-            updateReflectionList();
-            showStatus('学习心得已清空');
-        }
-    });
 
     document.addEventListener('keydown', (event) => {
         const tag = String(event.target?.tagName || '').toLowerCase();
@@ -563,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
         wordText.textContent = '本轮学习完成';
         wordPhonetic.textContent = '';
         wordPhonetic.classList.add('hidden');
-        wordMeaning.textContent = '你可以重新开始、切换单元，或者写下这次学习心得。';
+        wordMeaning.textContent = '你可以重新开始、切换单元，或者调整筛选条件继续复习。';
         wordMeaning.classList.remove('hidden');
         confusingText.innerHTML = '';
         confusingBtn.classList.add('hidden');
@@ -574,11 +524,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateKnownButton();
         updateProgress();
         updateDashboardMeta();
-
-        setTimeout(() => {
-            reflectionModal.classList.remove('hidden');
-            reflectionInput.focus();
-        }, 350);
     }
 
     function updateFavoriteButton() {
@@ -761,98 +706,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.warn('熟词数据保存失败。', error);
         }
-    }
-
-    async function saveReflection(text, userName) {
-        const reflections = JSON.parse(localStorage.getItem(REFLECTION_STORAGE_KEY) || '[]');
-        const now = new Date();
-        const dateStr = now.toLocaleDateString('zh-CN');
-        const timeStr = now.toLocaleTimeString('zh-CN');
-
-        const reflectionData = {
-            name: userName,
-            date: dateStr,
-            time: timeStr,
-            timestamp: now.getTime(),
-            unit: unitSelect.value,
-            content: text
-        };
-
-        reflections.push(reflectionData);
-        localStorage.setItem(REFLECTION_STORAGE_KEY, JSON.stringify(reflections));
-
-        if (FORMSPREE_URL.includes('YOUR_FORM_ID')) {
-            alert('学习心得已保存在本地。如需自动发送，请在 script.js 中配置 Formspree 地址。');
-            return;
-        }
-
-        try {
-            const response = await fetch(FORMSPREE_URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    _subject: `新的学习心得：${userName}（${dateStr}）`,
-                    ...reflectionData
-                })
-            });
-
-            if (response.ok) {
-                alert('学习心得已成功保存并发送。');
-            } else {
-                throw new Error('Formspree response was not ok.');
-            }
-        } catch (error) {
-            console.error('Error sending reflection:', error);
-            alert('学习心得已保存在本地，但发送失败，请稍后检查网络。');
-        }
-    }
-
-    function updateReflectionList() {
-        const reflections = JSON.parse(localStorage.getItem(REFLECTION_STORAGE_KEY) || '[]');
-        reflectionList.innerHTML = '';
-
-        if (reflections.length === 0) {
-            reflectionList.innerHTML = '<p style="color:#69819d;text-align:center;">暂时还没有学习心得记录。</p>';
-            return;
-        }
-
-        [...reflections].reverse().forEach((item) => {
-            const div = document.createElement('div');
-            div.className = 'reflection-item';
-            div.innerHTML = `
-                <span class="reflection-date">${item.date} ${item.time} · ${item.unit} · ${item.name || '匿名同学'}</span>
-                <p>${String(item.content || '').replace(/\n/g, '<br>')}</p>
-            `;
-            reflectionList.appendChild(div);
-        });
-    }
-
-    function downloadAllReflections() {
-        const reflections = JSON.parse(localStorage.getItem(REFLECTION_STORAGE_KEY) || '[]');
-        if (!reflections.length) {
-            alert('当前没有可导出的学习心得。');
-            return;
-        }
-
-        let content = '=== English Book 学习心得汇总 ===\n\n';
-        reflections.forEach((item) => {
-            content += `日期: ${item.date} ${item.time}\n`;
-            content += `姓名: ${item.name || '匿名同学'}\n`;
-            content += `单元: ${item.unit}\n`;
-            content += `内容: ${item.content}\n`;
-            content += '----------------------------\n';
-        });
-
-        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        const now = new Date();
-        a.href = url;
-        a.download = `english-book-reflections-${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}.txt`;
-        a.click();
-        URL.revokeObjectURL(url);
     }
 
     function getFavoriteCountByUnit(unit) {

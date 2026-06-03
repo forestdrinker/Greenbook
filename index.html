@@ -90,7 +90,6 @@
 
                         <div class="button-stack">
                             <button id="reset-btn" class="secondary-btn" type="button">重新开始本轮学习</button>
-                            <button id="export-reflections-btn" class="ghost-btn" type="button">查看或导出学习心得</button>
                         </div>
                     </div>
 
@@ -167,31 +166,6 @@
                 </section>
             </section>
         </main>
-    </div>
-
-    <div id="reflection-modal" class="modal hidden">
-        <div class="modal-content">
-            <h3>学习完成，留下今天的心得吧</h3>
-            <p>你可以记录今天记住了什么，或者哪些词还需要再回顾。</p>
-            <input type="text" id="user-name-input" placeholder="填写你的名字或昵称">
-            <textarea id="reflection-input" placeholder="写下今天的学习心得..."></textarea>
-            <div class="modal-actions">
-                <button id="skip-reflection-btn" class="ghost-btn" type="button">稍后再写</button>
-                <button id="save-reflection-btn" class="primary-btn" type="button">保存心得</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="export-modal" class="modal hidden">
-        <div class="modal-content">
-            <h3>学习心得管理</h3>
-            <div id="reflection-list" class="reflection-list"></div>
-            <div class="modal-actions">
-                <button id="clear-reflections-btn" class="danger-btn" type="button">清空全部心得</button>
-                <button id="close-export-btn" class="ghost-btn" type="button">关闭</button>
-                <button id="download-all-btn" class="primary-btn" type="button">下载全部心得</button>
-            </div>
-        </div>
     </div>
 
     <script src="words.js?v=20260518_1"></script>

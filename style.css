@@ -215,8 +215,7 @@ body {
 }
 
 .panel-heading p,
-.tips-card p,
-.modal-content p {
+.tips-card p {
     margin: 8px 0 0;
     color: var(--muted);
     line-height: 1.6;
@@ -644,77 +643,8 @@ button:disabled {
     transition: width 220ms ease;
 }
 
-.modal {
-    position: fixed;
-    inset: 0;
-    background: rgba(15, 23, 42, 0.48);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    z-index: 1000;
-}
-
-.modal.hidden,
 .hidden {
     display: none !important;
-}
-
-.modal-content {
-    width: min(100%, 620px);
-    background: #fff;
-    border-radius: 28px;
-    padding: 28px;
-    box-shadow: 0 28px 70px rgba(15, 23, 42, 0.22);
-}
-
-.modal-content h3 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.modal-content input {
-    margin-top: 18px;
-}
-
-#reflection-input {
-    margin-top: 14px;
-}
-
-.modal-actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-top: 18px;
-}
-
-.reflection-list {
-    max-height: 360px;
-    overflow: auto;
-    margin-top: 18px;
-    padding-right: 4px;
-    display: grid;
-    gap: 12px;
-}
-
-.reflection-item {
-    padding: 16px;
-    border-radius: 18px;
-    background: #f8fbff;
-    border: 1px solid #dfebf8;
-}
-
-.reflection-item p {
-    margin: 8px 0 0;
-    color: var(--text);
-    line-height: 1.7;
-}
-
-.reflection-date {
-    color: var(--muted);
-    font-size: 0.92rem;
-    font-weight: 700;
 }
 
 @media (max-width: 1080px) {
@@ -742,8 +672,7 @@ button:disabled {
 
     .hero-copy,
     .control-panel,
-    .progress-panel,
-    .modal-content {
+    .progress-panel {
         padding: 22px 18px;
     }
 
