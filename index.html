@@ -3,107 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>绿皮书单词背诵</title>
-    <link rel="stylesheet" href="style.css?v=20260518_5">
+    <title>English Book 学习平台</title>
+    <link rel="stylesheet" href="style.css?v=20260603_edu">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>绿皮书单词背诵</h1>
-        </header>
-        
-        <div class="controls">
-            <div class="control-group">
-                <label for="unit-select">选择单元:</label>
-                <select id="unit-select">
-                    <option value="all">所有单元</option>
-                    <!-- Options will be populated by JS -->
-                </select>
-            </div>
+    <div class="page-shell">
+        <div class="page-glow page-glow-left"></div>
+        <div class="page-glow page-glow-right"></div>
 
-            <div id="search-group" class="control-group search-group hidden">
-                <label for="search-input">搜索单词:</label>
-                <input type="text" id="search-input" placeholder="输入英文或中文后回车">
-                <button id="search-btn" class="secondary-btn" type="button">搜索跳转</button>
-                <div id="search-results" class="search-results hidden"></div>
-            </div>
-            
-            <div class="control-group mode-group">
-                <label for="repeat-toggle" class="mode-toggle">
-                    <input type="checkbox" id="repeat-toggle"> 重复背诵模式
-                </label>
-                <label for="favorites-only-toggle" class="mode-toggle">
-                    <input type="checkbox" id="favorites-only-toggle"> 收藏背诵模式
-                </label>
-            </div>
-
-            <div class="control-group">
-                 <button id="reset-btn">重置进度</button>
-                 <button id="export-reflections-btn" class="secondary-btn">查看/导出心得</button>
-            </div>
-        </div>
-
-        <div class="card-container" id="card-container">
-            <div class="card" id="word-card">
-                <div class="word-content">
-                    <h2 id="word-text">点击开始</h2>
-                    <div class="word-phonetic" id="word-phonetic"></div>
-                    <p id="word-meaning" class="hidden"></p>
-                    <div id="confusing-section" class="confusing-section hidden">
-                        <hr>
-                        <h4>😈 易混淆坏蛋：</h4>
-                        <p id="confusing-text"></p>
-                    </div>
+        <main class="dashboard">
+            <section class="hero-panel">
+                <div class="hero-copy">
+                    <span class="eyebrow">Educational Platform</span>
+                    <h1>把背单词变成一场更轻松、更有反馈感的学习流程</h1>
+                    <p>
+                        用课程化的节奏来管理单词记忆，按单元学习、搜索定位、收藏重点词，并记录每次学习后的收获。
+                    </p>
                 </div>
-                <div class="card-actions">
-                    <div class="action-row">
-                        <button id="confusing-btn" class="secondary-btn hidden">易混淆坏蛋</button>
-                        <button id="favorite-btn" class="favorite-star-btn" type="button" aria-label="收藏单词">☆</button>
-                    </div>
-                    <div class="action-row">
-                        <button id="show-answer-btn">显示释义</button>
-                        <button id="next-btn">下一个</button>
-                    </div>
+
+                <div class="hero-stats">
+                    <article class="stat-card accent-green">
+                        <span class="stat-label">学习模式</span>
+                        <strong id="hero-mode">顺序学习</strong>
+                        <span class="stat-help">可切换重复练习和收藏模式</span>
+                    </article>
+                    <article class="stat-card accent-orange">
+                        <span class="stat-label">当前单元</span>
+                        <strong id="hero-unit">全部单元</strong>
+                        <span class="stat-help">支持按单元聚焦训练</span>
+                    </article>
+                    <article class="stat-card accent-blue">
+                        <span class="stat-label">学习进度</span>
+                        <strong id="hero-progress">0 / 0</strong>
+                        <span class="stat-help">实时显示当前学习状态</span>
+                    </article>
                 </div>
-            </div>
-            <div id="status-msg"></div>
-        </div>
-        
-        <div class="progress">
-            <span id="progress-text">0 / 0</span>
-        </div>
+            </section>
+
+            <section class="workspace-grid">
+                <aside class="control-panel surface-card">
+                    <div class="panel-heading">
+                        <h2>学习控制台</h2>
+                        <p>先选择范围，再开始今天的训练。</p>
+                    </div>
+
+                    <div class="form-stack">
+                        <div class="field-block">
+                            <label for="unit-select">选择单元</label>
+                            <select id="unit-select">
+                                <option value="all">全部单元</option>
+                            </select>
+                        </div>
+
+                        <div class="field-block hidden" id="search-group">
+                            <label for="search-input">搜索单词</label>
+                            <div class="search-bar">
+                                <input type="text" id="search-input" placeholder="输入英文或中文后按回车">
+                                <button id="search-btn" class="secondary-btn" type="button">搜索跳转</button>
+                            </div>
+                            <div id="search-results" class="search-results hidden"></div>
+                        </div>
+
+                        <div class="toggle-grid">
+                            <label for="repeat-toggle" class="mode-toggle">
+                                <input type="checkbox" id="repeat-toggle">
+                                <span>
+                                    <strong>重复练习</strong>
+                                    <small>随机抽取单词，适合强化记忆</small>
+                                </span>
+                            </label>
+                            <label for="favorites-only-toggle" class="mode-toggle">
+                                <input type="checkbox" id="favorites-only-toggle">
+                                <span>
+                                    <strong>收藏模式</strong>
+                                    <small>只练你标记过的重要单词</small>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="button-stack">
+                            <button id="reset-btn" class="secondary-btn" type="button">重新开始本轮学习</button>
+                            <button id="export-reflections-btn" class="ghost-btn" type="button">查看或导出学习心得</button>
+                        </div>
+                    </div>
+
+                    <div class="tips-card">
+                        <h3>快捷键提示</h3>
+                        <ul class="shortcut-list">
+                            <li><span>Space</span> 显示释义 / 进入下一个</li>
+                            <li><span>A</span> 返回上一个单词</li>
+                            <li><span>D</span> 下一个单词</li>
+                            <li><span>J</span> 显示或隐藏释义</li>
+                            <li><span>K</span> 显示或隐藏易混词</li>
+                            <li><span>S</span> 打开搜索面板</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="learning-stage">
+                    <div class="stage-topbar">
+                        <div>
+                            <span class="stage-label">Learning Stage</span>
+                            <h2>单词学习卡</h2>
+                        </div>
+                        <div id="status-msg" class="status-badge"></div>
+                    </div>
+
+                    <div class="card-container" id="card-container">
+                        <article class="word-card" id="word-card">
+                            <div class="word-card-inner">
+                                <div class="word-meta">
+                                    <span class="unit-pill" id="current-unit-pill">准备开始</span>
+                                    <button id="favorite-btn" class="favorite-star-btn" type="button" aria-label="收藏单词">☆</button>
+                                </div>
+
+                                <div class="word-content">
+                                    <h3 id="word-text">点击开始学习</h3>
+                                    <div class="word-phonetic" id="word-phonetic"></div>
+                                    <p id="word-meaning" class="meaning-panel hidden"></p>
+
+                                    <div id="confusing-section" class="confusing-section hidden">
+                                        <div class="section-chip">易混词提醒</div>
+                                        <div id="confusing-text"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-actions">
+                                    <div class="action-row">
+                                        <button id="confusing-btn" class="secondary-btn hidden" type="button">查看易混词</button>
+                                        <button id="show-answer-btn" type="button">显示释义</button>
+                                    </div>
+                                    <div class="action-row">
+                                        <button id="next-btn" class="primary-cta" type="button">下一个单词</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="progress-panel surface-card">
+                        <div class="progress-copy">
+                            <span class="progress-label">Progress Tracker</span>
+                            <strong id="progress-text">0 / 0</strong>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
     </div>
 
-    <!-- 心得体会弹窗 -->
     <div id="reflection-modal" class="modal hidden">
         <div class="modal-content">
-            <h3>📖 背诵结束！留下一份心得吧</h3>
-            <p>记录下今天的收获或难点（可选）</p>
-            <input type="text" id="user-name-input" placeholder="你好同志，请留下你的芳名" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:8px;box-sizing:border-box">
-            <textarea id="reflection-input" placeholder="写点什么吧... (将自动发送至后台)"></textarea>
+            <h3>学习完成，留下今天的心得吧</h3>
+            <p>你可以记录今天记住了什么，或者哪些词还需要再回顾。</p>
+            <input type="text" id="user-name-input" placeholder="填写你的名字或昵称">
+            <textarea id="reflection-input" placeholder="写下今天的学习心得..."></textarea>
             <div class="modal-actions">
-                <button id="skip-reflection-btn" class="text-btn">跳过</button>
-                <button id="save-reflection-btn" class="primary-btn">保存心得</button>
+                <button id="skip-reflection-btn" class="ghost-btn" type="button">稍后再写</button>
+                <button id="save-reflection-btn" class="primary-btn" type="button">保存心得</button>
             </div>
         </div>
     </div>
 
-    <!-- 导出管理弹窗 -->
     <div id="export-modal" class="modal hidden">
         <div class="modal-content">
-            <h3>📂 心得管理</h3>
-            <div id="reflection-list" class="reflection-list">
-                <!-- Reflections will be listed here -->
-            </div>
+            <h3>学习心得管理</h3>
+            <div id="reflection-list" class="reflection-list"></div>
             <div class="modal-actions">
-                <button id="clear-reflections-btn" class="text-btn" style="color:red;margin-right:auto">清空所有</button>
-                <button id="close-export-btn" class="text-btn">关闭</button>
-                <button id="download-all-btn" class="primary-btn">一键下载所有心得</button>
+                <button id="clear-reflections-btn" class="danger-btn" type="button">清空全部心得</button>
+                <button id="close-export-btn" class="ghost-btn" type="button">关闭</button>
+                <button id="download-all-btn" class="primary-btn" type="button">下载全部心得</button>
             </div>
         </div>
     </div>
 
     <script src="words.js?v=20260518_1"></script>
-    <script src="script.js?v=20260518_5"></script>
+    <script src="script.js?v=20260603_edu"></script>
 </body>
 </html>

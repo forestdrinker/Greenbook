@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const REFLECTION_STORAGE_KEY = 'wordReflections';
     const FAVORITE_STORAGE_KEY = 'wordFavorites';
+    const FORMSPREE_URL = 'https://formspree.io/f/mvzwzrdn';
 
     let allWords = [];
     let currentQueue = [];
@@ -26,54 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const confusingSection = document.getElementById('confusing-section');
     const confusingText = document.getElementById('confusing-text');
     const progressText = document.getElementById('progress-text');
+    const progressFill = document.getElementById('progress-fill');
     const statusMsg = document.getElementById('status-msg');
     const favoriteBtn = document.getElementById('favorite-btn');
+    const heroMode = document.getElementById('hero-mode');
+    const heroUnit = document.getElementById('hero-unit');
+    const heroProgress = document.getElementById('hero-progress');
+    const currentUnitPill = document.getElementById('current-unit-pill');
 
-    // Ensure action buttons are rendered in two rows even if an older HTML cache is loaded.
-    function enforceActionLayout() {
-        const cardActions = document.querySelector('.card-actions');
-        if (!cardActions) {
-            return;
-        }
-
-        if (cardActions.querySelector('.action-row')) {
-            return;
-        }
-
-        const confusingButton = document.getElementById('confusing-btn');
-        const favoriteButton = document.getElementById('favorite-btn');
-        const showAnswerButton = document.getElementById('show-answer-btn');
-        const nextButton = document.getElementById('next-btn');
-
-        if (!confusingButton || !favoriteButton || !showAnswerButton || !nextButton) {
-            return;
-        }
-
-        const firstRow = document.createElement('div');
-        firstRow.className = 'action-row';
-        firstRow.appendChild(confusingButton);
-        firstRow.appendChild(favoriteButton);
-
-        const secondRow = document.createElement('div');
-        secondRow.className = 'action-row';
-        secondRow.appendChild(showAnswerButton);
-        secondRow.appendChild(nextButton);
-
-        cardActions.innerHTML = '';
-        cardActions.appendChild(firstRow);
-        cardActions.appendChild(secondRow);
-    }
-
-    enforceActionLayout();
-
-    function bind(el, eventName, handler) {
-        if (!el) {
-            return;
-        }
-        el.addEventListener(eventName, handler);
-    }
-
-    // Reflection related elements
     const reflectionModal = document.getElementById('reflection-modal');
     const userNameInput = document.getElementById('user-name-input');
     const reflectionInput = document.getElementById('reflection-input');
@@ -86,7 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearReflectionsBtn = document.getElementById('clear-reflections-btn');
     const reflectionList = document.getElementById('reflection-list');
 
-    // Load data
+    function bind(el, eventName, handler) {
+        if (el) {
+            el.addEventListener(eventName, handler);
+        }
+    }
+
     if (window.wordData) {
         allWords = window.wordData.map((word, index) => ({
             ...word,
@@ -96,85 +62,82 @@ document.addEventListener('DOMContentLoaded', () => {
         initSession();
     } else {
         wordText.textContent = '数据加载失败';
-        wordMeaning.textContent = '请确保 words.js 存在';
+        wordMeaning.textContent = '请确认 words.js 文件存在且格式正确。';
         wordMeaning.classList.remove('hidden');
+        updateDashboardMeta();
     }
 
-    function showStatus(text) {
-        if (!statusMsg) {
-            return;
-        }
-        statusMsg.textContent = text || '';
-    }
-
-    // Event listeners
     bind(unitSelect, 'change', initSession);
-    bind(repeatToggle, 'change', (e) => {
-        isRepeatMode = e.target.checked;
+    bind(repeatToggle, 'change', () => {
+        isRepeatMode = repeatToggle.checked;
         if (isRepeatMode && currentQueue.length === 0 && allWords.length > 0) {
             initSession();
         }
         updateProgress();
+        updateDashboardMeta();
     });
 
-    bind(searchBtn, 'click', () => {
-        searchWords();
+    bind(favoritesOnlyToggle, 'change', () => {
+        initSession();
+        if (favoritesOnlyToggle.checked) {
+            showStatus('已切换到收藏模式');
+        }
     });
 
-    bind(searchInput, 'keydown', (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
+    bind(searchBtn, 'click', searchWords);
+    bind(searchInput, 'keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
             searchWords();
         }
     });
 
-    bind(searchResults, 'click', (e) => {
-        const target = e.target.closest('button[data-word-id]');
+    bind(searchResults, 'click', (event) => {
+        const target = event.target.closest('button[data-word-id]');
         if (!target) {
             return;
         }
 
         const found = allWords.find((word) => word._wordId === target.dataset.wordId);
-        if (!found) {
-            return;
+        if (found) {
+            jumpToWord(found);
         }
-        jumpToWord(found);
     });
 
-    const onFavoritesOnlyToggle = () => {
+    bind(resetBtn, 'click', () => {
         initSession();
-        if (favoritesOnlyToggle && favoritesOnlyToggle.checked) {
-            showStatus('收藏背诵模式已开启');
-        } else {
-            showStatus('');
-        }
-    };
-    bind(favoritesOnlyToggle, 'change', onFavoritesOnlyToggle);
-    bind(favoritesOnlyToggle, 'input', onFavoritesOnlyToggle);
-
-    bind(resetBtn, 'click', initSession);
+        showStatus('学习队列已重新生成');
+    });
 
     bind(showAnswerBtn, 'click', () => {
+        if (!currentWord) {
+            return;
+        }
         wordMeaning.classList.remove('hidden');
+        showStatus('已显示释义');
     });
 
     bind(nextBtn, 'click', () => nextWord(false));
 
     bind(confusingBtn, 'click', () => {
+        if (!currentWord) {
+            return;
+        }
         confusingSection.classList.toggle('hidden');
+        showStatus(confusingSection.classList.contains('hidden') ? '已收起易混词' : '已展开易混词');
     });
 
     bind(favoriteBtn, 'click', toggleCurrentFavorite);
 
-    // Reflection handlers
     bind(skipReflectionBtn, 'click', () => {
         reflectionModal.classList.add('hidden');
         reflectionInput.value = '';
+        userNameInput.value = '';
     });
 
     bind(saveReflectionBtn, 'click', () => {
         const text = reflectionInput.value.trim();
-        const userName = userNameInput.value.trim() || '匿名用户';
+        const userName = userNameInput.value.trim() || '匿名同学';
         if (text) {
             saveReflection(text, userName);
         }
@@ -195,70 +158,73 @@ document.addEventListener('DOMContentLoaded', () => {
     bind(downloadAllBtn, 'click', downloadAllReflections);
 
     bind(clearReflectionsBtn, 'click', () => {
-        if (confirm('确定要清空所有心得记录吗？此操作不可恢复。')) {
+        if (confirm('确定要清空全部学习心得吗？此操作无法撤销。')) {
             localStorage.removeItem(REFLECTION_STORAGE_KEY);
             updateReflectionList();
+            showStatus('学习心得已清空');
         }
     });
 
-    // Keyboard shortcuts
-    document.addEventListener('keydown', (e) => {
-        const targetTag = String(e.target?.tagName || '').toLowerCase();
-        if (targetTag === 'input' || targetTag === 'textarea' || targetTag === 'select' || targetTag === 'button') {
+    document.addEventListener('keydown', (event) => {
+        const tag = String(event.target?.tagName || '').toLowerCase();
+        if (tag === 'input' || tag === 'textarea' || tag === 'select' || tag === 'button') {
             return;
         }
 
-        const key = String(e.key || '').toLowerCase();
+        const key = String(event.key || '').toLowerCase();
         if (key === 'a') {
-            e.preventDefault();
+            event.preventDefault();
             previousWord();
             return;
         }
         if (key === 'd') {
-            e.preventDefault();
+            event.preventDefault();
             nextWord(false);
             return;
         }
         if (key === 'j') {
-            e.preventDefault();
+            event.preventDefault();
             toggleMeaning();
             return;
         }
         if (key === 'k') {
-            e.preventDefault();
+            event.preventDefault();
             toggleConfusingSection();
             return;
         }
         if (key === 'l') {
-            e.preventDefault();
-            markCurrentWordLearned();
+            event.preventDefault();
+            toggleCurrentFavorite();
             return;
         }
         if (key === 's') {
-            e.preventDefault();
+            event.preventDefault();
             openSearchPanel();
             return;
         }
 
-        if (e.code !== 'Space') {
+        if (event.code !== 'Space') {
             return;
         }
-        e.preventDefault();
+
+        event.preventDefault();
         if (!currentWord) {
             return;
         }
+
         if (wordMeaning.classList.contains('hidden')) {
             wordMeaning.classList.remove('hidden');
+            showStatus('已显示释义');
         } else {
-            nextWord();
+            nextWord(false);
         }
     });
 
     function populateUnits() {
-        const units = new Set(allWords.map((w) => w.unit));
+        const units = new Set(allWords.map((word) => word.unit));
         const sortedUnits = Array.from(units).sort((a, b) => {
-            const numA = parseInt((a || '').replace(/\D/g, ''), 10) || 0;
-            const numB = parseInt((b || '').replace(/\D/g, ''), 10) || 0;
+            const numA = parseInt(String(a || '').replace(/\D/g, ''), 10) || 0;
+            const numB = parseInt(String(b || '').replace(/\D/g, ''), 10) || 0;
             return numA - numB;
         });
 
@@ -274,12 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedUnit = unitSelect.value;
         isRepeatMode = repeatToggle.checked;
 
-        let scopedWords;
-        if (selectedUnit === 'all') {
-            scopedWords = [...allWords];
-        } else {
-            scopedWords = allWords.filter((w) => w.unit === selectedUnit);
-        }
+        let scopedWords = selectedUnit === 'all'
+            ? [...allWords]
+            : allWords.filter((word) => word.unit === selectedUnit);
 
         if (favoritesOnlyToggle.checked) {
             scopedWords = scopedWords.filter(isWordFavorited);
@@ -287,36 +250,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentQueue = scopedWords;
         currentIndex = 0;
+        clearSearchResults();
         showStatus('');
 
         if (currentQueue.length === 0) {
             showEmptyState();
             updateProgress();
+            updateDashboardMeta();
             return;
         }
 
         shuffleArray(currentQueue);
         nextWord(true);
+        updateDashboardMeta();
     }
 
     function searchWords() {
-        const rawQuery = (searchInput?.value || '').trim();
+        const rawQuery = String(searchInput?.value || '').trim();
         if (!rawQuery) {
-            showStatus('请输入要搜索的单词');
+            showStatus('请输入要搜索的单词或中文释义');
             clearSearchResults();
             return;
         }
-        const query = rawQuery.toLowerCase();
 
+        const query = rawQuery.toLowerCase();
         const matches = findSearchMatches(query);
+
         if (matches.length === 0) {
             renderSearchResults([]);
-            showStatus('无此单词');
+            showStatus('没有找到匹配的单词');
             return;
         }
 
         renderSearchResults(matches);
-        showStatus(`找到 ${matches.length} 个匹配，请点击跳转`);
+        showStatus(`找到 ${matches.length} 个匹配结果，点击即可跳转`);
     }
 
     function findSearchMatches(query) {
@@ -331,31 +298,28 @@ document.addEventListener('DOMContentLoaded', () => {
             String(word.meaning || '').toLowerCase().includes(query)
         );
 
-        const uniqueMatches = [];
         const seenWordIds = new Set();
-
-        [...exactMatches, ...fuzzyWordMatches, ...meaningMatches].forEach((word) => {
+        return [...exactMatches, ...fuzzyWordMatches, ...meaningMatches].filter((word) => {
             if (!word || seenWordIds.has(word._wordId)) {
-                return;
+                return false;
             }
             seenWordIds.add(word._wordId);
-            uniqueMatches.push(word);
-        });
-
-        return uniqueMatches.slice(0, 50);
+            return true;
+        }).slice(0, 50);
     }
 
     function renderSearchResults(matches) {
         if (!searchResults) {
             return;
         }
+
         searchResults.innerHTML = '';
         searchResults.classList.remove('hidden');
 
-        if (!matches || matches.length === 0) {
+        if (!matches.length) {
             const empty = document.createElement('span');
             empty.className = 'search-empty';
-            empty.textContent = '无此单词';
+            empty.textContent = '没有匹配结果';
             searchResults.appendChild(empty);
             return;
         }
@@ -363,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
         matches.forEach((item) => {
             const resultBtn = document.createElement('button');
             resultBtn.type = 'button';
-            resultBtn.className = 'search-result-item';
+            resultBtn.className = 'search-result-item ghost-btn';
             resultBtn.dataset.wordId = item._wordId;
             resultBtn.textContent = `${item.word} (${item.unit})`;
             searchResults.appendChild(resultBtn);
@@ -385,7 +349,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         searchGroup.classList.remove('hidden');
         searchInput.focus();
-        searchInput.select?.();
+        if (typeof searchInput.select === 'function') {
+            searchInput.select();
+        }
+        showStatus('搜索面板已打开');
     }
 
     function jumpToWord(found) {
@@ -399,29 +366,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         initSession();
 
-        const matchIndex = currentQueue.findIndex((w) => w._wordId === found._wordId);
+        const matchIndex = currentQueue.findIndex((word) => word._wordId === found._wordId);
         if (matchIndex === -1) {
-            showStatus('该词当前筛选条件下不可见');
+            showStatus('该单词在当前筛选条件下不可见');
             return;
         }
 
         currentIndex = matchIndex;
         currentWord = currentQueue[currentIndex];
         renderCurrentWord();
-        showStatus(`已跳转到: ${found.word}`);
-        searchInput.select?.();
+        showStatus(`已跳转到 ${found.word}`);
     }
 
     function nextWord(isFirst = false) {
         if (currentQueue.length === 0) {
             showEmptyState();
             updateProgress();
+            updateDashboardMeta();
             return;
         }
 
         if (!isFirst) {
             if (!isRepeatMode) {
-                currentIndex++;
+                currentIndex += 1;
             } else {
                 currentIndex = Math.floor(Math.random() * currentQueue.length);
             }
@@ -445,15 +412,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (currentIndex <= 0) {
-            currentIndex = 0;
-        } else {
-            currentIndex--;
-        }
-
+        currentIndex = Math.max(currentIndex - 1, 0);
         currentWord = currentQueue[currentIndex];
         renderCurrentWord();
-        showStatus(`已返回到: ${currentWord.word}`);
+        showStatus(`已返回到 ${currentWord.word}`);
     }
 
     function toggleMeaning() {
@@ -462,6 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         wordMeaning.classList.toggle('hidden');
+        showStatus(wordMeaning.classList.contains('hidden') ? '已隐藏释义' : '已显示释义');
     }
 
     function toggleConfusingSection() {
@@ -470,17 +433,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         confusingSection.classList.toggle('hidden');
+        showStatus(confusingSection.classList.contains('hidden') ? '已收起易混词' : '已展开易混词');
     }
 
-    function markCurrentWordLearned() {
+    function renderCurrentWord() {
         if (!currentWord) {
             return;
         }
 
-        toggleCurrentFavorite();
-    }
-
-    function renderCurrentWord() {
         wordText.textContent = currentWord.word;
 
         if (currentWord.phonetic) {
@@ -494,66 +454,71 @@ document.addEventListener('DOMContentLoaded', () => {
         wordMeaning.textContent = currentWord.meaning;
         wordMeaning.classList.add('hidden');
 
-        if (currentWord.confusing && currentWord.confusing.trim()) {
-            const confusingItems = currentWord.confusing
+        if (currentWord.confusing && String(currentWord.confusing).trim()) {
+            const confusingItems = String(currentWord.confusing)
                 .split('|')
                 .map((item) => item.trim())
                 .filter(Boolean);
+
             confusingText.innerHTML = confusingItems
                 .map((item) => `<div class="confusing-item">${item}</div>`)
                 .join('');
             confusingBtn.classList.remove('hidden');
         } else {
-            confusingBtn.classList.add('hidden');
             confusingText.innerHTML = '';
+            confusingBtn.classList.add('hidden');
         }
-        confusingSection.classList.add('hidden');
 
+        confusingSection.classList.add('hidden');
         updateFavoriteButton();
         updateProgress();
+        updateDashboardMeta();
     }
 
     function showEmptyState() {
         const selectedUnit = unitSelect.value;
-        const favoritesOnly = favoritesOnlyToggle.checked;
-
         currentWord = null;
+
+        wordText.textContent = favoritesOnlyToggle.checked ? '还没有收藏单词' : '当前没有可学习的单词';
         wordPhonetic.textContent = '';
         wordPhonetic.classList.add('hidden');
+        confusingText.innerHTML = '';
         confusingBtn.classList.add('hidden');
         confusingSection.classList.add('hidden');
 
-        if (favoritesOnly) {
-            wordText.textContent = '暂无收藏单词';
-            if (selectedUnit === 'all') {
-                wordMeaning.textContent = '先点亮星标收藏一些单词，再开启“收藏背诵模式”。';
-            } else {
-                wordMeaning.textContent = `当前单元（${selectedUnit}）还没有收藏单词。`;
-            }
-            showStatus('收藏背诵模式已开启');
+        if (favoritesOnlyToggle.checked) {
+            wordMeaning.textContent = selectedUnit === 'all'
+                ? '先为一些重点单词点亮星标，再开启收藏模式进行集中复习。'
+                : `当前单元 ${selectedUnit} 里还没有收藏的单词。`;
         } else {
-            wordText.textContent = '无单词';
-            wordMeaning.textContent = '当前筛选条件没有可学习的单词。';
-            showStatus('');
+            wordMeaning.textContent = '请切换单元或调整筛选条件后再试。';
         }
 
+        currentUnitPill.textContent = selectedUnit === 'all' ? '全部单元' : selectedUnit;
         wordMeaning.classList.remove('hidden');
         updateFavoriteButton();
     }
 
     function showFinished() {
-        wordText.textContent = '本组背诵完成!';
-        wordMeaning.textContent = '点击重置或切换单元';
-        wordMeaning.classList.remove('hidden');
-        showStatus('🎉 完成!');
         currentWord = null;
+        wordText.textContent = '本轮学习完成';
+        wordPhonetic.textContent = '';
+        wordPhonetic.classList.add('hidden');
+        wordMeaning.textContent = '你可以重新开始、切换单元，或者写下这次学习心得。';
+        wordMeaning.classList.remove('hidden');
+        confusingText.innerHTML = '';
+        confusingBtn.classList.add('hidden');
+        confusingSection.classList.add('hidden');
+        currentUnitPill.textContent = '已完成';
+        showStatus('恭喜，当前学习队列已完成');
         updateFavoriteButton();
         updateProgress();
+        updateDashboardMeta();
 
         setTimeout(() => {
             reflectionModal.classList.remove('hidden');
             reflectionInput.focus();
-        }, 500);
+        }, 350);
     }
 
     function updateFavoriteButton() {
@@ -563,12 +528,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!hasWord) {
             favoriteBtn.textContent = '☆';
             favoriteBtn.classList.remove('favorite-active');
+            favoriteBtn.setAttribute('aria-label', '收藏单词');
             return;
         }
 
         const isFavorited = isWordFavorited(currentWord);
         favoriteBtn.textContent = isFavorited ? '★' : '☆';
         favoriteBtn.classList.toggle('favorite-active', isFavorited);
+        favoriteBtn.setAttribute('aria-label', isFavorited ? '取消收藏单词' : '收藏单词');
     }
 
     function toggleCurrentFavorite() {
@@ -580,6 +547,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setWordFavorited(currentWord, nextValue);
         updateFavoriteButton();
         updateProgress();
+        updateDashboardMeta();
+        showStatus(nextValue ? '已加入收藏' : '已取消收藏');
 
         if (favoritesOnlyToggle.checked && !nextValue) {
             initSession();
@@ -624,18 +593,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const normalized = {};
             Object.entries(parsed).forEach(([wordId, value]) => {
-                if (typeof value === 'boolean') {
-                    if (value) {
-                        normalized[wordId] = true;
-                    }
-                    return;
-                }
-
-                if (value && typeof value === 'object' && Boolean(value.favorite)) {
+                if (value === true) {
+                    normalized[wordId] = true;
+                } else if (value && typeof value === 'object' && value.favorite) {
                     normalized[wordId] = true;
                 }
             });
-
             return normalized;
         } catch (error) {
             console.warn('收藏数据读取失败，已重置。', error);
@@ -646,14 +609,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function persistFavoriteStore() {
         try {
             localStorage.setItem(FAVORITE_STORAGE_KEY, JSON.stringify(favoriteStore));
-            return true;
         } catch (error) {
             console.warn('收藏数据保存失败。', error);
-            return false;
         }
     }
 
-    // 心得保存逻辑
     async function saveReflection(text, userName) {
         const reflections = JSON.parse(localStorage.getItem(REFLECTION_STORAGE_KEY) || '[]');
         const now = new Date();
@@ -672,11 +632,8 @@ document.addEventListener('DOMContentLoaded', () => {
         reflections.push(reflectionData);
         localStorage.setItem(REFLECTION_STORAGE_KEY, JSON.stringify(reflections));
 
-        const FORMSPREE_URL = 'https://formspree.io/f/mvzwzrdn';
-
         if (FORMSPREE_URL.includes('YOUR_FORM_ID')) {
-            console.warn('心得已本地保存，但未配置 Formspree 链接，无法自动发送。');
-            alert('心得已在本地保存！\n温馨提示：请在 script.js 中配置您的 Formspree 链接以开启自动发送功能。');
+            alert('学习心得已保存在本地。如需自动发送，请在 script.js 中配置 Formspree 地址。');
             return;
         }
 
@@ -687,19 +644,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    _subject: `新心得提交: ${userName} (${dateStr})`,
+                    _subject: `新的学习心得：${userName}（${dateStr}）`,
                     ...reflectionData
                 })
             });
 
             if (response.ok) {
-                alert('心得已成功发送至后台！');
+                alert('学习心得已成功保存并发送。');
             } else {
-                throw new Error('发送失败');
+                throw new Error('Formspree response was not ok.');
             }
         } catch (error) {
-            console.error('Error sending to Formspree:', error);
-            alert('心得已在本地保存，但发送至后台失败，请检查网络。');
+            console.error('Error sending reflection:', error);
+            alert('学习心得已保存在本地，但发送失败，请稍后检查网络。');
         }
     }
 
@@ -708,7 +665,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reflectionList.innerHTML = '';
 
         if (reflections.length === 0) {
-            reflectionList.innerHTML = '<p style="color:#999;text-align:center">暂无心得记录</p>';
+            reflectionList.innerHTML = '<p style="color:#69819d;text-align:center;">暂时还没有学习心得记录。</p>';
             return;
         }
 
@@ -716,8 +673,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const div = document.createElement('div');
             div.className = 'reflection-item';
             div.innerHTML = `
-                <span class="reflection-date">${item.date} ${item.time} (${item.unit}) - ${item.name || '匿名'}</span>
-                <p>${item.content.replace(/\n/g, '<br>')}</p>
+                <span class="reflection-date">${item.date} ${item.time} · ${item.unit} · ${item.name || '匿名同学'}</span>
+                <p>${String(item.content || '').replace(/\n/g, '<br>')}</p>
             `;
             reflectionList.appendChild(div);
         });
@@ -725,29 +682,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function downloadAllReflections() {
         const reflections = JSON.parse(localStorage.getItem(REFLECTION_STORAGE_KEY) || '[]');
-        if (reflections.length === 0) {
-            alert('没有可以导出的心得');
+        if (!reflections.length) {
+            alert('当前没有可导出的学习心得。');
             return;
         }
 
-        let content = '=== 绿皮书背诵心得汇总 ===\n\n';
+        let content = '=== English Book 学习心得汇总 ===\n\n';
         reflections.forEach((item) => {
             content += `日期: ${item.date} ${item.time}\n`;
-            content += `姓名: ${item.name || '匿名'}\n`;
+            content += `姓名: ${item.name || '匿名同学'}\n`;
             content += `单元: ${item.unit}\n`;
             content += `内容: ${item.content}\n`;
             content += '----------------------------\n';
         });
 
-        const blob = new Blob([content], { type: 'text/plain' });
+        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
-
         const now = new Date();
-        const fileName = `心得汇总_${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}.txt`;
-
         a.href = url;
-        a.download = fileName;
+        a.download = `english-book-reflections-${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}.txt`;
         a.click();
         URL.revokeObjectURL(url);
     }
@@ -760,23 +714,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateProgress() {
-        const favoritesOnly = favoritesOnlyToggle.checked;
         const favoriteCount = getFavoriteCountByUnit(unitSelect.value);
-        const favoriteHint = favoritesOnly ? ' | 收藏背诵模式' : '';
+        const modeLabel = isRepeatMode ? '重复练习' : '顺序学习';
+        const favoriteLabel = favoritesOnlyToggle.checked ? ' · 收藏模式' : '';
 
         if (isRepeatMode) {
-            progressText.textContent = `当前: ${currentWord ? currentWord.unit : '-'} (无限模式) | 收藏: ${favoriteCount}${favoriteHint}`;
+            const currentUnitText = currentWord ? currentWord.unit : '-';
+            progressText.textContent = `当前单元：${currentUnitText} · ${modeLabel} · 收藏 ${favoriteCount}${favoriteLabel}`;
+            heroProgress.textContent = `循环练习 · 收藏 ${favoriteCount}`;
+            progressFill.style.width = currentQueue.length ? '100%' : '0%';
             return;
         }
 
-        const current = currentQueue.length === 0
-            ? 0
-            : Math.min(currentIndex + 1, currentQueue.length);
-        progressText.textContent = `进度: ${current} / ${currentQueue.length} | 收藏: ${favoriteCount}${favoriteHint}`;
+        const current = currentQueue.length === 0 ? 0 : Math.min(currentIndex + 1, currentQueue.length);
+        progressText.textContent = `进度：${current} / ${currentQueue.length} · 收藏 ${favoriteCount}${favoriteLabel}`;
+        heroProgress.textContent = `${current} / ${currentQueue.length}`;
+        const percent = currentQueue.length === 0 ? 0 : (current / currentQueue.length) * 100;
+        progressFill.style.width = `${percent}%`;
+    }
+
+    function updateDashboardMeta() {
+        const unitLabel = unitSelect.value === 'all' ? '全部单元' : unitSelect.value;
+        heroMode.textContent = favoritesOnlyToggle.checked
+            ? (isRepeatMode ? '收藏循环练习' : '收藏顺序学习')
+            : (isRepeatMode ? '重复练习' : '顺序学习');
+        heroUnit.textContent = unitLabel;
+        currentUnitPill.textContent = currentWord ? currentWord.unit : unitLabel;
+
+        if (!currentWord && currentQueue.length === 0) {
+            heroProgress.textContent = '0 / 0';
+        }
+    }
+
+    function showStatus(text) {
+        statusMsg.textContent = text || '';
+        statusMsg.style.visibility = text ? 'visible' : 'hidden';
     }
 
     function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
+        for (let i = array.length - 1; i > 0; i -= 1) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
