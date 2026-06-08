@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const showAnswerBtn = document.getElementById('show-answer-btn');
     const nextBtn = document.getElementById('next-btn');
     const confusingBtn = document.getElementById('confusing-btn');
+    const exampleBtn = document.getElementById('example-btn');
+    const exampleSection = document.getElementById('example-section');
+    const exampleText = document.getElementById('example-text');
     const confusingSection = document.getElementById('confusing-section');
     const confusingText = document.getElementById('confusing-text');
     const progressText = document.getElementById('progress-text');
@@ -118,13 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bind(nextBtn, 'click', () => nextWord(false));
 
-    bind(confusingBtn, 'click', () => {
-        if (!currentWord) {
-            return;
-        }
-        confusingSection.classList.toggle('hidden');
-        showStatus(confusingSection.classList.contains('hidden') ? '已收起易混词' : '已展开易混词');
-    });
+    bind(confusingBtn, 'click', toggleConfusingSection);
+    bind(exampleBtn, 'click', toggleExampleSection);
 
     bind(favoriteBtn, 'click', toggleCurrentFavorite);
     bind(knownBtn, 'click', toggleCurrentKnown);
@@ -154,6 +152,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (key === 'k') {
             event.preventDefault();
             toggleConfusingSection();
+            return;
+        }
+        if (key === 'n') {
+            event.preventDefault();
+            toggleExampleSection();
             return;
         }
         if (key === 'l') {
@@ -529,6 +532,16 @@ document.addEventListener('DOMContentLoaded', () => {
         showStatus(confusingSection.classList.contains('hidden') ? '已收起易混词' : '已展开易混词');
     }
 
+    function toggleExampleSection() {
+        if (!currentWord || !currentWord.example) {
+            showStatus('\u5f53\u524d\u5355\u8bcd\u6682\u65e0\u4f8b\u53e5');
+            return;
+        }
+
+        exampleSection.classList.toggle('hidden');
+        showStatus(exampleSection.classList.contains('hidden') ? '\u5df2\u6536\u8d77\u4f8b\u53e5' : '\u5df2\u5c55\u5f00\u4f8b\u53e5');
+    }
+
     function applyRepeatModeChange() {
         isRepeatMode = repeatToggle.checked;
         if (isRepeatMode && currentQueue.length === 0 && allWords.length > 0) {
@@ -583,6 +596,16 @@ document.addEventListener('DOMContentLoaded', () => {
         wordMeaning.textContent = currentWord.meaning;
         wordMeaning.classList.add('hidden');
 
+        const example = String(currentWord.example || '').trim();
+        if (example) {
+            exampleText.textContent = example;
+            exampleBtn.classList.remove('hidden');
+        } else {
+            exampleText.textContent = '';
+            exampleBtn.classList.add('hidden');
+        }
+        exampleSection.classList.add('hidden');
+
         if (currentWord.confusing && String(currentWord.confusing).trim()) {
             const confusingItems = String(currentWord.confusing)
                 .split('|')
@@ -615,6 +638,9 @@ document.addEventListener('DOMContentLoaded', () => {
         confusingText.innerHTML = '';
         confusingBtn.classList.add('hidden');
         confusingSection.classList.add('hidden');
+        exampleText.textContent = '';
+        exampleBtn.classList.add('hidden');
+        exampleSection.classList.add('hidden');
 
         wordMeaning.textContent = getEmptyStateMessage(selectedUnit);
 

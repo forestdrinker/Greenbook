@@ -112,6 +112,7 @@
                             <li><span>D</span> 下一个单词</li>
                             <li><span>J</span> 显示或隐藏释义</li>
                             <li><span>K</span> 显示或隐藏易混词</li>
+                            <li><span>N</span> 显示或隐藏例句</li>
                             <li><span>H</span> 标熟 / 取消标熟</li>
                             <li><span>Y</span> 打开 / 关闭重复模式</li>
                             <li><span>U</span> 打开 / 关闭收藏模式</li>
@@ -146,6 +147,11 @@
                                     <div class="word-phonetic" id="word-phonetic"></div>
                                     <p id="word-meaning" class="meaning-panel hidden"></p>
 
+                                    <div id="example-section" class="example-section hidden">
+                                        <div class="section-chip">例句</div>
+                                        <p id="example-text"></p>
+                                    </div>
+
                                     <div id="confusing-section" class="confusing-section hidden">
                                         <div class="section-chip">易混词提醒</div>
                                         <div id="confusing-text"></div>
@@ -155,6 +161,7 @@
                                 <div class="card-actions">
                                     <div class="action-row">
                                         <button id="confusing-btn" class="secondary-btn hidden" type="button">查看易混词</button>
+                                        <button id="example-btn" class="secondary-btn hidden" type="button">查看例句</button>
                                         <button id="show-answer-btn" type="button">显示释义</button>
                                     </div>
                                     <div class="action-row">
@@ -179,7 +186,7 @@
         </main>
     </div>
 
-    <script src="words.js?v=20260518_1"></script>
-    <script src="script.js?v=20260603_bulk"></script>
+    <script src="words.js?v=20260608_examples"></script>
+    <script src="script.js?v=20260608_examples"></script>
 </body>
 </html>
