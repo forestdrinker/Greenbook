@@ -5,7 +5,8 @@ window.wordData = [
     "word": "challenge",
     "phonetic": "[ˈʧælənʤ]",
     "meaning": "n.挑战;艰巨任务,难题vt.向…挑战;质疑,对…表示怀疑",
-    "confusing": "【形似】allege: t.断言,宣称... | 【形似】exchange: v./n.(for)交换,兑换;交流,交... | 【同尾】arrange: vt.整理,排列,布置;安排,筹备... | 【同尾】revenge: n.报复,复仇vt.替…报仇... | 【易混】change | 【易混】charge"
+    "confusing": "【形似】allege: t.断言,宣称... | 【形似】exchange: v./n.(for)交换,兑换;交流,交... | 【同尾】arrange: vt.整理,排列,布置;安排,筹备... | 【同尾】revenge: n.报复,复仇vt.替…报仇... | 【易混】change | 【易混】charge",
+    "example": "The final exam was a real challenge for the whole class."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@ window.wordData = [
     "word": "furnish",
     "phonetic": "[ˈfərnɪʃ]",
     "meaning": "vt.供应,提供;装备,布置",
-    "confusing": "【形似】flourish: vi.繁荣,茂盛;兴旺... | 【形似】nourish: t.提供养分,养育... | 【形似】furious: a.狂怒的,狂暴的,猛烈的... | 【同尾】establish: v建立,设立;安置,使定居;确定;查实,... | 【同尾】extinguish: vt.熄灭,扑灭..."
+    "confusing": "【形似】flourish: vi.繁荣,茂盛;兴旺... | 【形似】nourish: t.提供养分,养育... | 【形似】furious: a.狂怒的,狂暴的,猛烈的... | 【同尾】establish: v建立,设立;安置,使定居;确定;查实,... | 【同尾】extinguish: vt.熄灭,扑灭...",
+    "example": "The hotel will furnish each room with a desk and lamp."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@ window.wordData = [
     "word": "establish",
     "phonetic": "[ɪˈstæblɪʃ]",
     "meaning": "v建立,设立;安置,使定居;确定;查实,证实;使立足",
-    "confusing": "【形似】abolish: t.废除,取消... | 【同尾】furnish: vt.供应,提供;装备,布置... | 【同尾】flourish: vi.繁荣,茂盛;兴旺... | 【易混】publish: vt.出版，刊印;公布，发布... | 【易混】abolish: t.废除,取消..."
+    "confusing": "【形似】abolish: t.废除,取消... | 【同尾】furnish: vt.供应,提供;装备,布置... | 【同尾】flourish: vi.繁荣,茂盛;兴旺... | 【易混】publish: vt.出版，刊印;公布，发布... | 【易混】abolish: t.废除,取消...",
+    "example": "The team worked hard to establish clear rules for the project."
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@ window.wordData = [
     "word": "intellectual",
     "phonetic": "[ˌɪnəˈlɛkʧuəl]",
     "meaning": "n.知识分子a.智力的;有智力的,显示智力的;理智的;知识的",
-    "confusing": "【同尾】manual: a.体力的;手工做的;手的n.手册,指南... | 【同尾】visual: a.看的,视觉的..."
+    "confusing": "【同尾】manual: a.体力的;手工做的;手的n.手册,指南... | 【同尾】visual: a.看的,视觉的...",
+    "example": "She enjoyed intellectual discussions about science and history."
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@ window.wordData = [
     "word": "qualification",
     "phonetic": "[kˌwɑləfəˈkeɪʃən]",
     "meaning": "n.资格,合格;技能;限定,条件;合格证",
-    "confusing": "【形似】publication: n.出版物;出阪,发行;公布,发表... | 【形似】application: n请求,申请（书/表）;应用,运用；施用... | 【形似】fiction: n.虚构,编造,小说... | 【同尾】edition: n.版,版本,版次... | 【同尾】motion: n.运动,动;提议,动议vt.向…示意... | 【易混】quality | 【易混】quantity"
+    "confusing": "【形似】publication: n.出版物;出阪,发行;公布,发表... | 【形似】application: n请求,申请（书/表）;应用,运用；施用... | 【形似】fiction: n.虚构,编造,小说... | 【同尾】edition: n.版,版本,版次... | 【同尾】motion: n.运动,动;提议,动议vt.向…示意... | 【易混】quality | 【易混】quantity",
+    "example": "A teaching qualification is required for this position."
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@ window.wordData = [
     "word": "worthy",
     "phonetic": "[ˈwərði]",
     "meaning": "a.值得…的,配得上…的;可尊敬的;有价值的",
-    "confusing": "【形似】forth: ad.向前；向外... | 【同尾】wealthy: a.富裕的，丰富的... | 【同尾】empathy: n.同感，共鸣;同情..."
+    "confusing": "【形似】forth: ad.向前；向外... | 【同尾】wealthy: a.富裕的，丰富的... | 【同尾】empathy: n.同感，共鸣;同情...",
+    "example": "His honest work made him worthy of our respect."
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@ window.wordData = [
     "word": "appearance",
     "phonetic": "[əˈpɪrəns]",
     "meaning": "n.出现,出场,露面;外表,外貌,外观",
-    "confusing": "【形似】appliance: n.电器;器械,装置;应用,适用... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优... | 【同尾】alligiance: n.拥护;忠诚..."
+    "confusing": "【形似】appliance: n.电器;器械,装置;应用,适用... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优... | 【同尾】alligiance: n.拥护;忠诚...",
+    "example": "Her sudden appearance surprised everyone at the meeting."
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@ window.wordData = [
     "word": "aspect",
     "phonetic": "[ˈæˌspɛkt]",
     "meaning": "n.样子,外表,面貌;(问题等的)方面",
-    "confusing": "【形似】suspect: v猜想;怀疑;察觉a.可疑的n.嫌疑犯... | 【形似】inspect: vt.检查,调查,视察... | 【形似】asset: n.资产,财产;优点;有用的东西... | 【同尾】neglect: vt./n.忽视;疏忽,忽略;漏做... | 【同尾】infect: vt.(with)传染,感染;影响... | 【易混】expect | 【易混】respect | 【易混】suspect: v猜想;怀疑;察觉a.可疑的n.嫌疑犯..."
+    "confusing": "【形似】suspect: v猜想;怀疑;察觉a.可疑的n.嫌疑犯... | 【形似】inspect: vt.检查,调查,视察... | 【形似】asset: n.资产,财产;优点;有用的东西... | 【同尾】neglect: vt./n.忽视;疏忽,忽略;漏做... | 【同尾】infect: vt.(with)传染,感染;影响... | 【易混】expect | 【易混】respect | 【易混】suspect: v猜想;怀疑;察觉a.可疑的n.嫌疑犯...",
+    "example": "We need to consider every aspect of the problem."
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@ window.wordData = [
     "word": "liquid",
     "phonetic": "[ˈlɪkwɪd]",
     "meaning": "n.液体a.液体的,液态的",
-    "confusing": "【形似】fluid: a.流动的;液体的n.流体,液体..."
+    "confusing": "【形似】fluid: a.流动的;液体的n.流体,液体...",
+    "example": "Water is the most common liquid on earth."
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@ window.wordData = [
     "word": "sword",
     "phonetic": "[sɔrd]",
     "meaning": "n.剑,刀",
-    "confusing": "【同尾】landlord: n.房东,地主... | 【同尾】accord: n.一致,符合;协议,条约vi.(wit..."
+    "confusing": "【同尾】landlord: n.房东,地主... | 【同尾】accord: n.一致,符合;协议,条约vi.(wit...",
+    "example": "The knight carried a sword into battle."
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@ window.wordData = [
     "word": "lad",
     "phonetic": "[læd]",
     "meaning": "n.男孩,小伙子",
-    "confusing": "【形似】salad: n.色拉,凉拌菜... | 【形似】plead: v.请求,恳求,为……辩护... | 【形似】blade: n.刃,刀片,叶片..."
+    "confusing": "【形似】salad: n.色拉,凉拌菜... | 【形似】plead: v.请求,恳求,为……辩护... | 【形似】blade: n.刃,刀片,叶片...",
+    "example": "The young lad helped his grandfather in the garden."
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@ window.wordData = [
     "word": "apply",
     "phonetic": "[əˈplaɪ]",
     "meaning": "vi.申请;请求;适用,应用,运用",
-    "confusing": "【形似】appal: vt.使惊骇,使恐怖... | 【形似】appeal: （to）vi.呼吁,恳求;申诉n.呼吁;... | 【同尾】imply: t.意指,含...意思;暗示;表明... | 【同尾】comply: v.(with)遵照,照做,应允..."
+    "confusing": "【形似】appal: vt.使惊骇,使恐怖... | 【形似】appeal: （to）vi.呼吁,恳求;申诉n.呼吁;... | 【同尾】imply: t.意指,含...意思;暗示;表明... | 【同尾】comply: v.(with)遵照,照做,应允...",
+    "example": "She decided to apply for a scholarship abroad."
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@ window.wordData = [
     "word": "exterior",
     "phonetic": "[ɪkˈstɪriər]",
     "meaning": "a.外部的,外面的n.外部",
-    "confusing": "【形似】interior: a.内部的，里面的n.内部，内地... | 【形似】deteriorate: vi.恶化,变坏... | 【形似】terror: n.恐怖,可怕的人(事）... | 【同尾】junior: a.年少的,年幼的;低年级的;后进的,下... | 【同尾】inferior: a.下等的,下级的;差的,次的n.下级;..."
+    "confusing": "【形似】interior: a.内部的，里面的n.内部，内地... | 【形似】deteriorate: vi.恶化,变坏... | 【形似】terror: n.恐怖,可怕的人(事）... | 【同尾】junior: a.年少的,年幼的;低年级的;后进的,下... | 【同尾】inferior: a.下等的,下级的;差的,次的n.下级;...",
+    "example": "The exterior of the building was painted white."
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@ window.wordData = [
     "word": "preference",
     "phonetic": "[ˈprɛfərəns]",
     "meaning": "n.(for,to)偏爱,喜爱;优惠;优先选择",
-    "confusing": "【形似】reference: n.提及,涉及;参考,参考书目;证明书(... | 【形似】presence: n.出席,到场;存在,在... | 【形似】inference: n.推理,推论,推断;推断结果,结论... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】alligiance: n.拥护;忠诚..."
+    "confusing": "【形似】reference: n.提及,涉及;参考,参考书目;证明书(... | 【形似】presence: n.出席,到场;存在,在... | 【形似】inference: n.推理,推论,推断;推断结果,结论... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】alligiance: n.拥护;忠诚...",
+    "example": "He has a strong preference for quiet study rooms."
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@ window.wordData = [
     "word": "elbow",
     "phonetic": "[ˈɛlˌboʊ]",
     "meaning": "n.肘,弯头v.用肘挤",
-    "confusing": "【形似】bow: vi.鞠躬;点头n.鞠躬;点头;弓(形;... | 【同尾】rainbow: n.彩虹..."
+    "confusing": "【形似】bow: vi.鞠躬;点头n.鞠躬;点头;弓(形;... | 【同尾】rainbow: n.彩虹...",
+    "example": "He hurt his elbow during the basketball game."
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@ window.wordData = [
     "word": "discipline",
     "phonetic": "[ˈdɪsəplən]",
     "meaning": "n.纪律,规定;学科;训练;自制力",
-    "confusing": "【形似】discriminate: v区别,辨别;(against)有差别地... | 【形似】incline: v.(使}倾斜,(使)偏向,使)頉向于,... | 【形似】decline: vi.下倾,下降,下垂;衰落vt.拒绝,... | 【同尾】dine: vi.吃饭,进餐... | 【同尾】confine: vt.限制,局限于;管制,禁闭..."
+    "confusing": "【形似】discriminate: v区别,辨别;(against)有差别地... | 【形似】incline: v.(使}倾斜,(使)偏向,使)頉向于,... | 【形似】decline: vi.下倾,下降,下垂;衰落vt.拒绝,... | 【同尾】dine: vi.吃饭,进餐... | 【同尾】confine: vt.限制,局限于;管制,禁闭...",
+    "example": "Self-discipline helped her study every morning."
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@ window.wordData = [
     "word": "terrific",
     "phonetic": "[tərˈɪfɪk]",
     "meaning": "a.极好的,非常的,极度的",
-    "confusing": "【形似】terrify: vt.使害怕，使惊恐... | 【同尾】specific: a.明确的,具体的,特定的,特有的..."
+    "confusing": "【形似】terrify: vt.使害怕，使惊恐... | 【同尾】specific: a.明确的,具体的,特定的,特有的...",
+    "example": "The concert was terrific from beginning to end."
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@ window.wordData = [
     "word": "thrill",
     "phonetic": "[θrɪl]",
     "meaning": "n.令人激动的事vt.使激动,使兴奋;使毛骨悚然",
-    "confusing": "【形似】trial: n.审讯;试验;考验... | 【形似】trail: n.踪迹,瘾迹;小路v追踪,跟踪;拖,拖... | 【形似】chill: n.寒冷,寒气,寒战vt.使寒冷... | 【同尾】distill: vt.蒸馏;用蒸馏法提取;吸取,提炼... | 【同尾】mill: n.磨粉机；磨坊;作坊,工厂..."
+    "confusing": "【形似】trial: n.审讯;试验;考验... | 【形似】trail: n.踪迹,瘾迹;小路v追踪,跟踪;拖,拖... | 【形似】chill: n.寒冷,寒气,寒战vt.使寒冷... | 【同尾】distill: vt.蒸馏;用蒸馏法提取;吸取,提炼... | 【同尾】mill: n.磨粉机；磨坊;作坊,工厂...",
+    "example": "The roller coaster gave the children a thrill."
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@ window.wordData = [
     "word": "flu",
     "phonetic": "[flu]",
     "meaning": "n.流行性感冒",
-    "confusing": "【形似】flush: v.冲洗;使(水等)流;脸红n.脸红a.... | 【形似】fluid: a.流动的;液体的n.流体,液体... | 【形似】flour: n.面粉..."
+    "confusing": "【形似】flush: v.冲洗;使(水等)流;脸红n.脸红a.... | 【形似】fluid: a.流动的;液体的n.流体,液体... | 【形似】flour: n.面粉...",
+    "example": "He stayed home because he had the flu."
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@ window.wordData = [
     "word": "alligiance",
     "phonetic": "[alligiance*]",
     "meaning": "n.拥护;忠诚",
-    "confusing": "【形似】alliance: n.结盟,联盟,联姻... | 【形似】appliance: n.电器;器械,装置;应用,适用... | 【形似】allowance: n.津贴;补助(费)... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优..."
+    "confusing": "【形似】alliance: n.结盟,联盟,联姻... | 【形似】appliance: n.电器;器械,装置;应用,适用... | 【形似】allowance: n.津贴;补助(费)... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优...",
+    "example": "The soldier promised allegiance to his country."
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@ window.wordData = [
     "word": "edition",
     "phonetic": "[ɪˈdɪʃən]",
     "meaning": "n.版,版本,版次",
-    "confusing": "【形似】meditation: n.沉思,冥想,默念... | 【形似】expedition: n.远征(队),探险(队)... | 【形似】petition: n.请愿书,中请书;诉状t.(向…)请愿... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】motion: n.运动,动;提议,动议vt.向…示意..."
+    "confusing": "【形似】meditation: n.沉思,冥想,默念... | 【形似】expedition: n.远征(队),探险(队)... | 【形似】petition: n.请愿书,中请书;诉状t.(向…)请愿... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】motion: n.运动,动;提议,动议vt.向…示意...",
+    "example": "The new edition of the textbook includes more exercises."
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@ window.wordData = [
     "word": "triumph",
     "phonetic": "[traɪəmf]",
     "meaning": "n.胜利,成功vi得胜,战胜",
-    "confusing": "【形似】trim: a.整齐的,整洁的tt.整理,修懿;装饰... | 【形似】trumpet: n.喇叭,小号vi吹嘘;鼓吹..."
+    "confusing": "【形似】trim: a.整齐的,整洁的tt.整理,修懿;装饰... | 【形似】trumpet: n.喇叭,小号vi吹嘘;鼓吹...",
+    "example": "The rescue was a triumph for the whole team."
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@ window.wordData = [
     "word": "hostage",
     "phonetic": "[ˈhɑstɪʤ]",
     "meaning": "n.人质",
-    "confusing": "【形似】postage: n.邮费,邮资... | 【形似】shortage: n.不足,缺少... | 【形似】host: n.主人,旅店老板;节目主持人;一大群,... | 【同尾】message: n.消息,信息,通讯;启示,要旨... | 【同尾】luggage: n.行李..."
+    "confusing": "【形似】postage: n.邮费,邮资... | 【形似】shortage: n.不足,缺少... | 【形似】host: n.主人,旅店老板;节目主持人;一大群,... | 【同尾】message: n.消息,信息,通讯;启示,要旨... | 【同尾】luggage: n.行李...",
+    "example": "The police negotiated to free the hostage safely."
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@ window.wordData = [
     "word": "loaf",
     "phonetic": "[loʊf]",
     "meaning": "n.一条面包vi.游荡,闲逛",
-    "confusing": "【形似】loan: n.贷款;出借,借出v借出..."
+    "confusing": "【形似】loan: n.贷款;出借,借出v借出...",
+    "example": "She bought a fresh loaf of bread from the bakery."
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@ window.wordData = [
     "word": "applicable",
     "phonetic": "[ˈæpləkəbəl]",
     "meaning": "a.能应用的,适用的",
-    "confusing": "【形似】liable: adj.有责任的,有义务的;有…倾向的,... | 【形似】appliance: n.电器;器械,装置;应用,适用... | 【形似】capable: a.有能力的,能...的... | 【同尾】honorable: a.(honourable)可敬的;荣誉... | 【同尾】viable: a.(想法或计划)切实可行的,可实施的..."
+    "confusing": "【形似】liable: adj.有责任的,有义务的;有…倾向的,... | 【形似】appliance: n.电器;器械,装置;应用,适用... | 【形似】capable: a.有能力的,能...的... | 【同尾】honorable: a.(honourable)可敬的;荣誉... | 【同尾】viable: a.(想法或计划)切实可行的,可实施的...",
+    "example": "The rule is applicable to all students in the class."
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@ window.wordData = [
     "word": "motion",
     "phonetic": "[ˈmoʊʃən]",
     "meaning": "n.运动,动;提议,动议vt.向…示意",
-    "confusing": "【形似】emotion: n.情绪;情感... | 【形似】option: n.选择,选择权;(供)选择的事物(或人... | 【形似】notion: n.概念,意念;看法,想法,观点... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】emotion: n.情绪;情感... | 【形似】option: n.选择,选择权;(供)选择的事物(或人... | 【形似】notion: n.概念,意念;看法,想法,观点... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "He made a motion for everyone to sit down."
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@ window.wordData = [
     "word": "diploma",
     "phonetic": "[dɪˈploʊmɑ]",
     "meaning": "n.文凭,学位证书",
-    "confusing": "【形似】diplomatic: a.外交的,从事外交的;策略的,有手腕的... | 【形似】display: vt/n.陈列；显示... | 【形似】dilemma: n.(进退两难的)窘境,困境..."
+    "confusing": "【形似】diplomatic: a.外交的,从事外交的;策略的,有手腕的... | 【形似】display: vt/n.陈列；显示... | 【形似】dilemma: n.(进退两难的)窘境,困境...",
+    "example": "She received her diploma after four years of study."
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@ window.wordData = [
     "word": "dragon",
     "phonetic": "[ˈdrægən]",
     "meaning": "n.龙",
-    "confusing": "【形似】drag: vt.拖,拖曳;阻力,抗力;累赘,拖累;... | 【形似】drone: n 无人驾驶飞机;嗡嗡声  v.嗡嗡作响... | 【形似】drain: n.排水沟,阴沟;流出;消耗v.(使)液... | 【同尾】jargon: n.行话,术语..."
+    "confusing": "【形似】drag: vt.拖,拖曳;阻力,抗力;累赘,拖累;... | 【形似】drone: n 无人驾驶飞机;嗡嗡声  v.嗡嗡作响... | 【形似】drain: n.排水沟,阴沟;流出;消耗v.(使)液... | 【同尾】jargon: n.行话,术语...",
+    "example": "A dragon appears in many ancient stories."
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@ window.wordData = [
     "word": "contrast",
     "phonetic": "[ˈkɑntræst]",
     "meaning": "vt.使与…对比,使与…对照vi.和…形成对比n.对比,对照,差异",
-    "confusing": "【形似】contract: n.契约,合同;包工vi.缩小,收缩;订... | 【形似】contact: v./n.(使)接触,联系,交往... | 【形似】contradict: v.反驳;同…矛盾,同…抵触... | 【同尾】toast: n.烤面包,吐司;祝酒(词)v.烘,烤;... | 【同尾】feast: n.节日;宴会..."
+    "confusing": "【形似】contract: n.契约,合同;包工vi.缩小,收缩;订... | 【形似】contact: v./n.(使)接触,联系,交往... | 【形似】contradict: v.反驳;同…矛盾,同…抵触... | 【同尾】toast: n.烤面包,吐司;祝酒(词)v.烘,烤;... | 【同尾】feast: n.节日;宴会...",
+    "example": "The essay asks students to contrast two political systems."
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@ window.wordData = [
     "word": "trend",
     "phonetic": "[trɛnd]",
     "meaning": "n.倾向,趋势vi.伸向;倾向",
-    "confusing": "【形似】tend: v.趋向,往往是;照料,看护... | 【形似】trench: n.沟,沟渠... | 【形似】tender: a.嫩的,脆弱的,敏感的,温柔的,温厚的... | 【同尾】blend: v.(使)混杂,(使)混合n.混合(物)... | 【同尾】suspend: v.吊,悬挂;推迟;暂停..."
+    "confusing": "【形似】tend: v.趋向,往往是;照料,看护... | 【形似】trench: n.沟,沟渠... | 【形似】tender: a.嫩的,脆弱的,敏感的,温柔的,温厚的... | 【同尾】blend: v.(使)混杂,(使)混合n.混合(物)... | 【同尾】suspend: v.吊,悬挂;推迟;暂停...",
+    "example": "There is a growing trend toward online learning."
   },
   {
     "id": 31,
@@ -245,7 +275,8 @@ window.wordData = [
     "word": "honorable",
     "phonetic": "[ˈɑnərəbəl]",
     "meaning": "a.(honourable)可敬的;荣誉的,光荣的",
-    "confusing": "【形似】notable: a.值得注意的,显著地,著名的... | 【形似】portable: a.轻便的,便携式的... | 【形似】horrible: a.令人恐怖的,可怕的;极讨厌的,使人不... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】viable: a.(想法或计划)切实可行的,可实施的..."
+    "confusing": "【形似】notable: a.值得注意的,显著地,著名的... | 【形似】portable: a.轻便的,便携式的... | 【形似】horrible: a.令人恐怖的,可怕的;极讨厌的,使人不... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】viable: a.(想法或计划)切实可行的,可实施的...",
+    "example": "The judge was known as an honorable person."
   },
   {
     "id": 32,
@@ -253,7 +284,8 @@ window.wordData = [
     "word": "freelance",
     "phonetic": "[ˈfriˌlæns]",
     "meaning": "a.自由职业的",
-    "confusing": "【形似】reliance: n.信任,信心,依靠,依靠的人或物... | 【形似】resemblance: n.相似,相似处... | 【形似】fireplace: n.壁炉... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优..."
+    "confusing": "【形似】reliance: n.信任,信心,依靠,依靠的人或物... | 【形似】resemblance: n.相似,相似处... | 【形似】fireplace: n.壁炉... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优...",
+    "example": "He works as a freelance designer for several companies."
   },
   {
     "id": 33,
@@ -261,7 +293,8 @@ window.wordData = [
     "word": "appendix",
     "phonetic": "[əˈpɛndɪks]",
     "meaning": "n.附录,附属物",
-    "confusing": ""
+    "confusing": "",
+    "example": "The appendix contains extra tables and notes."
   },
   {
     "id": 34,
@@ -269,7 +302,8 @@ window.wordData = [
     "word": "objection",
     "phonetic": "[əˈbʤɛkʃən]",
     "meaning": "n.(to)反对,异议",
-    "confusing": "【形似】objective: n.目标，目的a.客观的，真实的... | 【形似】section: n.章节,部分,地区,部门,科,截面,剖... | 【形似】connection: n.(connexion)联系,连接;亲... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】objective: n.目标，目的a.客观的，真实的... | 【形似】section: n.章节,部分,地区,部门,科,截面,剖... | 【形似】connection: n.(connexion)联系,连接;亲... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "Several members raised an objection to the proposal."
   },
   {
     "id": 35,
@@ -277,7 +311,8 @@ window.wordData = [
     "word": "inflation",
     "phonetic": "[ˌɪnˈfleɪʃən]",
     "meaning": "n.通货膨胀",
-    "confusing": "【形似】installation: n.安装,设置;设备;就职,就任... | 【形似】invitation: n.邀请,招待;请柬... | 【形似】innovation: n.创新,革新,改革... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】installation: n.安装,设置;设备;就职,就任... | 【形似】invitation: n.邀请,招待;请柬... | 【形似】innovation: n.创新,革新,改革... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "Inflation made everyday goods more expensive."
   },
   {
     "id": 36,
@@ -285,7 +320,8 @@ window.wordData = [
     "word": "substantial",
     "phonetic": "[səbˈstænʃəl]",
     "meaning": "a.实质的,真实的;坚固的,结实的;富裕的,可观的",
-    "confusing": "【形似】substance: n.物质;实质,本质;主旨;财产,资产... | 【形似】essential: a.必要的，必不可少的；本质的,基本的... | 【同尾】colonial: a.殖民(地)的... | 【同尾】initial: a.最初的,开头的；词首的；n.（名字的..."
+    "confusing": "【形似】substance: n.物质;实质,本质;主旨;财产,资产... | 【形似】essential: a.必要的，必不可少的；本质的,基本的... | 【同尾】colonial: a.殖民(地)的... | 【同尾】initial: a.最初的,开头的；词首的；n.（名字的...",
+    "example": "The company made a substantial investment in research."
   },
   {
     "id": 37,
@@ -293,7 +329,8 @@ window.wordData = [
     "word": "hasty",
     "phonetic": "[ˈheɪsti]",
     "meaning": "a.匆忙的,仓促的;草率的",
-    "confusing": "【形似】nasty: a.肮胜的,卑劣的,下流的,领人厌恶的... | 【形似】haste: n.匆忙,急速;草率v赶快;匆忙... | 【形似】hay: n.干草... | 【同尾】majesty: n.陛下(对帝王、王后等的尊称);雄伟,... | 【同尾】dynasty: n.王朝,朝代..."
+    "confusing": "【形似】nasty: a.肮胜的,卑劣的,下流的,领人厌恶的... | 【形似】haste: n.匆忙,急速;草率v赶快;匆忙... | 【形似】hay: n.干草... | 【同尾】majesty: n.陛下(对帝王、王后等的尊称);雄伟,... | 【同尾】dynasty: n.王朝,朝代...",
+    "example": "Do not make a hasty decision under pressure."
   },
   {
     "id": 38,
@@ -301,7 +338,8 @@ window.wordData = [
     "word": "interpret",
     "phonetic": "[ˌɪnˈtərprət]",
     "meaning": "vt.解释,说明;了解,认为;口译vi.做口译",
-    "confusing": "【形似】interrupt: v.中断,遮断,阻碍;打断(话),打扰... | 【形似】interfere: v.(in)干涉,干预;(with)妨碍... | 【形似】enterprise: n.事业,企(事业单位;事业心,进取心；..."
+    "confusing": "【形似】interrupt: v.中断,遮断,阻碍;打断(话),打扰... | 【形似】interfere: v.(in)干涉,干预;(with)妨碍... | 【形似】enterprise: n.事业,企(事业单位;事业心,进取心；...",
+    "example": "The guide helped us interpret the old painting."
   },
   {
     "id": 39,
@@ -309,7 +347,8 @@ window.wordData = [
     "word": "fraction",
     "phonetic": "[ˈfrækʃən]",
     "meaning": "n.碎片,小部分,一点儿;分数",
-    "confusing": "【形似】friction: n.磨擦,摩擦力... | 【形似】action: n.行动,行为,动作,活动,作用... | 【形似】formation: n.形成,构成;编队,列队... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】friction: n.磨擦,摩擦力... | 【形似】action: n.行动,行为,动作,活动,作用... | 【形似】formation: n.形成,构成;编队,列队... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "Only a small fraction of the data was missing."
   },
   {
     "id": 40,
@@ -317,7 +356,8 @@ window.wordData = [
     "word": "romance",
     "phonetic": "[ˈroʊmæns]",
     "meaning": "n.传奇,爱情故事",
-    "confusing": "【形似】romantic: a.浪漫的,传奇式的;不切实际的,好幻想... | 【形似】performance: n.履行,执行;表演,演出;性能,特性;... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优..."
+    "confusing": "【形似】romantic: a.浪漫的,传奇式的;不切实际的,好幻想... | 【形似】performance: n.履行,执行;表演,演出;性能,特性;... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优...",
+    "example": "The novel tells a romance set during wartime."
   },
   {
     "id": 41,
@@ -325,7 +365,8 @@ window.wordData = [
     "word": "rectangle",
     "phonetic": "[ˈrɛktæŋgəl]",
     "meaning": "n.长方形,矩形",
-    "confusing": "【形似】tangle: v.(使)缠结,(使)乱作一团n.乱七八... | 【形似】range: n.范围,领域;排列,连续;山脉，炉灶v... | 【形似】eagle: n.鹰... | 【同尾】jungle: n.(热带)丛林,密林;乱七八糟的一堆... | 【同尾】smuggle: v走私,偷运..."
+    "confusing": "【形似】tangle: v.(使)缠结,(使)乱作一团n.乱七八... | 【形似】range: n.范围,领域;排列,连续;山脉，炉灶v... | 【形似】eagle: n.鹰... | 【同尾】jungle: n.(热带)丛林,密林;乱七八糟的一堆... | 【同尾】smuggle: v走私,偷运...",
+    "example": "The classroom table was shaped like a rectangle."
   },
   {
     "id": 42,
@@ -333,7 +374,8 @@ window.wordData = [
     "word": "owl",
     "phonetic": "[aʊl]",
     "meaning": "n.猫头鹰",
-    "confusing": "【形似】howl: vi(狼、狗等)嗥叫,(风等)呼啸vt(... | 【形似】towel: n.毛巾... | 【形似】bowel: n.肠;[pl.]内部,深处..."
+    "confusing": "【形似】howl: vi(狼、狗等)嗥叫,(风等)呼啸vt(... | 【形似】towel: n.毛巾... | 【形似】bowel: n.肠;[pl.]内部,深处...",
+    "example": "An owl flew silently through the forest at night."
   },
   {
     "id": 43,
@@ -341,7 +383,8 @@ window.wordData = [
     "word": "denote",
     "phonetic": "[dɪˈnoʊt]",
     "meaning": "vt.表示,意味着",
-    "confusing": "【形似】deter: v.威慑,阻止,使不敢... | 【形似】dense: a.稠密的,密集的,浓厚的... | 【形似】renovate: vt.更新,修复... | 【同尾】quote: v.引用,援引n.引文... | 【同尾】vote: n.投票,表决;选票,选票致v投票,表决..."
+    "confusing": "【形似】deter: v.威慑,阻止,使不敢... | 【形似】dense: a.稠密的,密集的,浓厚的... | 【形似】renovate: vt.更新,修复... | 【同尾】quote: v.引用,援引n.引文... | 【同尾】vote: n.投票,表决;选票,选票致v投票,表决...",
+    "example": "In this chart, red circles denote high risk."
   },
   {
     "id": 44,
@@ -349,7 +392,8 @@ window.wordData = [
     "word": "editor",
     "phonetic": "[ˈɛdɪtər]",
     "meaning": "n.编辑,编者",
-    "confusing": "【形似】edit: v编辑,校订... | 【形似】edition: n.版,版本,版次... | 【形似】distort: v弄歪(嘴脸等);扭曲;歪曲(真理,事实... | 【同尾】projector: n.放映机,幻灯机,投影仪... | 【同尾】conductor: n.领队,(乐队)指挥;(电车等的)售票..."
+    "confusing": "【形似】edit: v编辑,校订... | 【形似】edition: n.版,版本,版次... | 【形似】distort: v弄歪(嘴脸等);扭曲;歪曲(真理,事实... | 【同尾】projector: n.放映机,幻灯机,投影仪... | 【同尾】conductor: n.领队,(乐队)指挥;(电车等的)售票...",
+    "example": "The editor corrected the article before publication."
   },
   {
     "id": 45,
@@ -357,7 +401,8 @@ window.wordData = [
     "word": "fruitful",
     "phonetic": "[ˈfrutfəl]",
     "meaning": "a.多产的;果实累累的,富有成效的",
-    "confusing": "【形似】faithful: a.守信的,忠实的,如实的,可靠的... | 【形似】ritual: n.典礼(宗教等}仪式,例行公事,老规矩... | 【同尾】plentiful: a.富裕的,丰富的... | 【同尾】powerful: a.强大的,有力的;有权的..."
+    "confusing": "【形似】faithful: a.守信的,忠实的,如实的,可靠的... | 【形似】ritual: n.典礼(宗教等}仪式,例行公事,老规矩... | 【同尾】plentiful: a.富裕的,丰富的... | 【同尾】powerful: a.强大的,有力的;有权的...",
+    "example": "The meeting was fruitful and produced three new ideas."
   },
   {
     "id": 46,
@@ -365,7 +410,8 @@ window.wordData = [
     "word": "startle",
     "phonetic": "[ˈstɑrtəl]",
     "meaning": "vt.惊吓,使吃惊",
-    "confusing": "【形似】state: n.状态,情况;国,州;vt.陈述,说明... | 【形似】stale: a.变质的,不新鲜的;陈旧的... | 【形似】statue: n.塑像,雕像... | 【同尾】whistle: n.口哨;汽笛;口哨声,汽笛声vi吹口哨... | 【同尾】shuttle: n.航天飞机;(织机的)梭子;短程穿梭运..."
+    "confusing": "【形似】state: n.状态,情况;国,州;vt.陈述,说明... | 【形似】stale: a.变质的,不新鲜的;陈旧的... | 【形似】statue: n.塑像,雕像... | 【同尾】whistle: n.口哨;汽笛;口哨声,汽笛声vi吹口哨... | 【同尾】shuttle: n.航天飞机;(织机的)梭子;短程穿梭运...",
+    "example": "The loud noise startled the baby."
   },
   {
     "id": 47,
@@ -373,7 +419,8 @@ window.wordData = [
     "word": "viable",
     "phonetic": "[ˈvaɪəbəl]",
     "meaning": "a.(想法或计划)切实可行的,可实施的",
-    "confusing": "【形似】variable: a.易变的,多变的;可变的,变量的n.变... | 【形似】liable: adj.有责任的,有义务的;有…倾向的,... | 【形似】available: a.可用的,可得到的;可以见到的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉..."
+    "confusing": "【形似】variable: a.易变的,多变的;可变的,变量的n.变... | 【形似】liable: adj.有责任的,有义务的;有…倾向的,... | 【形似】available: a.可用的,可得到的;可以见到的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉...",
+    "example": "The plan is viable if we can reduce the cost."
   },
   {
     "id": 48,
@@ -381,7 +428,8 @@ window.wordData = [
     "word": "system",
     "phonetic": "[ˈsɪstəm]",
     "meaning": "n.(电脑)系统;体系,制度,体制;(人体的)系统;(水管或电线的)系统",
-    "confusing": "【形似】stem: n.茎,干;词干vi.出自,来源于,发生... | 【形似】systematic: a.(systematical)系统的,... | 【同尾】item: n.条,条款,项目..."
+    "confusing": "【形似】stem: n.茎,干;词干vi.出自,来源于,发生... | 【形似】systematic: a.(systematical)系统的,... | 【同尾】item: n.条,条款,项目...",
+    "example": "The school introduced a new computer system."
   },
   {
     "id": 49,
@@ -389,7 +437,8 @@ window.wordData = [
     "word": "concede",
     "phonetic": "[kənˈsid]",
     "meaning": "vt.(不情愿地)承认,承认…为真(或正确);退让,允许,让步,给予",
-    "confusing": "【形似】concrete: a.具体的,实质性的n.混凝土v用混凝土... | 【形似】conclude: v.结束,终止;断定,下结论;缔结,议定... | 【形似】conceive: v设想,想象,构思,以为,怀胎,受孕... | 【同尾】recede: v.退回,后退;收回,撤回;跌落,缩减,... | 【同尾】precede: v.领先于,在...之前,优先,先于..."
+    "confusing": "【形似】concrete: a.具体的,实质性的n.混凝土v用混凝土... | 【形似】conclude: v.结束,终止;断定,下结论;缔结,议定... | 【形似】conceive: v设想,想象,构思,以为,怀胎,受孕... | 【同尾】recede: v.退回,后退;收回,撤回;跌落,缩减,... | 【同尾】precede: v.领先于,在...之前,优先,先于...",
+    "example": "He had to concede that his opponent was right."
   },
   {
     "id": 50,
@@ -397,7 +446,8 @@ window.wordData = [
     "word": "jewelry",
     "phonetic": "[ˈʤuəlri]",
     "meaning": "n.珠宝",
-    "confusing": "【形似】jewel: n.宝石,宝石饰物..."
+    "confusing": "【形似】jewel: n.宝石,宝石饰物...",
+    "example": "She kept her jewelry in a small wooden box."
   },
   {
     "id": 51,
@@ -405,7 +455,8 @@ window.wordData = [
     "word": "dictate",
     "phonetic": "[ˈdɪkˌteɪt]",
     "meaning": "v.口述;(使)听写;命令;",
-    "confusing": "【形似】indicate: v指出,指示;表明或暗示……的可能性... | 【形似】delicate: a.纤弱的,精致的,微妙的,灵敏的... | 【形似】dedicate: vt.奉献;把…用在... | 【同尾】educate: vt.教育,培养,训练... | 【同尾】eliminate: vt消除,排除..."
+    "confusing": "【形似】indicate: v指出,指示;表明或暗示……的可能性... | 【形似】delicate: a.纤弱的,精致的,微妙的,灵敏的... | 【形似】dedicate: vt.奉献;把…用在... | 【同尾】educate: vt.教育,培养,训练... | 【同尾】eliminate: vt消除,排除...",
+    "example": "The teacher asked us to dictate the passage aloud."
   },
   {
     "id": 52,
@@ -413,7 +464,8 @@ window.wordData = [
     "word": "lame",
     "phonetic": "[leɪm]",
     "meaning": "a.跛的;有缺陷的;站不住脚的",
-    "confusing": "【形似】flame: n.火焰,火苗;热情;光辉v发火焰,燃烧... | 【形似】tame: a.驯服的,温顺的;沉闷的,乏味的 \nv... | 【形似】slam: v(门,窗等}砰地关上n.猛然关闭的声音..."
+    "confusing": "【形似】flame: n.火焰,火苗;热情;光辉v发火焰,燃烧... | 【形似】tame: a.驯服的,温顺的;沉闷的,乏味的 \nv... | 【形似】slam: v(门,窗等}砰地关上n.猛然关闭的声音...",
+    "example": "His lame excuse did not convince anyone."
   },
   {
     "id": 53,
@@ -421,7 +473,8 @@ window.wordData = [
     "word": "exhaust",
     "phonetic": "[ɪgˈzɔst]",
     "meaning": "v.使筋疲力尽,耗尽;抽完,汲干n.排气装置;废气",
-    "confusing": "【同尾】crust: n.外皮,壳;地壳... | 【同尾】robust: a.强健的,健康的；强烈的，坚定的，坚决..."
+    "confusing": "【同尾】crust: n.外皮,壳;地壳... | 【同尾】robust: a.强健的,健康的；强烈的，坚定的，坚决...",
+    "example": "The long hike exhausted all the volunteers."
   },
   {
     "id": 54,
@@ -429,7 +482,8 @@ window.wordData = [
     "word": "stiff",
     "phonetic": "[stɪf]",
     "meaning": "a.硬的,僵直的;拘谨的;呆板的;艰难的,费劲的;激烈的",
-    "confusing": "【形似】stuff: n.原料,材料;东西 \nvt.填满,塞满... | 【形似】staff: n.全体职工，全体人员;杠,棒;参谋部v... | 【形似】sniff: v.以鼻吸气，用力吸入;嗅，闻n吸气（声... | 【同尾】cliff: n.悬崖;峭璧... | 【同尾】plaintiff: n.原告..."
+    "confusing": "【形似】stuff: n.原料,材料;东西 \nvt.填满,塞满... | 【形似】staff: n.全体职工，全体人员;杠,棒;参谋部v... | 【形似】sniff: v.以鼻吸气，用力吸入;嗅，闻n吸气（声... | 【同尾】cliff: n.悬崖;峭璧... | 【同尾】plaintiff: n.原告...",
+    "example": "The old door was stiff and hard to open."
   },
   {
     "id": 55,
@@ -437,7 +491,8 @@ window.wordData = [
     "word": "pinch",
     "phonetic": "[pɪnʧ]",
     "meaning": "n.(一)撮,微量;捏,掐;紧缺,短缺vt.捏,掐,拧,挟",
-    "confusing": "【形似】punch: n.冲压机冲床;穿孔机v冲压,穿孔，拳击... | 【形似】pitch: n.沥青;掷v.用沥青覆盖;投掷,扔... | 【形似】prince: n.王子;亲王... | 【同尾】wrench: t.猛拧,猛拉;拜托,挣脱;使扭伤n.扳... | 【同尾】bunch: n.一串,一群,一帮,一伙..."
+    "confusing": "【形似】punch: n.冲压机冲床;穿孔机v冲压,穿孔，拳击... | 【形似】pitch: n.沥青;掷v.用沥青覆盖;投掷,扔... | 【形似】prince: n.王子;亲王... | 【同尾】wrench: t.猛拧,猛拉;拜托,挣脱;使扭伤n.扳... | 【同尾】bunch: n.一串,一群,一帮,一伙...",
+    "example": "Add a pinch of salt to the soup."
   },
   {
     "id": 56,
@@ -445,7 +500,8 @@ window.wordData = [
     "word": "pants",
     "phonetic": "[pænts]",
     "meaning": "n.长裤,(宽松的)便裤;内裤",
-    "confusing": "【形似】pant: n.喘气vi.气喘... | 【形似】pat: v.轻拍,轻打,抚摸n.轻拍,轻打,抚摸... | 【形似】planet: n.行星... | 【同尾】blueprints: n.蓝图;方案..."
+    "confusing": "【形似】pant: n.喘气vi.气喘... | 【形似】pat: v.轻拍,轻打,抚摸n.轻拍,轻打,抚摸... | 【形似】planet: n.行星... | 【同尾】blueprints: n.蓝图;方案...",
+    "example": "He wore black pants to the interview."
   },
   {
     "id": 57,
@@ -453,7 +509,8 @@ window.wordData = [
     "word": "remnant",
     "phonetic": "[ˈrɛmnənt]",
     "meaning": "n.残余物;零头布料;遗迹",
-    "confusing": "【形似】pregnant: a.怀孕的,妊娠的;充满的... | 【形似】predominant: a.(over)占优势的,主要的,突出的... | 【形似】tenant: n.承租人,房客,佃户... | 【同尾】descendant: n.子孙,后代... | 【同尾】constant: a.持续的,不断的;永恒的,不变的;坚定..."
+    "confusing": "【形似】pregnant: a.怀孕的,妊娠的;充满的... | 【形似】predominant: a.(over)占优势的,主要的,突出的... | 【形似】tenant: n.承租人,房客,佃户... | 【同尾】descendant: n.子孙,后代... | 【同尾】constant: a.持续的,不断的;永恒的,不变的;坚定...",
+    "example": "A remnant of the old wall still stands near the river."
   },
   {
     "id": 58,
@@ -461,7 +518,8 @@ window.wordData = [
     "word": "projector",
     "phonetic": "[prɑˈʤɛktər]",
     "meaning": "n.放映机,幻灯机,投影仪",
-    "confusing": "【形似】project: n.方案,计划;工程,项目ut.投射,放... | 【形似】prospect: n.景色,前景,前途,展望... | 【形似】predator: n捕食性动物，掠夺者... | 【同尾】editor: n.编辑,编者... | 【同尾】conductor: n.领队,(乐队)指挥;(电车等的)售票..."
+    "confusing": "【形似】project: n.方案,计划;工程,项目ut.投射,放... | 【形似】prospect: n.景色,前景,前途,展望... | 【形似】predator: n捕食性动物，掠夺者... | 【同尾】editor: n.编辑,编者... | 【同尾】conductor: n.领队,(乐队)指挥;(电车等的)售票...",
+    "example": "The teacher connected the laptop to the projector."
   },
   {
     "id": 59,
@@ -469,7 +527,8 @@ window.wordData = [
     "word": "torrent",
     "phonetic": "[ˈtɔrənt]",
     "meaning": "n.激流,山流",
-    "confusing": "【形似】torment: n.痛苦,折磨;令人痛苦的东西,折磨者v... | 【形似】orient: n.东方v定...的方位... | 【形似】tent: n.帐篷... | 【同尾】incident: n.事件;事变... | 【同尾】evident: a.明显的,明白的..."
+    "confusing": "【形似】torment: n.痛苦,折磨;令人痛苦的东西,折磨者v... | 【形似】orient: n.东方v定...的方位... | 【形似】tent: n.帐篷... | 【同尾】incident: n.事件;事变... | 【同尾】evident: a.明显的,明白的...",
+    "example": "A torrent of rain flooded the street."
   },
   {
     "id": 60,
@@ -477,7 +536,8 @@ window.wordData = [
     "word": "crisp",
     "phonetic": "[krɪsp]",
     "meaning": "a.脆的,易碎的n.炸薯片",
-    "confusing": "【形似】rip: v.撕,刭,劈,锯,裂开,撕裂n.裂口,... | 【形似】script: n.剧本(原稿;手稿,原稿;笔迹,手迹... | 【形似】cruise: v巡航;缓慢巡行n.乘船巡游..."
+    "confusing": "【形似】rip: v.撕,刭,劈,锯,裂开,撕裂n.裂口,... | 【形似】script: n.剧本(原稿;手稿,原稿;笔迹,手迹... | 【形似】cruise: v巡航;缓慢巡行n.乘船巡游...",
+    "example": "The crisp leaves broke under our feet."
   },
   {
     "id": 61,
@@ -485,7 +545,8 @@ window.wordData = [
     "word": "tag",
     "phonetic": "[tæg]",
     "meaning": "n.标签,货签vt.贴标签于",
-    "confusing": ""
+    "confusing": "",
+    "example": "Each suitcase had a tag with the owner's name."
   },
   {
     "id": 62,
@@ -493,7 +554,8 @@ window.wordData = [
     "word": "duration",
     "phonetic": "[ˈdʊˈreɪʃən]",
     "meaning": "n.期间;持久,持续时间",
-    "confusing": "【形似】ratio: n.比,比率... | 【形似】drain: n.排水沟,阴沟;流出;消耗v.(使)液... | 【形似】rational: a.理性的,合理的... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】ratio: n.比,比率... | 【形似】drain: n.排水沟,阴沟;流出;消耗v.(使)液... | 【形似】rational: a.理性的,合理的... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "The duration of the lecture was about one hour."
   },
   {
     "id": 63,
@@ -501,7 +563,8 @@ window.wordData = [
     "word": "dealer",
     "phonetic": "[ˈdilər]",
     "meaning": "n.商人,贩子",
-    "confusing": "【形似】deliver: v.交付,递送,释放,发表,表达,接生... | 【形似】ideal: a.理想的;完美的\nn.完美典型,范例;... | 【形似】eagle: n.鹰..."
+    "confusing": "【形似】deliver: v.交付,递送,释放,发表,表达,接生... | 【形似】ideal: a.理想的;完美的\nn.完美典型,范例;... | 【形似】eagle: n.鹰...",
+    "example": "The car dealer offered a discount."
   },
   {
     "id": 64,
@@ -509,7 +572,8 @@ window.wordData = [
     "word": "incident",
     "phonetic": "[ˈɪnsədənt]",
     "meaning": "n.事件;事变",
-    "confusing": "【形似】incidence: n.影响程度,影响范围;发生率... | 【形似】incidentally: ad.附带地,顺便提及... | 【形似】ancient: a.古代的,古老的... | 【同尾】torrent: n.激流,山流... | 【同尾】evident: a.明显的,明白的..."
+    "confusing": "【形似】incidence: n.影响程度,影响范围;发生率... | 【形似】incidentally: ad.附带地,顺便提及... | 【形似】ancient: a.古代的,古老的... | 【同尾】torrent: n.激流,山流... | 【同尾】evident: a.明显的,明白的...",
+    "example": "The incident was reported to the police."
   },
   {
     "id": 65,
@@ -517,7 +581,8 @@ window.wordData = [
     "word": "zeal",
     "phonetic": "[zil]",
     "meaning": "n.热情,热忱",
-    "confusing": "【形似】seal: n.海豹;印,图章;封铅,封条vt.封,... | 【形似】heal: v.(使)治愈,愈合..."
+    "confusing": "【形似】seal: n.海豹;印,图章;封铅,封条vt.封,... | 【形似】heal: v.(使)治愈,愈合...",
+    "example": "Her zeal for learning inspired her classmates."
   },
   {
     "id": 66,
@@ -525,7 +590,8 @@ window.wordData = [
     "word": "rhythm",
     "phonetic": "[ˈrɪðəm]",
     "meaning": "n.节奏,韵律",
-    "confusing": "【同尾】algorithm: n.演算法,计算程序..."
+    "confusing": "【同尾】algorithm: n.演算法,计算程序...",
+    "example": "The song has a lively rhythm."
   },
   {
     "id": 67,
@@ -533,7 +599,8 @@ window.wordData = [
     "word": "educate",
     "phonetic": "[ˈɛʤəˌkeɪt]",
     "meaning": "vt.教育,培养,训练",
-    "confusing": "【形似】dedicate: vt.奉献;把…用在... | 【形似】deduct: vt.扣除;演绎(推理)... | 【形似】deduce: vt.(from)演绎,推断... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】eliminate: vt消除,排除..."
+    "confusing": "【形似】dedicate: vt.奉献;把…用在... | 【形似】deduct: vt.扣除;演绎(推理)... | 【形似】deduce: vt.(from)演绎,推断... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】eliminate: vt消除,排除...",
+    "example": "Good teachers educate students to think independently."
   },
   {
     "id": 68,
@@ -541,7 +608,8 @@ window.wordData = [
     "word": "overlook",
     "phonetic": "[ˈoʊvərˌlʊk]",
     "meaning": "v.漏看,忽略;俯瞰,眺望;宽容,放任",
-    "confusing": "【形似】overflow: v.(使)外溢[使)溢出... | 【同尾】outlook: n.景色,风光;观点,见解;展望,前景... | 【同尾】handbook: n.手册,指南..."
+    "confusing": "【形似】overflow: v.(使)外溢[使)溢出... | 【同尾】outlook: n.景色,风光;观点,见解;展望,前景... | 【同尾】handbook: n.手册,指南...",
+    "example": "It is easy to overlook small errors in a long report."
   },
   {
     "id": 69,
@@ -549,7 +617,8 @@ window.wordData = [
     "word": "shear",
     "phonetic": "[ʃɪr]",
     "meaning": "v.剪,修剪",
-    "confusing": "【形似】swear: vi.(at)诅咒,骂人v.宣誓,发誓... | 【形似】spear: n.矛,枪,渔叉... | 【形似】sheer: a.纯粹的,十足的,全然的;陡峭的,险峻... | 【同尾】disappear: vi.不见,消失... | 【同尾】gear: n.齿轮,传动装置;v(to,towar..."
+    "confusing": "【形似】swear: vi.(at)诅咒,骂人v.宣誓,发誓... | 【形似】spear: n.矛,枪,渔叉... | 【形似】sheer: a.纯粹的,十足的,全然的;陡峭的,险峻... | 【同尾】disappear: vi.不见,消失... | 【同尾】gear: n.齿轮,传动装置;v(to,towar...",
+    "example": "The farmer will shear the sheep in spring."
   },
   {
     "id": 70,
@@ -557,7 +626,8 @@ window.wordData = [
     "word": "kidnap",
     "phonetic": "[ˈkɪdˌnæp]",
     "meaning": "vt.绑架",
-    "confusing": "【同尾】snap: v.咔嚓折断,啪地绷断;猛咬;猛然断裂;... | 【同尾】nap: n.小睡,打盹..."
+    "confusing": "【同尾】snap: v.咔嚓折断,啪地绷断;猛咬;猛然断裂;... | 【同尾】nap: n.小睡,打盹...",
+    "example": "The criminal tried to kidnap a wealthy businessman."
   },
   {
     "id": 71,
@@ -565,7 +635,8 @@ window.wordData = [
     "word": "propaganda",
     "phonetic": "[ˌprɑpəˈgændə]",
     "meaning": "n.宣传",
-    "confusing": "【形似】propagate: v.传播,宣传(观点、信仰等);繁殖,增... | 【同尾】agenda: n.议事日程..."
+    "confusing": "【形似】propagate: v.传播,宣传(观点、信仰等);繁殖,增... | 【同尾】agenda: n.议事日程...",
+    "example": "The campaign used propaganda to influence public opinion."
   },
   {
     "id": 72,
@@ -573,7 +644,8 @@ window.wordData = [
     "word": "prescribe",
     "phonetic": "[prəˈskraɪb]",
     "meaning": "v.指示,规定;开处方,开(药)",
-    "confusing": "【形似】describe: v.描述,形容... | 【形似】preside: v.(at,over)主持... | 【形似】precise: a.精确的,准确的... | 【同尾】subscribe: vi.(to)订购,订阅;预定;赞成... | 【同尾】ascribe: v.把…归因于..."
+    "confusing": "【形似】describe: v.描述,形容... | 【形似】preside: v.(at,over)主持... | 【形似】precise: a.精确的,准确的... | 【同尾】subscribe: vi.(to)订购,订阅;预定;赞成... | 【同尾】ascribe: v.把…归因于...",
+    "example": "The doctor may prescribe medicine for the pain."
   },
   {
     "id": 73,
@@ -581,7 +653,8 @@ window.wordData = [
     "word": "cape",
     "phonetic": "[keɪp]",
     "meaning": "n.披肩;斗篷;海角,岬",
-    "confusing": "【形似】ape: n.猿vt.模仿... | 【形似】scrape: v.刮,擦去;擦过,勉强通过n.刮前,刮... | 【形似】rape: n./vt.强奸..."
+    "confusing": "【形似】ape: n.猿vt.模仿... | 【形似】scrape: v.刮,擦去;擦过,勉强通过n.刮前,刮... | 【形似】rape: n./vt.强奸...",
+    "example": "The lighthouse stood on a rocky cape."
   },
   {
     "id": 74,
@@ -589,7 +662,8 @@ window.wordData = [
     "word": "solo",
     "phonetic": "[ˈsoʊˌloʊ]",
     "meaning": "a.单独的,单独进行的ad.单独地n.独唱(曲),独舞,独奏(曲）",
-    "confusing": "【形似】sole: a.单独的,唯一的,专有的,独有的n.脚... | 【形似】slot: n.狭缝,狭槽;位置,空位  v.把…纳..."
+    "confusing": "【形似】sole: a.单独的,唯一的,专有的,独有的n.脚... | 【形似】slot: n.狭缝,狭槽;位置,空位  v.把…纳...",
+    "example": "He performed a solo on the violin."
   },
   {
     "id": 75,
@@ -597,7 +671,8 @@ window.wordData = [
     "word": "neglect",
     "phonetic": "[nɪˈglɛkt]",
     "meaning": "vt./n.忽视;疏忽,忽略;漏做",
-    "confusing": "【形似】select: t.选择,挑选a.精选的,选择的... | 【形似】reflect: vt.反映,表现vi.反省,细想;沉思... | 【同尾】aspect: n.样子,外表,面貌;(问题等的)方面... | 【同尾】inspect: vt.检查,调查,视察..."
+    "confusing": "【形似】select: t.选择,挑选a.精选的,选择的... | 【形似】reflect: vt.反映,表现vi.反省,细想;沉思... | 【同尾】aspect: n.样子,外表,面貌;(问题等的)方面... | 【同尾】inspect: vt.检查,调查,视察...",
+    "example": "Do not neglect your health while studying."
   },
   {
     "id": 76,
@@ -605,7 +680,8 @@ window.wordData = [
     "word": "quantify",
     "phonetic": "[kˈwɑntɪˌfaɪ]",
     "meaning": "vt.确定数量,量化",
-    "confusing": "【形似】qualify: v.使具有资格,证明合格,限制,限定,修... | 【形似】unify: v.使联合,统一;使相同,使一致... | 【形似】notify: v.通知,告知,报告... | 【同尾】rectify: vt.纠正,整顿... | 【同尾】justify: v.证明...正当(或有理,正确),为...."
+    "confusing": "【形似】qualify: v.使具有资格,证明合格,限制,限定,修... | 【形似】unify: v.使联合,统一;使相同,使一致... | 【形似】notify: v.通知,告知,报告... | 【同尾】rectify: vt.纠正,整顿... | 【同尾】justify: v.证明...正当(或有理,正确),为....",
+    "example": "Researchers tried to quantify the effects of sleep loss."
   },
   {
     "id": 77,
@@ -613,7 +689,8 @@ window.wordData = [
     "word": "faulty",
     "phonetic": "[ˈfɔlti]",
     "meaning": "a.有错误的,有缺点的",
-    "confusing": "【形似】faculty: n.才能.(大学的)系,科,院,(学院或... | 【形似】default: n.违约,拖欠;弃权vi.不履行义务;拖... | 【形似】adult: n.成(年)人a.成年人的,已成熟的... | 【同尾】royalty: n.王家,王族... | 【同尾】novelty: n.新奇,新颖..."
+    "confusing": "【形似】faculty: n.才能.(大学的)系,科,院,(学院或... | 【形似】default: n.违约,拖欠;弃权vi.不履行义务;拖... | 【形似】adult: n.成(年)人a.成年人的,已成熟的... | 【同尾】royalty: n.王家,王族... | 【同尾】novelty: n.新奇,新颖...",
+    "example": "A faulty wire caused the machine to stop."
   },
   {
     "id": 78,
@@ -621,7 +698,8 @@ window.wordData = [
     "word": "eliminate",
     "phonetic": "[ɪˈlɪməˌneɪt]",
     "meaning": "vt消除,排除",
-    "confusing": "【形似】terminate: vi.(使)结束(使)停止... | 【形似】culminate: v(在某一点)结束,(以某种结果）告终... | 【形似】limited: a.有限的,被限制的... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】terminate: vi.(使)结束(使)停止... | 【形似】culminate: v(在某一点)结束,(以某种结果）告终... | 【形似】limited: a.有限的,被限制的... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "The new policy aims to eliminate unnecessary paperwork."
   },
   {
     "id": 79,
@@ -629,7 +707,8 @@ window.wordData = [
     "word": "upright",
     "phonetic": "[ˈəˌpraɪt]",
     "meaning": "a.垂直的,直立的;正直的,诚实的ad.竖立着",
-    "confusing": "【形似】plight: n.困境,苦境... | 【形似】copyright: n.版权 v.获得...的版权... | 【形似】freight: n.货物,货运；运费... | 【同尾】highlight: v.使显著；强调 n.最重要的事件... | 【同尾】insight: n.洞察力,见识..."
+    "confusing": "【形似】plight: n.困境,苦境... | 【形似】copyright: n.版权 v.获得...的版权... | 【形似】freight: n.货物,货运；运费... | 【同尾】highlight: v.使显著；强调 n.最重要的事件... | 【同尾】insight: n.洞察力,见识...",
+    "example": "She sat upright and listened carefully."
   },
   {
     "id": 80,
@@ -637,7 +716,8 @@ window.wordData = [
     "word": "invitation",
     "phonetic": "[ˌɪnvɪˈteɪʃən]",
     "meaning": "n.邀请,招待;请柬",
-    "confusing": "【形似】imitation: n.模仿,仿效;仿制;仿造品... | 【形似】navigation: n.航海,航空;导航,领航... | 【形似】limitation: n.限制，局限性... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】imitation: n.模仿,仿效;仿制;仿造品... | 【形似】navigation: n.航海,航空;导航,领航... | 【形似】limitation: n.限制，局限性... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "We received an invitation to the graduation party."
   },
   {
     "id": 81,
@@ -645,7 +725,8 @@ window.wordData = [
     "word": "commemorate",
     "phonetic": "[kəˈmɛmərˌeɪt]",
     "meaning": "vt纪念,庆祝",
-    "confusing": "【形似】commerce: n.商业,贸易... | 【形似】accommodate: vt.留宿，收容；供应，供给；调和；适应... | 【形似】corporate: a.公司的;法人的;全体的,共同的... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】commerce: n.商业,贸易... | 【形似】accommodate: vt.留宿，收容；供应，供给；调和；适应... | 【形似】corporate: a.公司的;法人的;全体的,共同的... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "The city built a monument to commemorate the victory."
   },
   {
     "id": 82,
@@ -653,7 +734,8 @@ window.wordData = [
     "word": "reproach",
     "phonetic": "[riˈproʊʧ]",
     "meaning": "vt.n.指责,责备",
-    "confusing": "【形似】epoch: n.时期,朝代... | 【形似】approach: v靠近,接近n.接近;途径,入门;方式,... | 【形似】preach: vt.宣讲(教义);竭力鼓吹,宣传;说教... | 【同尾】attach: vt.缚上,系上,贴上;使依附,使隶属,... | 【同尾】detach: vt.分开,分离,分遣,派遣(军队)..."
+    "confusing": "【形似】epoch: n.时期,朝代... | 【形似】approach: v靠近,接近n.接近;途径,入门;方式,... | 【形似】preach: vt.宣讲(教义);竭力鼓吹,宣传;说教... | 【同尾】attach: vt.缚上,系上,贴上;使依附,使隶属,... | 【同尾】detach: vt.分开,分离,分遣,派遣(军队)...",
+    "example": "His reproach made the careless worker feel ashamed."
   },
   {
     "id": 83,
@@ -661,7 +743,8 @@ window.wordData = [
     "word": "dilute",
     "phonetic": "[dɪˈlut]",
     "meaning": "vt.冲淡,稀释a.冲淡的,稀释的",
-    "confusing": "【形似】dispute: n.争论,争执v争论,辩论;反驳;怀疑;... | 【同尾】attribute: n.属性,品质,特征vt.把…归于,认为... | 【同尾】constitute: vt.组成,构成..."
+    "confusing": "【形似】dispute: n.争论,争执v争论,辩论;反驳;怀疑;... | 【同尾】attribute: n.属性,品质,特征vt.把…归于,认为... | 【同尾】constitute: vt.组成,构成...",
+    "example": "You should dilute the juice with water."
   },
   {
     "id": 84,
@@ -669,7 +752,8 @@ window.wordData = [
     "word": "sane",
     "phonetic": "[seɪn]",
     "meaning": "a.明智的,理智的,清醒的;心智健全的;合情合理的",
-    "confusing": "【形似】stance: n(公开表明的)观点，态度，立场:站姿... | 【形似】swan: n.天鹅... | 【形似】span: n.跨度,跨距,范围..."
+    "confusing": "【形似】stance: n(公开表明的)观点，态度，立场:站姿... | 【形似】swan: n.天鹅... | 【形似】span: n.跨度,跨距,范围...",
+    "example": "It is sane to save money for emergencies."
   },
   {
     "id": 85,
@@ -677,7 +761,8 @@ window.wordData = [
     "word": "lease",
     "phonetic": "[lis]",
     "meaning": "n.租约,租期vt.出租",
-    "confusing": "【形似】ease: v.减轻,缓和n.舒适,悠闲... | 【形似】release: t.释放,解放,发表,发布n.发表,发布... | 【形似】tease: v戏弄,取笑;挑逗n.(爱)戏弄他人者;... | 【同尾】phrase: n.短语,习语,词语... | 【同尾】phase: n.阶段,状态,时期;相,相位..."
+    "confusing": "【形似】ease: v.减轻,缓和n.舒适,悠闲... | 【形似】release: t.释放,解放,发表,发布n.发表,发布... | 【形似】tease: v戏弄,取笑;挑逗n.(爱)戏弄他人者;... | 【同尾】phrase: n.短语,习语,词语... | 【同尾】phase: n.阶段,状态,时期;相,相位...",
+    "example": "They signed a one-year lease for the apartment."
   },
   {
     "id": 86,
@@ -685,7 +770,8 @@ window.wordData = [
     "word": "browse",
     "phonetic": "[braʊz]",
     "meaning": "vi吃嫩叶或草;浏览n.嫩叶,嫩芽;吃草,放牧;浏览",
-    "confusing": "【形似】brow: n.眉(毛);额... | 【形似】rouse: vt./vi.唤醒,唤起;激励;激起... | 【形似】prose: n.散文..."
+    "confusing": "【形似】brow: n.眉(毛);额... | 【形似】rouse: vt./vi.唤醒,唤起;激励;激起... | 【形似】prose: n.散文...",
+    "example": "I like to browse books before choosing one."
   },
   {
     "id": 87,
@@ -693,7 +779,8 @@ window.wordData = [
     "word": "tentative",
     "phonetic": "[ˈtɛntətɪv]",
     "meaning": "a.尝试的,试验(性)的;犹豫的,迟疑不决的",
-    "confusing": "【形似】alternative: a.供选择的,n.替换物,选择对象... | 【形似】initiative: a.创始的,起始的n.第一步,创始,主动... | 【形似】naive: a.天真的；幼稚的... | 【同尾】revive: v.恢复;(使)复苏... | 【同尾】locomotive: n.机车,火车头a.运动的,移动的,运载..."
+    "confusing": "【形似】alternative: a.供选择的,n.替换物,选择对象... | 【形似】initiative: a.创始的,起始的n.第一步,创始,主动... | 【形似】naive: a.天真的；幼稚的... | 【同尾】revive: v.恢复;(使)复苏... | 【同尾】locomotive: n.机车,火车头a.运动的,移动的,运载...",
+    "example": "The date for the meeting is still tentative."
   },
   {
     "id": 88,
@@ -701,7 +788,8 @@ window.wordData = [
     "word": "seam",
     "phonetic": "[sim]",
     "meaning": "n.缝,接缝",
-    "confusing": "【形似】stream: n.小河,溪流;流,一股,一串v流出,涌... | 【形似】stem: n.茎,干;词干vi.出自,来源于,发生... | 【形似】slam: v(门,窗等}砰地关上n.猛然关闭的声音..."
+    "confusing": "【形似】stream: n.小河,溪流;流,一股,一串v流出,涌... | 【形似】stem: n.茎,干;词干vi.出自,来源于,发生... | 【形似】slam: v(门,窗等}砰地关上n.猛然关闭的声音...",
+    "example": "The seam of the coat began to tear."
   },
   {
     "id": 89,
@@ -709,7 +797,8 @@ window.wordData = [
     "word": "highway",
     "phonetic": "[ˈhaɪˌweɪ]",
     "meaning": "n.公路,大路",
-    "confusing": "【形似】highly: adv.高度地,非常,很;赞许地... | 【同尾】railroad/railway: n.铁路v由铁道运输... | 【同尾】doorway: n.门口..."
+    "confusing": "【形似】highly: adv.高度地,非常,很;赞许地... | 【同尾】railroad/railway: n.铁路v由铁道运输... | 【同尾】doorway: n.门口...",
+    "example": "The highway was crowded during the holiday."
   },
   {
     "id": 90,
@@ -717,7 +806,8 @@ window.wordData = [
     "word": "alter",
     "phonetic": "[ˈɔltər]",
     "meaning": "v.改变,变更;改(衣服使其更合身)",
-    "confusing": "【形似】cater: vi.迎合;提供饮食及服务... | 【形似】alert: a.警惕的,机灵的... | 【形似】salute: v./n.敬礼,鸣礼炮;迎接,欢迎... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰... | 【同尾】character: n.性格,品质,特性;人物,角色;字符,..."
+    "confusing": "【形似】cater: vi.迎合;提供饮食及服务... | 【形似】alert: a.警惕的,机灵的... | 【形似】salute: v./n.敬礼,鸣礼炮;迎接,欢迎... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰... | 【同尾】character: n.性格,品质,特性;人物,角色;字符,...",
+    "example": "The tailor can alter the jacket to fit you."
   },
   {
     "id": 91,
@@ -725,7 +815,8 @@ window.wordData = [
     "word": "manipulate",
     "phonetic": "[məˈnɪpjəˌleɪt]",
     "meaning": "vt.操作,控制;操纵,影响",
-    "confusing": "【形似】articulate: a.善于表达的,vt.清晰明白地说... | 【形似】anticipate: vt.预期,期望,预料... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】articulate: a.善于表达的,vt.清晰明白地说... | 【形似】anticipate: vt.预期,期望,预料... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "She learned to manipulate the robotic arm."
   },
   {
     "id": 92,
@@ -733,7 +824,8 @@ window.wordData = [
     "word": "accuracy",
     "phonetic": "[ˈækjərəsi]",
     "meaning": "n.准确,准确度",
-    "confusing": "【形似】accurate: a.准确的,精确的... | 【同尾】literacy: n.识字,有文化;读写能力... | 【同尾】pharmacy: n.药剂学，制药;药店..."
+    "confusing": "【形似】accurate: a.准确的,精确的... | 【同尾】literacy: n.识字,有文化;读写能力... | 【同尾】pharmacy: n.药剂学，制药;药店...",
+    "example": "The accuracy of the test results is very important."
   },
   {
     "id": 93,
@@ -741,7 +833,8 @@ window.wordData = [
     "word": "descendant",
     "phonetic": "[dɪˈsɛndənt]",
     "meaning": "n.子孙,后代",
-    "confusing": "【形似】descent: n.下降,降下;斜坡;血统,家世... | 【形似】descend: v下来,下降... | 【形似】decent: a.体面的,像样的;正派的,宽厚的... | 【同尾】remnant: n.残余物;零头布料;遗迹... | 【同尾】constant: a.持续的,不断的;永恒的,不变的;坚定..."
+    "confusing": "【形似】descent: n.下降,降下;斜坡;血统,家世... | 【形似】descend: v下来,下降... | 【形似】decent: a.体面的,像样的;正派的,宽厚的... | 【同尾】remnant: n.残余物;零头布料;遗迹... | 【同尾】constant: a.持续的,不断的;永恒的,不变的;坚定...",
+    "example": "He is a descendant of the town's first mayor."
   },
   {
     "id": 94,
@@ -749,7 +842,8 @@ window.wordData = [
     "word": "sting",
     "phonetic": "[stɪŋ]",
     "meaning": "v.刺,刺痛,叮n.刺,刺痛,剧痛,叮",
-    "confusing": "【形似】string: n.弦,线,细绳;一串,一行;一系列v.... | 【形似】setting: n.(太阳等}落山;(固定东西的)底座;... | 【形似】swing: v.摇摆,摇荡;回转,旋转 \nn秋千;摇... | 【同尾】handwriting: n.笔迹,手迹,书法... | 【同尾】bearing: n.方向,方位;关系,影响;姿态,举止..."
+    "confusing": "【形似】string: n.弦,线,细绳;一串,一行;一系列v.... | 【形似】setting: n.(太阳等}落山;(固定东西的)底座;... | 【形似】swing: v.摇摆,摇荡;回转,旋转 \nn秋千;摇... | 【同尾】handwriting: n.笔迹,手迹,书法... | 【同尾】bearing: n.方向,方位;关系,影响;姿态,举止...",
+    "example": "The bee's sting caused his hand to swell."
   },
   {
     "id": 95,
@@ -757,7 +851,8 @@ window.wordData = [
     "word": "linguistic",
     "phonetic": "[lɪŋgˈwɪstɪk]",
     "meaning": "a.语言的,语言学的",
-    "confusing": "【同尾】domestic: a.家的,家庭的;本国的;驯养的;家用的... | 【同尾】authentic: a.真正的；可靠的..."
+    "confusing": "【同尾】domestic: a.家的,家庭的;本国的;驯养的;家用的... | 【同尾】authentic: a.真正的；可靠的...",
+    "example": "The study focuses on linguistic development in children."
   },
   {
     "id": 96,
@@ -765,7 +860,8 @@ window.wordData = [
     "word": "outbreak",
     "phonetic": "[ˈaʊtˌbreɪk]",
     "meaning": "n.爆发",
-    "confusing": "【同尾】leak: v.漏,泄露,n.漏洞漏细,漏出... | 【同尾】sneak: vi.偷偷地走,溜t.偷偷地做(或拿,吃..."
+    "confusing": "【同尾】leak: v.漏,泄露,n.漏洞漏细,漏出... | 【同尾】sneak: vi.偷偷地走,溜t.偷偷地做(或拿,吃...",
+    "example": "The outbreak of disease worried the doctors."
   },
   {
     "id": 97,
@@ -773,7 +869,8 @@ window.wordData = [
     "word": "phrase",
     "phonetic": "[freɪz]",
     "meaning": "n.短语,习语,词语",
-    "confusing": "【形似】phase: n.阶段,状态,时期;相,相位... | 【形似】purse: n.钱包... | 【形似】prose: n.散文... | 【同尾】lease: n.租约,租期vt.出租... | 【同尾】purchase: vt.买,购买n.购买的物品..."
+    "confusing": "【形似】phase: n.阶段,状态,时期;相,相位... | 【形似】purse: n.钱包... | 【形似】prose: n.散文... | 【同尾】lease: n.租约,租期vt.出租... | 【同尾】purchase: vt.买,购买n.购买的物品...",
+    "example": "That phrase is often used in formal letters."
   },
   {
     "id": 98,
@@ -781,7 +878,8 @@ window.wordData = [
     "word": "brochure",
     "phonetic": "[broʊˈʃʊr]",
     "meaning": "n.小册子",
-    "confusing": "【形似】procedure: n.程序,手续,步骤... | 【同尾】feature: n.特征,特色;特写,专题;(地理)特征... | 【同尾】posture: n.姿势,体态;看法,态度vi.摆出(不..."
+    "confusing": "【形似】procedure: n.程序,手续,步骤... | 【同尾】feature: n.特征,特色;特写,专题;(地理)特征... | 【同尾】posture: n.姿势,体态;看法,态度vi.摆出(不...",
+    "example": "The travel brochure showed beautiful beaches."
   },
   {
     "id": 99,
@@ -789,7 +887,8 @@ window.wordData = [
     "word": "enormous",
     "phonetic": "[ɪˈnɔrmɪs]",
     "meaning": "a.巨大的,庞大的",
-    "confusing": "【形似】generous: a.宽宏大量的,慷慨的；丰富的，大量的... | 【形似】notorious: a.奥名昭著的,声名狼藉的,众所周知的... | 【形似】anonymous: a.匿名的,无名的,无特色的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻... | 【同尾】numerous: a.众多的,许多的,大批的..."
+    "confusing": "【形似】generous: a.宽宏大量的,慷慨的；丰富的，大量的... | 【形似】notorious: a.奥名昭著的,声名狼藉的,众所周知的... | 【形似】anonymous: a.匿名的,无名的,无特色的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻... | 【同尾】numerous: a.众多的,许多的,大批的...",
+    "example": "The elephant is an enormous animal."
   },
   {
     "id": 100,
@@ -797,7 +896,8 @@ window.wordData = [
     "word": "exclude",
     "phonetic": "[ɪkˈsklud]",
     "meaning": "vt.,把…排除在外,排斥",
-    "confusing": "【形似】preclude: t.妨碍,阻止... | 【形似】exclusive: a.专有的,专用的,独占的;排他的;孤高... | 【形似】clue: n.线索,暗示... | 【同尾】altitude: n.高度,海拔... | 【同尾】conclude: v.结束,终止;断定,下结论;缔结,议定..."
+    "confusing": "【形似】preclude: t.妨碍,阻止... | 【形似】exclusive: a.专有的,专用的,独占的;排他的;孤高... | 【形似】clue: n.线索,暗示... | 【同尾】altitude: n.高度,海拔... | 【同尾】conclude: v.结束,终止;断定,下结论;缔结,议定...",
+    "example": "The club may exclude members who break the rules."
   },
   {
     "id": 101,
@@ -805,7 +905,8 @@ window.wordData = [
     "word": "spin",
     "phonetic": "[spɪn]",
     "meaning": "v.旋转;纺纱;(蜘蛛)织布,(蚕等)吐丝;虚构,杜撰n.旋转;自转",
-    "confusing": "【形似】spine: n.脊骨,脊柱,脊椎;(动植物的)刺,书... | 【形似】sin: n.罪,罪恶v犯罪... | 【形似】spit: vi.吐(唾沫),吐痍;n.唾液,口水..."
+    "confusing": "【形似】spine: n.脊骨,脊柱,脊椎;(动植物的)刺,书... | 【形似】sin: n.罪,罪恶v犯罪... | 【形似】spit: vi.吐(唾沫),吐痍;n.唾液,口水...",
+    "example": "The dancer began to spin across the stage."
   },
   {
     "id": 102,
@@ -813,7 +914,8 @@ window.wordData = [
     "word": "brutal",
     "phonetic": "[ˈbrutəl]",
     "meaning": "a.残忍的;严酷的,严峻的",
-    "confusing": "【形似】rural: a.农村的... | 【同尾】dental: a.牙齿的,牙科的... | 【同尾】instrumental: a.起作用的,有帮助的;乐器的..."
+    "confusing": "【形似】rural: a.农村的... | 【同尾】dental: a.牙齿的,牙科的... | 【同尾】instrumental: a.起作用的,有帮助的;乐器的...",
+    "example": "The brutal winter damaged many crops."
   },
   {
     "id": 103,
@@ -821,7 +923,8 @@ window.wordData = [
     "word": "howl",
     "phonetic": "[haʊl]",
     "meaning": "vi(狼、狗等)嗥叫,(风等)呼啸vt(因愤怒、痛苦)吼叫,哀号n.(狼、狗等)嗥叫;(风等)呼啸;(因愤怒、痛苦等)吼叫,哀号",
-    "confusing": "【形似】owl: n.猫头鹰... | 【形似】holy: adj.神圣的,圣洁的..."
+    "confusing": "【形似】owl: n.猫头鹰... | 【形似】holy: adj.神圣的,圣洁的...",
+    "example": "The dog began to howl when it heard the siren."
   },
   {
     "id": 104,
@@ -829,7 +932,8 @@ window.wordData = [
     "word": "network",
     "phonetic": "[ˈnɛtˌwərk]",
     "meaning": "n.网状物;广播网,电视网;网络;人际关系网,联络网",
-    "confusing": "【同尾】framework: n.构架;框架;结构;组织;机构..."
+    "confusing": "【同尾】framework: n.构架;框架;结构;组织;机构...",
+    "example": "The company built a network of local suppliers."
   },
   {
     "id": 105,
@@ -837,7 +941,8 @@ window.wordData = [
     "word": "evident",
     "phonetic": "[ˈɛvədənt]",
     "meaning": "a.明显的,明白的",
-    "confusing": "【形似】resident: n.居民,常住者a.居住的... | 【形似】evidence: n.根据,证据;行迹,迹象... | 【形似】violent: a.猛烈的,激烈的;暴力引起的,强暴的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变..."
+    "confusing": "【形似】resident: n.居民,常住者a.居住的... | 【形似】evidence: n.根据,证据;行迹,迹象... | 【形似】violent: a.猛烈的,激烈的;暴力引起的,强暴的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变...",
+    "example": "It was evident that she had practiced a lot."
   },
   {
     "id": 106,
@@ -845,7 +950,8 @@ window.wordData = [
     "word": "dynamic(al)",
     "phonetic": "[dynamic(al*)]",
     "meaning": "a.动力的,电动的,有生气的n.动态",
-    "confusing": "【同尾】static(al): a.静态的;静力的... | 【同尾】analytic(al): a.分析的;分解的..."
+    "confusing": "【同尾】static(al): a.静态的;静力的... | 【同尾】analytic(al): a.分析的;分解的...",
+    "example": "The dynamic speaker kept the audience awake."
   },
   {
     "id": 107,
@@ -853,7 +959,8 @@ window.wordData = [
     "word": "swan",
     "phonetic": "[swɔn]",
     "meaning": "n.天鹅",
-    "confusing": "【形似】sway: v摇摆,摇动... | 【形似】span: n.跨度,跨距,范围... | 【形似】scan: t.细看,审视,浏览,扫描n.粗略一看,..."
+    "confusing": "【形似】sway: v摇摆,摇动... | 【形似】span: n.跨度,跨距,范围... | 【形似】scan: t.细看,审视,浏览,扫描n.粗略一看,...",
+    "example": "A white swan crossed the lake gracefully."
   },
   {
     "id": 108,
@@ -861,7 +968,8 @@ window.wordData = [
     "word": "rigorous",
     "phonetic": "[ˈrɪgərəs]",
     "meaning": "a.严密的,缜密的;严格的,严厉的;严峻的",
-    "confusing": "【形似】vigorous: a.有力的;朝气蓬勃的,精力旺盛的... | 【形似】gorgeous: a.华丽的,绚丽的,令人十分痛快的,极好... | 【形似】glorious: a.壮丽的,辉煌的,光荣的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】numerous: a.众多的,许多的,大批的..."
+    "confusing": "【形似】vigorous: a.有力的;朝气蓬勃的,精力旺盛的... | 【形似】gorgeous: a.华丽的,绚丽的,令人十分痛快的,极好... | 【形似】glorious: a.壮丽的,辉煌的,光荣的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】numerous: a.众多的,许多的,大批的...",
+    "example": "The experiment required rigorous safety checks."
   },
   {
     "id": 109,
@@ -869,7 +977,8 @@ window.wordData = [
     "word": "technology",
     "phonetic": "[tɛkˈnɑləʤi]",
     "meaning": "n.工艺;科技,技术",
-    "confusing": "【形似】ecology: n.生态学... | 【形似】geology: n.地质学... | 【形似】psychology: n.心理,心理学... | 【同尾】biology: n.生物学... | 【同尾】analogy: n.比拟,类比..."
+    "confusing": "【形似】ecology: n.生态学... | 【形似】geology: n.地质学... | 【形似】psychology: n.心理,心理学... | 【同尾】biology: n.生物学... | 【同尾】analogy: n.比拟,类比...",
+    "example": "Modern technology changes the way we work."
   },
   {
     "id": 110,
@@ -877,7 +986,8 @@ window.wordData = [
     "word": "wax",
     "phonetic": "[wæks]",
     "meaning": "n.蜡,蜂蜡vt.打蜡",
-    "confusing": ""
+    "confusing": "",
+    "example": "She used wax to polish the wooden table."
   },
   {
     "id": 111,
@@ -885,7 +995,8 @@ window.wordData = [
     "word": "pillow",
     "phonetic": "[ˈpɪloʊ]",
     "meaning": "n.枕头",
-    "confusing": "【形似】spill: v.溢出,溅出n.摔下,跌下... | 【同尾】glow: vi.发热,发光,发红n.光亮;光辉... | 【同尾】overflow: v.(使)外溢[使)溢出..."
+    "confusing": "【形似】spill: v.溢出,溅出n.摔下,跌下... | 【同尾】glow: vi.发热,发光,发红n.光亮;光辉... | 【同尾】overflow: v.(使)外溢[使)溢出...",
+    "example": "He put a soft pillow under his head."
   },
   {
     "id": 112,
@@ -893,7 +1004,8 @@ window.wordData = [
     "word": "solidarity",
     "phonetic": "[ˌsɑləˈdɛrəti]",
     "meaning": "n.团结,一致",
-    "confusing": "【形似】solitary: a.孤独的，隐居的;单一的,唯一的；单独... | 【形似】clarity: n.清晰,明晰；清晰的思维（或理解）... | 【同尾】productivity: n.生产率... | 【同尾】prosperity: n.繁荣,兴旺..."
+    "confusing": "【形似】solitary: a.孤独的，隐居的;单一的,唯一的；单独... | 【形似】clarity: n.清晰,明晰；清晰的思维（或理解）... | 【同尾】productivity: n.生产率... | 【同尾】prosperity: n.繁荣,兴旺...",
+    "example": "The workers showed solidarity during the strike."
   },
   {
     "id": 113,
@@ -901,7 +1013,8 @@ window.wordData = [
     "word": "slaughter",
     "phonetic": "[sˈlɔtər]",
     "meaning": "n./vt.屠杀,杀戮,屠宰",
-    "confusing": "【形似】laughter: n.笑,笑声... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】character: n.性格,品质,特性;人物,角色;字符,..."
+    "confusing": "【形似】laughter: n.笑,笑声... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】character: n.性格,品质,特性;人物,角色;字符,...",
+    "example": "The war led to the slaughter of many innocent people."
   },
   {
     "id": 114,
@@ -909,7 +1022,8 @@ window.wordData = [
     "word": "pit",
     "phonetic": "[pɪt]",
     "meaning": "n.坑,陷阱;煤矿,矿井;剧院的正厅后座",
-    "confusing": "【形似】spit: vi.吐(唾沫),吐痍;n.唾液,口水... | 【形似】pint: n.品脱... | 【形似】split: v.(使)裂开,劈开;(up)(使)分裂..."
+    "confusing": "【形似】spit: vi.吐(唾沫),吐痍;n.唾液,口水... | 【形似】pint: n.品脱... | 【形似】split: v.(使)裂开,劈开;(up)(使)分裂...",
+    "example": "The child fell into a shallow pit."
   },
   {
     "id": 115,
@@ -917,7 +1031,8 @@ window.wordData = [
     "word": "decay",
     "phonetic": "[dɪˈkeɪ]",
     "meaning": "vt.使腐朽,腐烂vi衰减,衰退n.腐朽,腐烂;衰减,衰退",
-    "confusing": "【形似】decade: n.十年... | 【形似】deadly: a.致命的,致死的... | 【形似】democracy: n.民主,民主制民主国家..."
+    "confusing": "【形似】decade: n.十年... | 【形似】deadly: a.致命的,致死的... | 【形似】democracy: n.民主,民主制民主国家...",
+    "example": "The fruit began to decay in the heat."
   },
   {
     "id": 116,
@@ -925,7 +1040,8 @@ window.wordData = [
     "word": "pray",
     "phonetic": "[preɪ]",
     "meaning": "vt.请求,恳求;祈祷,祈求",
-    "confusing": "【形似】spray: n.喷雾,飞沫;浪花,水花v喷洒,喷射... | 【形似】prayer: n.祈祷,祷告;祷文... | 【形似】tray: n.盘,碟,托盘..."
+    "confusing": "【形似】spray: n.喷雾,飞沫;浪花,水花v喷洒,喷射... | 【形似】prayer: n.祈祷,祷告;祷文... | 【形似】tray: n.盘,碟,托盘...",
+    "example": "Many people pray for peace every day."
   },
   {
     "id": 117,
@@ -933,7 +1049,8 @@ window.wordData = [
     "word": "grand",
     "phonetic": "[grænd]",
     "meaning": "a.盛大的,豪华的;重大的,主要的;(计划等)宏大的,雄伟的;(常用于大型建筑物的名称前)大的",
-    "confusing": "【形似】groan: v./n.呻吟... | 【形似】grind: vt.磨(碎),碾(碎)... | 【形似】grant: vt.同意,准予;授予,给予\nn.授予;... | 【同尾】expand: v.(使)膨胀,(使)扩张;张开,展开... | 【同尾】brand: n.商标,标记,牌子vt.使铭记;打火印..."
+    "confusing": "【形似】groan: v./n.呻吟... | 【形似】grind: vt.磨(碎),碾(碎)... | 【形似】grant: vt.同意,准予;授予,给予\nn.授予;... | 【同尾】expand: v.(使)膨胀,(使)扩张;张开,展开... | 【同尾】brand: n.商标,标记,牌子vt.使铭记;打火印...",
+    "example": "The hotel lobby was grand and impressive."
   },
   {
     "id": 118,
@@ -941,7 +1058,8 @@ window.wordData = [
     "word": "booth",
     "phonetic": "[buθ]",
     "meaning": "n.电话亭;摊位",
-    "confusing": "【形似】boot: n.靴子... | 【形似】boost: n./ vt.提升;增加;抬高(价格);..."
+    "confusing": "【形似】boot: n.靴子... | 【形似】boost: n./ vt.提升;增加;抬高(价格);...",
+    "example": "The company set up a booth at the exhibition."
   },
   {
     "id": 119,
@@ -949,7 +1067,8 @@ window.wordData = [
     "word": "beware",
     "phonetic": "[bɪˈwɛr]",
     "meaning": "vi谨防,当心",
-    "confusing": "【形似】bare: a.赤裸的.空的;稀少的,仅有的v露出,... | 【形似】aware: a.知道的,意识到的... | 【同尾】software: n.软件... | 【同尾】nightmare: n.噩梦;无法摆脱的恐惧,可怕的事..."
+    "confusing": "【形似】bare: a.赤裸的.空的;稀少的,仅有的v露出,... | 【形似】aware: a.知道的,意识到的... | 【同尾】software: n.软件... | 【同尾】nightmare: n.噩梦;无法摆脱的恐惧,可怕的事...",
+    "example": "Beware of icy roads in winter."
   },
   {
     "id": 120,
@@ -957,7 +1076,8 @@ window.wordData = [
     "word": "occasion",
     "phonetic": "[əˈkeɪʒən]",
     "meaning": "n.场合,时节,时刻;时机,机会",
-    "confusing": "【形似】occasional: a.偶然的,非经常的,特殊场合的;临时的... | 【形似】occupation: n.占领,占据;占用;职业工作... | 【形似】vocation: n.职业,行业... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】occasional: a.偶然的,非经常的,特殊场合的;临时的... | 【形似】occupation: n.占领,占据;占用;职业工作... | 【形似】vocation: n.职业,行业... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "The wedding was a joyful occasion."
   },
   {
     "id": 121,
@@ -965,7 +1085,8 @@ window.wordData = [
     "word": "numerous",
     "phonetic": "[ˈnumərəs]",
     "meaning": "a.众多的,许多的,大批的",
-    "confusing": "【形似】humorous: a.幽默的,诙谐的... | 【形似】generous: a.宽宏大量的,慷慨的；丰富的，大量的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻..."
+    "confusing": "【形似】humorous: a.幽默的,诙谐的... | 【形似】generous: a.宽宏大量的,慷慨的；丰富的，大量的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻...",
+    "example": "Numerous students joined the volunteer program."
   },
   {
     "id": 122,
@@ -973,7 +1094,8 @@ window.wordData = [
     "word": "element",
     "phonetic": "[ˈɛləmənt]",
     "meaning": "n.元素,组成部分",
-    "confusing": "【形似】settlement: n.解决,决定,调停;居留区,住宅区... | 【形似】elementary: a.初等的,基本的... | 【形似】helmet: n.头盔,钢盔... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变..."
+    "confusing": "【形似】settlement: n.解决,决定,调停;居留区,住宅区... | 【形似】elementary: a.初等的,基本的... | 【形似】helmet: n.头盔,钢盔... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变...",
+    "example": "Trust is an essential element of friendship."
   },
   {
     "id": 123,
@@ -981,7 +1103,8 @@ window.wordData = [
     "word": "nursery",
     "phonetic": "[ˈnərsəri]",
     "meaning": "n.托儿所",
-    "confusing": "【形似】surgery: n.外科,外科学;外科手术治疗;手术室,... | 【同尾】stationery: n.文具... | 【同尾】pottery: n.陶器；陶土；制陶手艺..."
+    "confusing": "【形似】surgery: n.外科,外科学;外科手术治疗;手术室,... | 【同尾】stationery: n.文具... | 【同尾】pottery: n.陶器；陶土；制陶手艺...",
+    "example": "The nursery cares for children during the day."
   },
   {
     "id": 124,
@@ -989,7 +1112,8 @@ window.wordData = [
     "word": "worship",
     "phonetic": "[ˈwərʃɪp]",
     "meaning": "n.礼拜,礼拜仪式;崇拜,敬仰v.崇拜,敬仰,尊敬;做礼拜",
-    "confusing": "【形似】workshop: n.车间,工厂;专题讨论会... | 【形似】ownership: n.所有(权),所有制... | 【形似】whip: n.鞭子;车夫v鞭打,抽打;突然移动... | 【同尾】relationship: n.关系,联系... | 【同尾】membership: n.会员资格,成员资格..."
+    "confusing": "【形似】workshop: n.车间,工厂;专题讨论会... | 【形似】ownership: n.所有(权),所有制... | 【形似】whip: n.鞭子;车夫v鞭打,抽打;突然移动... | 【同尾】relationship: n.关系,联系... | 【同尾】membership: n.会员资格,成员资格...",
+    "example": "Some people worship at the temple every morning."
   },
   {
     "id": 125,
@@ -997,7 +1121,8 @@ window.wordData = [
     "word": "dental",
     "phonetic": "[ˈdɛntəl]",
     "meaning": "a.牙齿的,牙科的",
-    "confusing": "【形似】entail: t.牵涉；使某事我成为必要；限定继承人... | 【形似】detail: n.细节,详情,ut.详述... | 【形似】denial: n.否认;拒绝；拒绝给予... | 【同尾】brutal: a.残忍的;严酷的,严峻的... | 【同尾】instrumental: a.起作用的,有帮助的;乐器的..."
+    "confusing": "【形似】entail: t.牵涉；使某事我成为必要；限定继承人... | 【形似】detail: n.细节,详情,ut.详述... | 【形似】denial: n.否认;拒绝；拒绝给予... | 【同尾】brutal: a.残忍的;严酷的,严峻的... | 【同尾】instrumental: a.起作用的,有帮助的;乐器的...",
+    "example": "Regular brushing is important for dental health."
   },
   {
     "id": 126,
@@ -1005,7 +1130,8 @@ window.wordData = [
     "word": "dense",
     "phonetic": "[dɛns]",
     "meaning": "a.稠密的,密集的,浓厚的",
-    "confusing": "【形似】tense: n.时态 a.拉紧的;紧张的... | 【形似】condense: 以(使)压缩【使]凝结;精简,压缩... | 【形似】ensure: vt.确保,保证... | 【同尾】immense: a.广大的,巨大的... | 【同尾】response: n.回答,响应,反应..."
+    "confusing": "【形似】tense: n.时态 a.拉紧的;紧张的... | 【形似】condense: 以(使)压缩【使]凝结;精简,压缩... | 【形似】ensure: vt.确保,保证... | 【同尾】immense: a.广大的,巨大的... | 【同尾】response: n.回答,响应,反应...",
+    "example": "The dense fog made driving dangerous."
   },
   {
     "id": 127,
@@ -1013,7 +1139,8 @@ window.wordData = [
     "word": "productivity",
     "phonetic": "[ˌproʊdəkˈtɪvɪti]",
     "meaning": "n.生产率",
-    "confusing": "【形似】productive: a.生产(性)的,能产的,多产的... | 【形似】product: n.产品,产物;乘积... | 【形似】activity: n.活动;活性;活力... | 【同尾】solidarity: n.团结,一致... | 【同尾】prosperity: n.繁荣,兴旺..."
+    "confusing": "【形似】productive: a.生产(性)的,能产的,多产的... | 【形似】product: n.产品,产物;乘积... | 【形似】activity: n.活动;活性;活力... | 【同尾】solidarity: n.团结,一致... | 【同尾】prosperity: n.繁荣,兴旺...",
+    "example": "Better tools can improve worker productivity."
   },
   {
     "id": 128,
@@ -1021,7 +1148,8 @@ window.wordData = [
     "word": "valve",
     "phonetic": "[vælv]",
     "meaning": "n.阀;真空管,电子管",
-    "confusing": "【形似】viable: a.(想法或计划)切实可行的,可实施的... | 【形似】velvet: n.丝绒,天鹅绒a丝绒制的,柔软的... | 【形似】evolve: v.(使)发展,(使)进化... | 【同尾】dissolve: vt.使溶解,使融化vi.解散;取消... | 【同尾】involve: v.使某人卷入,陷入,连累;包含,含有,..."
+    "confusing": "【形似】viable: a.(想法或计划)切实可行的,可实施的... | 【形似】velvet: n.丝绒,天鹅绒a丝绒制的,柔软的... | 【形似】evolve: v.(使)发展,(使)进化... | 【同尾】dissolve: vt.使溶解,使融化vi.解散;取消... | 【同尾】involve: v.使某人卷入,陷入,连累;包含,含有,...",
+    "example": "The valve controls the flow of water."
   },
   {
     "id": 129,
@@ -1029,7 +1157,8 @@ window.wordData = [
     "word": "abuse",
     "phonetic": "[əˈbjuz]",
     "meaning": "vt滥用;虐待;谩骂n.滥用;虐待",
-    "confusing": "【形似】amuse: t.逗...笑,给...以娱乐(或消遣)... | 【形似】clause: n.(正式文件或法律文件的)条款;从句分... | 【形似】bruise: n.青肿,挫伤;伤痕t打青;挫伤... | 【同尾】diffuse: vi.扩散vt.传播,散布;宣泄,舒缓(... | 【同尾】arouse: vt.唤醒,叫醒;唤起,激起..."
+    "confusing": "【形似】amuse: t.逗...笑,给...以娱乐(或消遣)... | 【形似】clause: n.(正式文件或法律文件的)条款;从句分... | 【形似】bruise: n.青肿,挫伤;伤痕t打青;挫伤... | 【同尾】diffuse: vi.扩散vt.传播,散布;宣泄,舒缓(... | 【同尾】arouse: vt.唤醒,叫醒;唤起,激起...",
+    "example": "Drug abuse can destroy a person's health."
   },
   {
     "id": 130,
@@ -1037,7 +1166,8 @@ window.wordData = [
     "word": "circular",
     "phonetic": "[ˈsərkjələr]",
     "meaning": "a.圆(形)的,环形的;循环的n.传单,通报",
-    "confusing": "【形似】circulate: v.(使)循环,(使)流通;传播... | 【形似】circus: n.马观团,杂技团;... | 【同尾】cellar: n.地窖,地下室... | 【同尾】pillar: n.柱,台柱,栋梁..."
+    "confusing": "【形似】circulate: v.(使)循环,(使)流通;传播... | 【形似】circus: n.马观团,杂技团;... | 【同尾】cellar: n.地窖,地下室... | 【同尾】pillar: n.柱,台柱,栋梁...",
+    "example": "The table had a circular top."
   },
   {
     "id": 131,
@@ -1045,7 +1175,8 @@ window.wordData = [
     "word": "classic",
     "phonetic": "[ˈklæsɪk]",
     "meaning": "n.杰作,名著a.第一流的,不朽的;典型的",
-    "confusing": "【形似】classical: a.经典的,古典(文学)的... | 【形似】classify: v.分类,分等(级）... | 【形似】plastic: n.(常pl.)塑料,塑料制品a.可塑的... | 【同尾】intrinsic: a.(指价值,性质)固有的,本质的,内在..."
+    "confusing": "【形似】classical: a.经典的,古典(文学)的... | 【形似】classify: v.分类,分等(级）... | 【形似】plastic: n.(常pl.)塑料,塑料制品a.可塑的... | 【同尾】intrinsic: a.(指价值,性质)固有的,本质的,内在...",
+    "example": "This novel is considered a classic of modern literature."
   },
   {
     "id": 132,
@@ -1053,7 +1184,8 @@ window.wordData = [
     "word": "revive",
     "phonetic": "[rɪˈvaɪv]",
     "meaning": "v.恢复;(使)复苏",
-    "confusing": "【形似】revise: vt.修订,校订;修正,修改... | 【形似】survive: v.幸免于,幸存;比…长命... | 【形似】revolve: v.使旋转... | 【同尾】tentative: a.尝试的,试验(性)的;犹豫的,迟疑不... | 【同尾】locomotive: n.机车,火车头a.运动的,移动的,运载..."
+    "confusing": "【形似】revise: vt.修订,校订;修正,修改... | 【形似】survive: v.幸免于,幸存;比…长命... | 【形似】revolve: v.使旋转... | 【同尾】tentative: a.尝试的,试验(性)的;犹豫的,迟疑不... | 【同尾】locomotive: n.机车,火车头a.运动的,移动的,运载...",
+    "example": "A short rest helped him revive his energy."
   },
   {
     "id": 133,
@@ -1061,7 +1193,8 @@ window.wordData = [
     "word": "disguise",
     "phonetic": "[dɪsˈgaɪz]",
     "meaning": "n.假装,伪装vt.假装,伪装,掩饰",
-    "confusing": "【形似】disgust: n.厌恶,恶心v使厌恶... | 【形似】distinguish: v.(from)区别,辨别;辨认出;使杰... | 【形似】discourse: n.演讲,论文,谈话vi.演讲,谈话... | 【同尾】devise: vt.设计,想出,发明... | 【同尾】supervise: v.管理,监督..."
+    "confusing": "【形似】disgust: n.厌恶,恶心v使厌恶... | 【形似】distinguish: v.(from)区别,辨别;辨认出;使杰... | 【形似】discourse: n.演讲,论文,谈话vi.演讲,谈话... | 【同尾】devise: vt.设计,想出,发明... | 【同尾】supervise: v.管理,监督...",
+    "example": "The spy wore a disguise to avoid recognition."
   },
   {
     "id": 134,
@@ -1069,7 +1202,8 @@ window.wordData = [
     "word": "deny",
     "phonetic": "[dɪˈnaɪ]",
     "meaning": "vt.拒绝;否认,否定",
-    "confusing": "【形似】envy: vt./n.羡慕,妒忌... | 【形似】defy: vt.(公然)违抗,反抗;蔑视... | 【形似】dean: n.教长,主持牧师(大学的)学院院长,系..."
+    "confusing": "【形似】envy: vt./n.羡慕,妒忌... | 【形似】defy: vt.(公然)违抗,反抗;蔑视... | 【形似】dean: n.教长,主持牧师(大学的)学院院长,系...",
+    "example": "He continued to deny that he had made a mistake."
   },
   {
     "id": 135,
@@ -1077,7 +1211,8 @@ window.wordData = [
     "word": "huddle",
     "phonetic": "[ˈhədəl]",
     "meaning": "v.聚集在一起,挤作一团n.挤在一起的人,一堆杂乱的东西",
-    "confusing": "【同尾】riddle: n.谜,谜语... | 【同尾】idle: a.空闲的,闲置的;无用的,无效的;懒散..."
+    "confusing": "【同尾】riddle: n.谜,谜语... | 【同尾】idle: a.空闲的,闲置的;无用的,无效的;懒散...",
+    "example": "The children huddled together to keep warm."
   },
   {
     "id": 136,
@@ -1085,7 +1220,8 @@ window.wordData = [
     "word": "cheat",
     "phonetic": "[ʧit]",
     "meaning": "v.作弊;欺骗n.骗子;欺诈,欺骗行为",
-    "confusing": "【形似】chart: n.图；图表... | 【形似】threat: n.威胁,恐吓;坏兆头,危险迹象... | 【形似】create: t.创造,创作,引起,造成,建立... | 【同尾】feat: n.功绩,壮举... | 【同尾】retreat: v.撤退,退却..."
+    "confusing": "【形似】chart: n.图；图表... | 【形似】threat: n.威胁,恐吓;坏兆头,危险迹象... | 【形似】create: t.创造,创作,引起,造成,建立... | 【同尾】feat: n.功绩,壮举... | 【同尾】retreat: v.撤退,退却...",
+    "example": "Students must not cheat on the exam."
   },
   {
     "id": 137,
@@ -1093,7 +1229,8 @@ window.wordData = [
     "word": "cellar",
     "phonetic": "[ˈsɛlər]",
     "meaning": "n.地窖,地下室",
-    "confusing": "【形似】cell: n.细胞;小囚房;蜂房;电池... | 【同尾】circular: a.圆(形)的,环形的;循环的n.传单,... | 【同尾】pillar: n.柱,台柱,栋梁..."
+    "confusing": "【形似】cell: n.细胞;小囚房;蜂房;电池... | 【同尾】circular: a.圆(形)的,环形的;循环的n.传单,... | 【同尾】pillar: n.柱,台柱,栋梁...",
+    "example": "They stored old wine in the cellar."
   },
   {
     "id": 138,
@@ -1101,7 +1238,8 @@ window.wordData = [
     "word": "court",
     "phonetic": "[kɔrt]",
     "meaning": "n.法院,法庭;宫廷,朝廷;院子;球场",
-    "confusing": "【形似】scout: n.侦查员,侦察机(舰); vi.搜索,... | 【形似】courtesy: n.谦恭有礼;有礼貌的举止(或言词)... | 【形似】escort: t.护卫,护送;n.护卫者,护送者..."
+    "confusing": "【形似】scout: n.侦查员,侦察机(舰); vi.搜索,... | 【形似】courtesy: n.谦恭有礼;有礼貌的举止(或言词)... | 【形似】escort: t.护卫,护送;n.护卫者,护送者...",
+    "example": "The case will be heard in court next week."
   },
   {
     "id": 139,
@@ -1109,7 +1247,8 @@ window.wordData = [
     "word": "namely",
     "phonetic": "[ˈneɪmli]",
     "meaning": "ad.即,也就是",
-    "confusing": "【同尾】timely: a.及时的,适时的... | 【同尾】barely: ad.赤裸裸地,无遮蔽地;仅仅,勉强,几..."
+    "confusing": "【同尾】timely: a.及时的,适时的... | 【同尾】barely: ad.赤裸裸地,无遮蔽地;仅仅,勉强,几...",
+    "example": "Only one person was late, namely John."
   },
   {
     "id": 140,
@@ -1117,7 +1256,8 @@ window.wordData = [
     "word": "paw",
     "phonetic": "[pɔ]",
     "meaning": "n.爪",
-    "confusing": ""
+    "confusing": "",
+    "example": "The cat cleaned its paw after stepping in mud."
   },
   {
     "id": 141,
@@ -1125,7 +1265,8 @@ window.wordData = [
     "word": "undertake",
     "phonetic": "[ˈəndərˌteɪk]",
     "meaning": "vt承担,担任;许诺,保证;着手,从事",
-    "confusing": "【形似】underlie: vt.位于…之下;构成…的基础... | 【形似】overtake: v.追上，赶上;超过;袭击;压倒... | 【形似】undesirable: a.不受欢迎的,令人不快的... | 【同尾】sake: n.缘故... | 【同尾】earthquake: n.地震..."
+    "confusing": "【形似】underlie: vt.位于…之下;构成…的基础... | 【形似】overtake: v.追上，赶上;超过;袭击;压倒... | 【形似】undesirable: a.不受欢迎的,令人不快的... | 【同尾】sake: n.缘故... | 【同尾】earthquake: n.地震...",
+    "example": "She agreed to undertake the difficult task."
   },
   {
     "id": 142,
@@ -1133,7 +1274,8 @@ window.wordData = [
     "word": "instrumental",
     "phonetic": "[ˌɪnstrəˈmɛnəl]",
     "meaning": "a.起作用的,有帮助的;乐器的",
-    "confusing": "【形似】instrument: n.工具,仪器,器械;乐器... | 【形似】investment: n.投资,投资额... | 【形似】internal: a.内部的,内的,国内的,内政的... | 【同尾】brutal: a.残忍的;严酷的,严峻的... | 【同尾】dental: a.牙齿的,牙科的..."
+    "confusing": "【形似】instrument: n.工具,仪器,器械;乐器... | 【形似】investment: n.投资,投资额... | 【形似】internal: a.内部的,内的,国内的,内政的... | 【同尾】brutal: a.残忍的;严酷的,严峻的... | 【同尾】dental: a.牙齿的,牙科的...",
+    "example": "His advice was instrumental in our success."
   },
   {
     "id": 143,
@@ -1141,7 +1283,8 @@ window.wordData = [
     "word": "generate",
     "phonetic": "[ˈʤɛnərˌeɪt]",
     "meaning": "vt.产生,引起;产生(能量),发(电)",
-    "confusing": "【形似】degenerate: vi.衰退,堕落,蜕化n.堕落者... | 【形似】penetrate: v穿过,渗入,看穿,洞察... | 【形似】generator: n.发电机,发生器... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】degenerate: vi.衰退,堕落,蜕化n.堕落者... | 【形似】penetrate: v穿过,渗入,看穿,洞察... | 【形似】generator: n.发电机,发生器... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "The wind farm can generate enough electricity for the village."
   },
   {
     "id": 144,
@@ -1149,7 +1292,8 @@ window.wordData = [
     "word": "threat",
     "phonetic": "[θrɛt]",
     "meaning": "n.威胁,恐吓;坏兆头,危险迹象",
-    "confusing": "【形似】threaten: vt.恐吓，威胁 vi.有..危险,预示... | 【形似】treaty: n.条约,协议,协商... | 【形似】throat: n.咽喉,嗓子... | 【同尾】cheat: v.作弊;欺骗n.骗子;欺诈,欺骗行为... | 【同尾】feat: n.功绩,壮举..."
+    "confusing": "【形似】threaten: vt.恐吓，威胁 vi.有..危险,预示... | 【形似】treaty: n.条约,协议,协商... | 【形似】throat: n.咽喉,嗓子... | 【同尾】cheat: v.作弊;欺骗n.骗子;欺诈,欺骗行为... | 【同尾】feat: n.功绩,壮举...",
+    "example": "The dark clouds were a threat to the picnic."
   },
   {
     "id": 145,
@@ -1157,7 +1301,8 @@ window.wordData = [
     "word": "manual",
     "phonetic": "[ˈmænjuəl]",
     "meaning": "a.体力的;手工做的;手的n.手册,指南",
-    "confusing": "【形似】annual: a.每年的,年度的n.年刊,年鉴... | 【形似】canal: n.运河;(沟)渠;(人体内输送食物、空... | 【形似】aural: a.听觉的... | 【同尾】intellectual: n.知识分子a.智力的;有智力的,显示智... | 【同尾】visual: a.看的,视觉的..."
+    "confusing": "【形似】annual: a.每年的,年度的n.年刊,年鉴... | 【形似】canal: n.运河;(沟)渠;(人体内输送食物、空... | 【形似】aural: a.听觉的... | 【同尾】intellectual: n.知识分子a.智力的;有智力的,显示智... | 【同尾】visual: a.看的,视觉的...",
+    "example": "The camera came with a detailed manual."
   },
   {
     "id": 146,
@@ -1165,7 +1310,8 @@ window.wordData = [
     "word": "hamburger",
     "phonetic": "[ˈhæmbərgər]",
     "meaning": "n.汉堡包,",
-    "confusing": "【形似】chamber: n.房间；室... | 【同尾】linger: vi.逗留,闲荡,徘徊;磨蹭,拖延... | 【同尾】trigger: n.扳机v.引发，导致..."
+    "confusing": "【形似】chamber: n.房间；室... | 【同尾】linger: vi.逗留,闲荡,徘徊;磨蹭,拖延... | 【同尾】trigger: n.扳机v.引发，导致...",
+    "example": "He ordered a hamburger and a glass of milk."
   },
   {
     "id": 147,
@@ -1173,7 +1319,8 @@ window.wordData = [
     "word": "coverge",
     "phonetic": "[coverge*]",
     "meaning": "vi(在一点上)会合;互相靠拢;聚集,集中;(思想、观点等)趋近",
-    "confusing": "【形似】verge: n.变,边缘v.接近,濒临... | 【形似】core: n.果核；中心，核心... | 【形似】uncover: v揭开,揭露... | 【同尾】enlarge: v.扩大,放大,增大... | 【同尾】urge: v.力劝,催促;强烈希望;鼓励,促进n...."
+    "confusing": "【形似】verge: n.变,边缘v.接近,濒临... | 【形似】core: n.果核；中心，核心... | 【形似】uncover: v揭开,揭露... | 【同尾】enlarge: v.扩大,放大,增大... | 【同尾】urge: v.力劝,催促;强烈希望;鼓励,促进n....",
+    "example": "Several roads converge near the old bridge."
   },
   {
     "id": 148,
@@ -1181,7 +1328,8 @@ window.wordData = [
     "word": "default",
     "phonetic": "[dɪˈfɔlt]",
     "meaning": "n.违约,拖欠;弃权vi.不履行义务;拖欠",
-    "confusing": "【形似】faulty: a.有错误的,有缺点的... | 【形似】faculty: n.才能.(大学的)系,科,院,(学院或... | 【同尾】insult: vt./n.侮辱,凌辱... | 【同尾】adult: n.成(年)人a.成年人的,已成熟的..."
+    "confusing": "【形似】faulty: a.有错误的,有缺点的... | 【形似】faculty: n.才能.(大学的)系,科,院,(学院或... | 【同尾】insult: vt./n.侮辱,凌辱... | 【同尾】adult: n.成(年)人a.成年人的,已成熟的...",
+    "example": "The company went into default after missing payments."
   },
   {
     "id": 149,
@@ -1189,7 +1337,8 @@ window.wordData = [
     "word": "fabulous",
     "phonetic": "[ˈfæbjələs]",
     "meaning": "a.寓言式的;极为巨大的;极好的",
-    "confusing": "【形似】blouse: n.女衬衫... | 【形似】ambiguous: a.模棱两可的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻..."
+    "confusing": "【形似】blouse: n.女衬衫... | 【形似】ambiguous: a.模棱两可的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻...",
+    "example": "The view from the mountain was fabulous."
   },
   {
     "id": 150,
@@ -1197,7 +1346,8 @@ window.wordData = [
     "word": "graduate",
     "phonetic": "[ˈgræʤəˌweɪt]",
     "meaning": "n.(大学)毕业生,获(学士)学位者vi.接受学位,毕业",
-    "confusing": "【形似】radiate: v.放射,辐射;散布,传播... | 【形似】gradual: a.逐渐的,逐步的... | 【形似】undergraduate: n.大学生,大学肄业生... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】radiate: v.放射,辐射;散布,传播... | 【形似】gradual: a.逐渐的,逐步的... | 【形似】undergraduate: n.大学生,大学肄业生... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "She will graduate from university this summer."
   },
   {
     "id": 151,
@@ -1205,7 +1355,8 @@ window.wordData = [
     "word": "inhabit",
     "phonetic": "[ˌɪnˈhæbət]",
     "meaning": "vt.居住,栖息",
-    "confusing": "【形似】inhibit: vt.阻止,妨碍,抑制... | 【形似】inhabitant: n.居民,住户... | 【形似】inherit: vt.继承(金钱等,经遗传而得(性格,特... | 【同尾】rabbit: n.兔子... | 【同尾】prohibit: vt.禁止,阻止,不准;使不可能..."
+    "confusing": "【形似】inhibit: vt.阻止,妨碍,抑制... | 【形似】inhabitant: n.居民,住户... | 【形似】inherit: vt.继承(金钱等,经遗传而得(性格,特... | 【同尾】rabbit: n.兔子... | 【同尾】prohibit: vt.禁止,阻止,不准;使不可能...",
+    "example": "Many birds inhabit the wetlands."
   },
   {
     "id": 152,
@@ -1213,7 +1364,8 @@ window.wordData = [
     "word": "constant",
     "phonetic": "[ˈkɑnstənt]",
     "meaning": "a.持续的,不断的;永恒的,不变的;坚定的,忠实的n.常数,恒量",
-    "confusing": "【形似】consultant: n.会诊医师,顾问医生;顾问... | 【形似】instant: a.立即的,直接的;紧迫的;(食品)速溶... | 【形似】contain: v包含;容纳，装有;等于，相当于... | 【同尾】remnant: n.残余物;零头布料;遗迹... | 【同尾】descendant: n.子孙,后代..."
+    "confusing": "【形似】consultant: n.会诊医师,顾问医生;顾问... | 【形似】instant: a.立即的,直接的;紧迫的;(食品)速溶... | 【形似】contain: v包含;容纳，装有;等于，相当于... | 【同尾】remnant: n.残余物;零头布料;遗迹... | 【同尾】descendant: n.子孙,后代...",
+    "example": "The machine needs constant attention."
   },
   {
     "id": 153,
@@ -1221,7 +1373,8 @@ window.wordData = [
     "word": "prosperity",
     "phonetic": "[prɑˈspɛrəti]",
     "meaning": "n.繁荣,兴旺",
-    "confusing": "【形似】property: n.财产,资产,所有物;性质,特性... | 【形似】prosper: ×成功,兴隆,昌盛,使成功,使昌隆,繁荣... | 【形似】prospect: n.景色,前景,前途,展望... | 【同尾】solidarity: n.团结,一致... | 【同尾】productivity: n.生产率..."
+    "confusing": "【形似】property: n.财产,资产,所有物;性质,特性... | 【形似】prosper: ×成功,兴隆,昌盛,使成功,使昌隆,繁荣... | 【形似】prospect: n.景色,前景,前途,展望... | 【同尾】solidarity: n.团结,一致... | 【同尾】productivity: n.生产率...",
+    "example": "The new factory brought prosperity to the region."
   },
   {
     "id": 154,
@@ -1229,7 +1382,8 @@ window.wordData = [
     "word": "siege",
     "phonetic": "[siʤ]",
     "meaning": "n.包围,围攻",
-    "confusing": "【同尾】privilege: n.特权,优惠,特许v给予优惠,给予特权... | 【同尾】allege: t.断言,宣称..."
+    "confusing": "【同尾】privilege: n.特权,优惠,特许v给予优惠,给予特权... | 【同尾】allege: t.断言,宣称...",
+    "example": "The city was under siege for several months."
   },
   {
     "id": 155,
@@ -1237,7 +1391,8 @@ window.wordData = [
     "word": "handwriting",
     "phonetic": "[ˈhænˌdraɪtɪŋ]",
     "meaning": "n.笔迹,手迹,书法",
-    "confusing": "【同尾】sting: v.刺,刺痛,叮n.刺,刺痛,剧痛,叮... | 【同尾】bearing: n.方向,方位;关系,影响;姿态,举止..."
+    "confusing": "【同尾】sting: v.刺,刺痛,叮n.刺,刺痛,剧痛,叮... | 【同尾】bearing: n.方向,方位;关系,影响;姿态,举止...",
+    "example": "Her handwriting is neat and easy to read."
   },
   {
     "id": 156,
@@ -1245,7 +1400,8 @@ window.wordData = [
     "word": "conduct",
     "phonetic": "[ˈkɑndəkt]",
     "meaning": "n.行为,举动,品行;引导,实施vt.引导,带领;处理,实施,管理;传导,传(热、电等),指挥(乐队)",
-    "confusing": "【形似】conductor: n.领队,(乐队)指挥;(电车等的)售票... | 【形似】construct: v.建造,构造;创立;解释,说明n.构想... | 【形似】product: n.产品,产物;乘积... | 【同尾】obstruct: v.妨碍，阻止;阻塞，截断... | 【同尾】deduct: vt.扣除;演绎(推理)..."
+    "confusing": "【形似】conductor: n.领队,(乐队)指挥;(电车等的)售票... | 【形似】construct: v.建造,构造;创立;解释,说明n.构想... | 【形似】product: n.产品,产物;乘积... | 【同尾】obstruct: v.妨碍，阻止;阻塞，截断... | 【同尾】deduct: vt.扣除;演绎(推理)...",
+    "example": "His conduct during the meeting was professional."
   },
   {
     "id": 157,
@@ -1253,7 +1409,8 @@ window.wordData = [
     "word": "lever",
     "phonetic": "[ˈlɛvər]",
     "meaning": "n.杆,杠杆",
-    "confusing": "【形似】liver: n.肝,肝脏... | 【形似】eve: n.(节日等的)前夜,前夕... | 【形似】sleeve: n.袖子... | 【同尾】manoeuvre/maneuver: v.演习;谨慎地运用技巧(使某物)移动,... | 【同尾】whatsoever: ad.(用于否定句中以加强语气)任何..."
+    "confusing": "【形似】liver: n.肝,肝脏... | 【形似】eve: n.(节日等的)前夜,前夕... | 【形似】sleeve: n.袖子... | 【同尾】manoeuvre/maneuver: v.演习;谨慎地运用技巧(使某物)移动,... | 【同尾】whatsoever: ad.(用于否定句中以加强语气)任何...",
+    "example": "Use the lever to lift the heavy stone."
   },
   {
     "id": 158,
@@ -1261,7 +1418,8 @@ window.wordData = [
     "word": "blend",
     "phonetic": "[blɛnd]",
     "meaning": "v.(使)混杂,(使)混合n.混合(物)",
-    "confusing": "【形似】bleed: vi.出血,流血... | 【形似】legend: n.传说,传奇... | 【同尾】trend: n.倾向,趋势vi.伸向;倾向... | 【同尾】suspend: v.吊,悬挂;推迟;暂停..."
+    "confusing": "【形似】bleed: vi.出血,流血... | 【形似】legend: n.传说,传奇... | 【同尾】trend: n.倾向,趋势vi.伸向;倾向... | 【同尾】suspend: v.吊,悬挂;推迟;暂停...",
+    "example": "The artist tried to blend blue and green paint."
   },
   {
     "id": 159,
@@ -1269,7 +1427,8 @@ window.wordData = [
     "word": "crab",
     "phonetic": "[kræb]",
     "meaning": "n.螃蟹;蟹肉",
-    "confusing": "【形似】cab: n.出租车,出租马车;驾驶室vi.乘出租... | 【形似】grab: v.抓;夺n.(at)抓(住);夺(得)... | 【形似】curb: ut.控制,路缘,(街道的)镶边石,勒马..."
+    "confusing": "【形似】cab: n.出租车,出租马车;驾驶室vi.乘出租... | 【形似】grab: v.抓;夺n.(at)抓(住);夺(得)... | 【形似】curb: ut.控制,路缘,(街道的)镶边石,勒马...",
+    "example": "A small crab moved across the sand."
   },
   {
     "id": 160,
@@ -1277,7 +1436,8 @@ window.wordData = [
     "word": "ample",
     "phonetic": "[ˈæmpəl]",
     "meaning": "a.充分的,富裕的;宽敞的,宽大的",
-    "confusing": "【形似】sample: n.样品,实例,标本,抽样检查v取样,采... | 【形似】pamphlet: n.小册子... | 【形似】ape: n.猿vt.模仿... | 【同尾】principle: n.原理,原则;主义,信念... | 【同尾】cripple: n.跛子,残疾人vt.使跛,使残疾..."
+    "confusing": "【形似】sample: n.样品,实例,标本,抽样检查v取样,采... | 【形似】pamphlet: n.小册子... | 【形似】ape: n.猿vt.模仿... | 【同尾】principle: n.原理,原则;主义,信念... | 【同尾】cripple: n.跛子,残疾人vt.使跛,使残疾...",
+    "example": "There is ample space for everyone in the hall."
   },
   {
     "id": 161,
@@ -1285,7 +1445,8 @@ window.wordData = [
     "word": "urban",
     "phonetic": "[ˈərbən]",
     "meaning": "a.城市的",
-    "confusing": "【形似】ban: v.取缔，查禁，禁止n.禁止,禁令..."
+    "confusing": "【形似】ban: v.取缔，查禁，禁止n.禁止,禁令...",
+    "example": "Urban life can be fast and noisy."
   },
   {
     "id": 162,
@@ -1293,7 +1454,8 @@ window.wordData = [
     "word": "preside",
     "phonetic": "[prɪˈzaɪd]",
     "meaning": "v.(at,over)主持",
-    "confusing": "【形似】resident: n.居民,常住者a.居住的... | 【形似】prestige: n.声望,威望,威信... | 【形似】residence: n.住处,住宅... | 【同尾】abide: vi.(by)遵守,坚持... | 【同尾】worldwide: a.全世界的,世界范围的ad.遍及全世界..."
+    "confusing": "【形似】resident: n.居民,常住者a.居住的... | 【形似】prestige: n.声望,威望,威信... | 【形似】residence: n.住处,住宅... | 【同尾】abide: vi.(by)遵守,坚持... | 【同尾】worldwide: a.全世界的,世界范围的ad.遍及全世界...",
+    "example": "The mayor will preside over the ceremony."
   },
   {
     "id": 163,
@@ -1301,7 +1463,8 @@ window.wordData = [
     "word": "psychology",
     "phonetic": "[saɪˈkɑləʤi]",
     "meaning": "n.心理,心理学",
-    "confusing": "【形似】sociology: n.社会学... | 【形似】ecology: n.生态学... | 【形似】technology: n.工艺;科技,技术... | 【同尾】biology: n.生物学... | 【同尾】analogy: n.比拟,类比..."
+    "confusing": "【形似】sociology: n.社会学... | 【形似】ecology: n.生态学... | 【形似】technology: n.工艺;科技,技术... | 【同尾】biology: n.生物学... | 【同尾】analogy: n.比拟,类比...",
+    "example": "She studied psychology to understand human behavior."
   },
   {
     "id": 164,
@@ -1309,7 +1472,8 @@ window.wordData = [
     "word": "rash",
     "phonetic": "[ræʃ]",
     "meaning": "n.疹,皮疹,(短时期内出现的)一连串令人不快的事物a.轻率的,鲁莽的",
-    "confusing": "【形似】trash: n.垃圾,废物,拙劣的文学(或艺术)作品... | 【形似】crash: v.碰撞,坠落;崩溃n.碰撞,坠落,摔坏... | 【形似】lash: v(用绳索等)将(物品)系牢;鞭打,抽打..."
+    "confusing": "【形似】trash: n.垃圾,废物,拙劣的文学(或艺术)作品... | 【形似】crash: v.碰撞,坠落;崩溃n.碰撞,坠落,摔坏... | 【形似】lash: v(用绳索等)将(物品)系牢;鞭打,抽打...",
+    "example": "A red rash appeared on his arm."
   },
   {
     "id": 165,
@@ -1317,7 +1481,8 @@ window.wordData = [
     "word": "radical",
     "phonetic": "[ˈrædɪkəl]",
     "meaning": "a.基本的,重要的,根本的;激进的,极端的",
-    "confusing": "【形似】racial: a.种的,种族的... | 【形似】eradicate: vt.根除,消灭,杜绝... | 【形似】rail: n.栏杆,围栏;(pl.)铁路;铁轨;横... | 【同尾】critical: a.批评的,评论的;挑剔的;危急的,紧要... | 【同尾】vocal: a.嗓音的,发声的;直言不讳的n.声乐节..."
+    "confusing": "【形似】racial: a.种的,种族的... | 【形似】eradicate: vt.根除,消灭,杜绝... | 【形似】rail: n.栏杆,围栏;(pl.)铁路;铁轨;横... | 【同尾】critical: a.批评的,评论的;挑剔的;危急的,紧要... | 【同尾】vocal: a.嗓音的,发声的;直言不讳的n.声乐节...",
+    "example": "The new law brought a radical change to education."
   },
   {
     "id": 166,
@@ -1325,7 +1490,8 @@ window.wordData = [
     "word": "document",
     "phonetic": "[ˈdɑkjəmɛnt]",
     "meaning": "n.公文,文件,文献",
-    "confusing": "【形似】documentary: a.文献的n.记录片... | 【形似】monument: n.纪念碑,纪念馆... | 【形似】decent: a.体面的,像样的;正派的,宽厚的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变..."
+    "confusing": "【形似】documentary: a.文献的n.记录片... | 【形似】monument: n.纪念碑,纪念馆... | 【形似】decent: a.体面的,像样的;正派的,宽厚的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变...",
+    "example": "Please sign the document before Friday."
   },
   {
     "id": 167,
@@ -1333,7 +1499,8 @@ window.wordData = [
     "word": "inventory",
     "phonetic": "[ˌɪnvənˈtɔri]",
     "meaning": "n.详细目录;存货清单,物品清单;库存物品",
-    "confusing": "【形似】entry: n.进入,入口,通道,记载,条目... | 【同尾】dormitory: n.(dorm)(集体)宿舍... | 【同尾】satisfactory: a.令人满意的..."
+    "confusing": "【形似】entry: n.进入,入口,通道,记载,条目... | 【同尾】dormitory: n.(dorm)(集体)宿舍... | 【同尾】satisfactory: a.令人满意的...",
+    "example": "The store checks its inventory every month."
   },
   {
     "id": 168,
@@ -1341,7 +1508,8 @@ window.wordData = [
     "word": "pillar",
     "phonetic": "[ˈpɪlər]",
     "meaning": "n.柱,台柱,栋梁",
-    "confusing": "【形似】spill: v.溢出,溅出n.摔下,跌下... | 【形似】polar: a.两极的,极地的南辕北辙的n.极线,极... | 【同尾】circular: a.圆(形)的,环形的;循环的n.传单,... | 【同尾】cellar: n.地窖,地下室..."
+    "confusing": "【形似】spill: v.溢出,溅出n.摔下,跌下... | 【形似】polar: a.两极的,极地的南辕北辙的n.极线,极... | 【同尾】circular: a.圆(形)的,环形的;循环的n.传单,... | 【同尾】cellar: n.地窖,地下室...",
+    "example": "The old temple has a stone pillar at the entrance."
   },
   {
     "id": 169,
@@ -1349,7 +1517,8 @@ window.wordData = [
     "word": "harm",
     "phonetic": "[hɑrm]",
     "meaning": "n./vt.伤害,损害,危害",
-    "confusing": "【形似】charm: n.吸引力,魅力v.迷人.(使)陶醉;施... | 【形似】harmony: n.协调,和谐;融洽..."
+    "confusing": "【形似】charm: n.吸引力,魅力v.迷人.(使)陶醉;施... | 【形似】harmony: n.协调,和谐;融洽...",
+    "example": "Too much stress can harm your health."
   },
   {
     "id": 170,
@@ -1357,7 +1526,8 @@ window.wordData = [
     "word": "grip",
     "phonetic": "[grɪp]",
     "meaning": "v.紧握,抓紧n.握,抓紧",
-    "confusing": "【形似】rip: v.撕,刭,劈,锯,裂开,撕裂n.裂口,... | 【形似】grin: n.露齿而笑，咧嘴笑... | 【形似】grim: a.讨厌的，糟糕的；严厉的，冷酷的..."
+    "confusing": "【形似】rip: v.撕,刭,劈,锯,裂开,撕裂n.裂口,... | 【形似】grin: n.露齿而笑，咧嘴笑... | 【形似】grim: a.讨厌的，糟糕的；严厉的，冷酷的...",
+    "example": "She tightened her grip on the rope."
   },
   {
     "id": 171,
@@ -1365,7 +1535,8 @@ window.wordData = [
     "word": "antenna",
     "phonetic": "[ænˈtɛnə]",
     "meaning": "n.天线",
-    "confusing": "【形似】lantern: n.提灯,灯笼... | 【形似】canteen: n.食堂;小卖部..."
+    "confusing": "【形似】lantern: n.提灯,灯笼... | 【形似】canteen: n.食堂;小卖部...",
+    "example": "The radio antenna was damaged by the storm."
   },
   {
     "id": 172,
@@ -1373,7 +1544,8 @@ window.wordData = [
     "word": "sip",
     "phonetic": "[sɪp]",
     "meaning": "v.啜饮,抿,呷n.小口喝,一小口的量",
-    "confusing": "【形似】slip: v.滑,滑倒,滑落;溜走\nn.疏忽,小错... | 【形似】skip: v跳来跳去,蹦蹦跳跳;跳跃,跳绳;跳过,... | 【形似】strip: v剥,刹去n.窄条,带状物..."
+    "confusing": "【形似】slip: v.滑,滑倒,滑落;溜走\nn.疏忽,小错... | 【形似】skip: v跳来跳去,蹦蹦跳跳;跳跃,跳绳;跳过,... | 【形似】strip: v剥,刹去n.窄条,带状物...",
+    "example": "He took a sip of hot tea."
   },
   {
     "id": 173,
@@ -1381,7 +1553,8 @@ window.wordData = [
     "word": "devise",
     "phonetic": "[dɪˈvaɪz]",
     "meaning": "vt.设计,想出,发明",
-    "confusing": "【形似】revise: vt.修订,校订;修正,修改... | 【形似】device: n.装置,设备,仪器;手段;策略;诡计... | 【形似】deviate: vi.(from)背离,偏离... | 【同尾】disguise: n.假装,伪装vt.假装,伪装,掩饰... | 【同尾】supervise: v.管理,监督..."
+    "confusing": "【形似】revise: vt.修订,校订;修正,修改... | 【形似】device: n.装置,设备,仪器;手段;策略;诡计... | 【形似】deviate: vi.(from)背离,偏离... | 【同尾】disguise: n.假装,伪装vt.假装,伪装,掩饰... | 【同尾】supervise: v.管理,监督...",
+    "example": "The engineers devised a safer bridge design."
   },
   {
     "id": 174,
@@ -1389,7 +1562,8 @@ window.wordData = [
     "word": "bold",
     "phonetic": "[boʊld]",
     "meaning": "a.大胆的,勇敢的;冒失的,冒昧的;黑体的,粗体的",
-    "confusing": "【形似】bond: n.结合(物),粘结(剂),联结;公债,... | 【形似】bolt: n.螺栓(门,窗的)插销v门(门),关窗... | 【形似】bald: a.秃的,秃头的..."
+    "confusing": "【形似】bond: n.结合(物),粘结(剂),联结;公债,... | 【形似】bolt: n.螺栓(门,窗的)插销v门(门),关窗... | 【形似】bald: a.秃的,秃头的...",
+    "example": "It was bold of her to speak first."
   },
   {
     "id": 175,
@@ -1397,7 +1571,8 @@ window.wordData = [
     "word": "highly",
     "phonetic": "[ˈhaɪli]",
     "meaning": "adv.高度地,非常,很;赞许地",
-    "confusing": "【形似】highway: n.公路,大路... | 【形似】thigh: n.大腿... | 【同尾】monthly: a.每月的;ad.每月一次;n.月刊..."
+    "confusing": "【形似】highway: n.公路,大路... | 【形似】thigh: n.大腿... | 【同尾】monthly: a.每月的;ad.每月一次;n.月刊...",
+    "example": "The film was highly praised by critics."
   },
   {
     "id": 176,
@@ -1405,7 +1580,8 @@ window.wordData = [
     "word": "stadium",
     "phonetic": "[ˈsteɪdiəm]",
     "meaning": "n.体育场",
-    "confusing": "【同尾】calcium: n.钙... | 【同尾】medium: n.(pl.media)媒体,方法,媒介..."
+    "confusing": "【同尾】calcium: n.钙... | 【同尾】medium: n.(pl.media)媒体,方法,媒介...",
+    "example": "The stadium was full of excited fans."
   },
   {
     "id": 177,
@@ -1413,7 +1589,8 @@ window.wordData = [
     "word": "diffuse",
     "phonetic": "[dɪfˈjuz]",
     "meaning": "vi.扩散vt.传播,散布;宣泄,舒缓(尤指不良情绪)a.(文章等)冗长的,漫无边际的;四散的,弥漫的",
-    "confusing": "【形似】differ: vi.(from)与...不同,(wit... | 【形似】fuse: n.保险丝,导火线,引信v熔化,熔合... | 【同尾】abuse: vt滥用;虐待;谩骂n.滥用;虐待... | 【同尾】arouse: vt.唤醒,叫醒;唤起,激起..."
+    "confusing": "【形似】differ: vi.(from)与...不同,(wit... | 【形似】fuse: n.保险丝,导火线,引信v熔化,熔合... | 【同尾】abuse: vt滥用;虐待;谩骂n.滥用;虐待... | 【同尾】arouse: vt.唤醒,叫醒;唤起,激起...",
+    "example": "The smell of coffee began to diffuse through the room."
   },
   {
     "id": 178,
@@ -1421,7 +1598,8 @@ window.wordData = [
     "word": "globe",
     "phonetic": "[gloʊb]",
     "meaning": "n.球体,地球仪;地球,世界",
-    "confusing": "【形似】glove: n.手套... | 【形似】global: a.全球的,世界的... | 【同尾】probe: n.探针;探测器(以探针等)探查,刺穿;... | 【同尾】robe: n.长袍,上衣..."
+    "confusing": "【形似】glove: n.手套... | 【形似】global: a.全球的,世界的... | 【同尾】probe: n.探针;探测器(以探针等)探查,刺穿;... | 【同尾】robe: n.长袍,上衣...",
+    "example": "The teacher pointed to Europe on the globe."
   },
   {
     "id": 179,
@@ -1429,7 +1607,8 @@ window.wordData = [
     "word": "negligible",
     "phonetic": "[ˈnɛglɪʤəbəl]",
     "meaning": "a.可以忽略的,微不足道的",
-    "confusing": "【形似】eligible: a.有条件被选中的,有资格当选的;合格的... | 【形似】intelligible: a.可理解的,易领悟的;清楚的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉..."
+    "confusing": "【形似】eligible: a.有条件被选中的,有资格当选的;合格的... | 【形似】intelligible: a.可理解的,易领悟的;清楚的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉...",
+    "example": "The difference was negligible in the final result."
   },
   {
     "id": 180,
@@ -1437,7 +1616,8 @@ window.wordData = [
     "word": "mostly",
     "phonetic": "[ˈmoʊstli]",
     "meaning": "adv.主要地,大部分,通常",
-    "confusing": "【形似】costly: a.昂贵的;价值高的;豪华的... | 【形似】monthly: a.每月的;ad.每月一次;n.月刊... | 【形似】motel: n.汽车旅馆... | 【同尾】consequently: ad.因而,所以... | 【同尾】presently: adv.一会儿,不久..."
+    "confusing": "【形似】costly: a.昂贵的;价值高的;豪华的... | 【形似】monthly: a.每月的;ad.每月一次;n.月刊... | 【形似】motel: n.汽车旅馆... | 【同尾】consequently: ad.因而,所以... | 【同尾】presently: adv.一会儿,不久...",
+    "example": "The audience was mostly made up of students."
   },
   {
     "id": 181,
@@ -1445,7 +1625,8 @@ window.wordData = [
     "word": "dine",
     "phonetic": "[daɪn]",
     "meaning": "vi.吃饭,进餐",
-    "confusing": "【形似】divine: a.神的,神授的,天赐的;极好的,极美的... | 【形似】define: t.给...下定义,限定,规定... | 【形似】pine: n.松树..."
+    "confusing": "【形似】divine: a.神的,神授的,天赐的;极好的,极美的... | 【形似】define: t.给...下定义,限定,规定... | 【形似】pine: n.松树...",
+    "example": "We will dine at a small restaurant tonight."
   },
   {
     "id": 182,
@@ -1453,7 +1634,8 @@ window.wordData = [
     "word": "graph",
     "phonetic": "[græf]",
     "meaning": "n.图表,曲线图",
-    "confusing": "【形似】graphic: a.绘画似的,图解的,生动的... | 【形似】grasp: v./n.抓住,抓紧;掌握,领会... | 【形似】grape: n.葡萄... | 【同尾】telegraph: n.电报机;电报v.打电报传达(消息),... | 【同尾】paragraph: n.段,节;小新闻,短评..."
+    "confusing": "【形似】graphic: a.绘画似的,图解的,生动的... | 【形似】grasp: v./n.抓住,抓紧;掌握,领会... | 【形似】grape: n.葡萄... | 【同尾】telegraph: n.电报机;电报v.打电报传达(消息),... | 【同尾】paragraph: n.段,节;小新闻,短评...",
+    "example": "The graph shows a steady increase in sales."
   },
   {
     "id": 183,
@@ -1461,7 +1643,8 @@ window.wordData = [
     "word": "tile",
     "phonetic": "[taɪl]",
     "meaning": "n.瓦片,瓷砖",
-    "confusing": "【形似】title: n.书名;标题;头衔,称号... | 【形似】triple: a.三部分;三方的;三倍的;三重的v(使... | 【形似】trifle: n.少量,少许;小事,琐事;微不足道的东..."
+    "confusing": "【形似】title: n.书名;标题;头衔,称号... | 【形似】triple: a.三部分;三方的;三倍的;三重的v(使... | 【形似】trifle: n.少量,少许;小事,琐事;微不足道的东...",
+    "example": "A broken tile fell from the roof."
   },
   {
     "id": 184,
@@ -1469,7 +1652,8 @@ window.wordData = [
     "word": "jail/gaol",
     "phonetic": "[jail/gaol*]",
     "meaning": "n.监狱,拘留所vt.监禁某人",
-    "confusing": ""
+    "confusing": "",
+    "example": "The thief was sent to jail for two years."
   },
   {
     "id": 185,
@@ -1477,7 +1661,8 @@ window.wordData = [
     "word": "segregate",
     "phonetic": "[ˈsɛgrəˌgeɪt]",
     "meaning": "vt.隔离,分开",
-    "confusing": "【形似】aggregate: n.总数,合计a.总数的,总计的vt.总... | 【形似】regulate: t.管制,控制,调节,校准,调整... | 【形似】permeate: vi.扩散,弥漫;渗入,渗透... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】aggregate: n.总数,合计a.总数的,总计的vt.总... | 【形似】regulate: t.管制,控制,调节,校准,调整... | 【形似】permeate: vi.扩散,弥漫;渗入,渗透... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "The school decided to segregate recyclable waste from other trash."
   },
   {
     "id": 186,
@@ -1485,7 +1670,8 @@ window.wordData = [
     "word": "spider",
     "phonetic": "[ˈspaɪdər]",
     "meaning": "n.蜘蛛",
-    "confusing": "【形似】spite: n.恶意;怨恨... | 【形似】spine: n.脊骨,脊柱,脊椎;(动植物的)刺,书... | 【形似】spear: n.矛,枪,渔叉... | 【同尾】slender: a.修长的,苗条的;细长的;微小的;微薄... | 【同尾】thunder: n.雷(声);轰隆声vi打雷,雷鸣vt...."
+    "confusing": "【形似】spite: n.恶意;怨恨... | 【形似】spine: n.脊骨,脊柱,脊椎;(动植物的)刺,书... | 【形似】spear: n.矛,枪,渔叉... | 【同尾】slender: a.修长的,苗条的;细长的;微小的;微薄... | 【同尾】thunder: n.雷(声);轰隆声vi打雷,雷鸣vt....",
+    "example": "A spider built a web in the corner."
   },
   {
     "id": 187,
@@ -1493,7 +1679,8 @@ window.wordData = [
     "word": "invasion",
     "phonetic": "[ˌɪnˈveɪʒən]",
     "meaning": "n.侵入,侵略",
-    "confusing": "【形似】invitation: n.邀请,招待;请柬... | 【形似】innovation: n.创新,革新,改革... | 【形似】division: n.分,分割;部门,科,处;除法... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】invitation: n.邀请,招待;请柬... | 【形似】innovation: n.创新,革新,改革... | 【形似】division: n.分,分割;部门,科,处;除法... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "The invasion changed the history of the country."
   },
   {
     "id": 188,
@@ -1501,7 +1688,8 @@ window.wordData = [
     "word": "precedent",
     "phonetic": "[ˈprɛsɪdənt]",
     "meaning": "n.先例,范例;惯例",
-    "confusing": "【形似】precede: v.领先于,在...之前,优先,先于... | 【形似】recede: v.退回,后退;收回,撤回;跌落,缩减,... | 【形似】preceding: a.在前的,在先的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变..."
+    "confusing": "【形似】precede: v.领先于,在...之前,优先,先于... | 【形似】recede: v.退回,后退;收回,撤回;跌落,缩减,... | 【形似】preceding: a.在前的,在先的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变...",
+    "example": "The judge referred to an earlier precedent."
   },
   {
     "id": 189,
@@ -1509,7 +1697,8 @@ window.wordData = [
     "word": "critical",
     "phonetic": "[ˈkrɪtɪkəl]",
     "meaning": "a.批评的,评论的;挑剔的;危急的,紧要的;临界的",
-    "confusing": "【形似】critic: n.批评家,评论家... | 【形似】vertical: a.垂直的,竖的n.垂线... | 【形似】criminal: n.罪犯,刑事犯;a.犯罪的,刑事的... | 【同尾】radical: a.基本的,重要的,根本的;激进的,极端... | 【同尾】vocal: a.嗓音的,发声的;直言不讳的n.声乐节..."
+    "confusing": "【形似】critic: n.批评家,评论家... | 【形似】vertical: a.垂直的,竖的n.垂线... | 【形似】criminal: n.罪犯,刑事犯;a.犯罪的,刑事的... | 【同尾】radical: a.基本的,重要的,根本的;激进的,极端... | 【同尾】vocal: a.嗓音的,发声的;直言不讳的n.声乐节...",
+    "example": "Clean water is critical to public health."
   },
   {
     "id": 190,
@@ -1517,7 +1706,8 @@ window.wordData = [
     "word": "excursion",
     "phonetic": "[ɪkˈskərʒən]",
     "meaning": "n.短途旅行,游览",
-    "confusing": "【形似】version: n.型,版本,译本,译文,说法,描述... | 【形似】erosion: n.腐蚀,磨损;前弱,减少... | 【形似】cushion: n.垫子,软垫vt.装垫子;缓和,减轻... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】version: n.型,版本,译本,译文,说法,描述... | 【形似】erosion: n.腐蚀,磨损;前弱,减少... | 【形似】cushion: n.垫子,软垫vt.装垫子;缓和,减轻... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "The class took an excursion to the museum."
   },
   {
     "id": 191,
@@ -1525,7 +1715,8 @@ window.wordData = [
     "word": "commit",
     "phonetic": "[kəˈmɪt]",
     "meaning": "v把…交托给,提交;犯(错误),干(坏事)",
-    "confusing": "【形似】omit: v.省略,删去;遗漏,忽略... | 【形似】community: n.同一地区的全体居民;社会,社区;共同... | 【形似】commodity: n.(pl.)日用品;商品;农/矿产品;... | 【同尾】emit: vt.散发,发射... | 【同尾】submit: vi.服从,屈服;vt.呈送,提交..."
+    "confusing": "【形似】omit: v.省略,删去;遗漏,忽略... | 【形似】community: n.同一地区的全体居民;社会,社区;共同... | 【形似】commodity: n.(pl.)日用品;商品;农/矿产品;... | 【同尾】emit: vt.散发,发射... | 【同尾】submit: vi.服从,屈服;vt.呈送,提交...",
+    "example": "He promised to commit himself to the project."
   },
   {
     "id": 192,
@@ -1533,7 +1724,8 @@ window.wordData = [
     "word": "integrate",
     "phonetic": "[ˈɪnəˌgreɪt]",
     "meaning": "v.(into,with)(使)成为一体,(使)结合在一起,(使)合并",
-    "confusing": "【形似】interact: vi.互相作用,互相影响... | 【形似】integral: a.构成整体所必需的;完整的... | 【形似】intricate: a.错综复杂的,复杂精细的... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】interact: vi.互相作用,互相影响... | 【形似】integral: a.构成整体所必需的;完整的... | 【形似】intricate: a.错综复杂的,复杂精细的... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "The software can integrate data from many sources."
   },
   {
     "id": 193,
@@ -1541,7 +1733,8 @@ window.wordData = [
     "word": "message",
     "phonetic": "[ˈmɛsɪʤ]",
     "meaning": "n.消息,信息,通讯;启示,要旨",
-    "confusing": "【形似】mess: n.混乱,混杂,脏乱  v弄脏，弄乱，搞... | 【形似】sausage: n.香肠,腊肠... | 【同尾】hostage: n.人质... | 【同尾】luggage: n.行李..."
+    "confusing": "【形似】mess: n.混乱,混杂,脏乱  v弄脏，弄乱，搞... | 【形似】sausage: n.香肠,腊肠... | 【同尾】hostage: n.人质... | 【同尾】luggage: n.行李...",
+    "example": "She left a message on my phone."
   },
   {
     "id": 194,
@@ -1549,7 +1742,8 @@ window.wordData = [
     "word": "crash",
     "phonetic": "[kræʃ]",
     "meaning": "v.碰撞,坠落;崩溃n.碰撞,坠落,摔坏;失败,瓦解,崩溃;撞击声,爆裂声;狂跌",
-    "confusing": "【形似】rash: n.疹,皮疹,(短时期内出现的)一连串令... | 【形似】cash: n.现金,现款,v.兑现，付（或收）现款... | 【形似】trash: n.垃圾,废物,拙劣的文学(或艺术)作品... | 【同尾】splash: vt.溅湿某人,泼n.溅,飞溅声;引人注... | 【同尾】dash: vi.冲;猛冲,突进n.冲;猛冲,突进;..."
+    "confusing": "【形似】rash: n.疹,皮疹,(短时期内出现的)一连串令... | 【形似】cash: n.现金,现款,v.兑现，付（或收）现款... | 【形似】trash: n.垃圾,废物,拙劣的文学(或艺术)作品... | 【同尾】splash: vt.溅湿某人,泼n.溅,飞溅声;引人注... | 【同尾】dash: vi.冲;猛冲,突进n.冲;猛冲,突进;...",
+    "example": "The car crash blocked the road for hours."
   },
   {
     "id": 195,
@@ -1557,7 +1751,8 @@ window.wordData = [
     "word": "environment",
     "phonetic": "[ɪnˈvaɪrənmənt]",
     "meaning": "n.环境,外界",
-    "confusing": "【形似】sentiment: n..思想感情,情绪,情操,[pl]意见... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变..."
+    "confusing": "【形似】sentiment: n..思想感情,情绪,情操,[pl]意见... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变...",
+    "example": "A clean environment benefits everyone."
   },
   {
     "id": 196,
@@ -1565,7 +1760,8 @@ window.wordData = [
     "word": "cosy/cozy",
     "phonetic": "[cosy/cozy*]",
     "meaning": "a.温暖而舒适的",
-    "confusing": ""
+    "confusing": "",
+    "example": "The small room felt cozy on a cold night."
   },
   {
     "id": 197,
@@ -1573,7 +1769,8 @@ window.wordData = [
     "word": "boundary",
     "phonetic": "[ˈbaʊndəri]",
     "meaning": "n.分界线,边界",
-    "confusing": "【形似】bound: vi./n.跳(跃)a.受约束的;有义务... | 【形似】abound: vi.大量存在;(in,with)充满,... | 【形似】voluntary: a.自愿的,志愿的... | 【同尾】contrary: a.相反的,矛盾的,对抗的n.矛盾,反对... | 【同尾】literary: a.文学(上)的;精通文学的,从事写作的..."
+    "confusing": "【形似】bound: vi./n.跳(跃)a.受约束的;有义务... | 【形似】abound: vi.大量存在;(in,with)充满,... | 【形似】voluntary: a.自愿的,志愿的... | 【同尾】contrary: a.相反的,矛盾的,对抗的n.矛盾,反对... | 【同尾】literary: a.文学(上)的;精通文学的,从事写作的...",
+    "example": "The river marks the boundary between the two towns."
   },
   {
     "id": 198,
@@ -1581,7 +1778,8 @@ window.wordData = [
     "word": "peep",
     "phonetic": "[pip]",
     "meaning": "vi.偷看,窥视",
-    "confusing": "【形似】weep: v.(over)(为…）哭泣；（为…）流... | 【形似】peer: n.同龄人;同等地位的人;贵族vi仔细看... | 【形似】peel: v削皮,剥皮n.果皮..."
+    "confusing": "【形似】weep: v.(over)(为…）哭泣；（为…）流... | 【形似】peer: n.同龄人;同等地位的人;贵族vi仔细看... | 【形似】peel: v削皮,剥皮n.果皮...",
+    "example": "The child tried to peep through the keyhole."
   },
   {
     "id": 199,
@@ -1589,7 +1787,8 @@ window.wordData = [
     "word": "toast",
     "phonetic": "[toʊst]",
     "meaning": "n.烤面包,吐司;祝酒(词)v.烘,烤;(向…)祝酒",
-    "confusing": "【形似】roast: vi./t.考,炙,烘... | 【形似】boast: v.(of,about)自夸,夸耀n.自... | 【形似】utmost: a.最远的;极度的,极端的n.极限,极度... | 【同尾】contrast: vt.使与…对比,使与…对照vi.和…形... | 【同尾】feast: n.节日;宴会..."
+    "confusing": "【形似】roast: vi./t.考,炙,烘... | 【形似】boast: v.(of,about)自夸,夸耀n.自... | 【形似】utmost: a.最远的;极度的,极端的n.极限,极度... | 【同尾】contrast: vt.使与…对比,使与…对照vi.和…形... | 【同尾】feast: n.节日;宴会...",
+    "example": "They raised a toast to the newly married couple."
   },
   {
     "id": 200,
@@ -1597,7 +1796,8 @@ window.wordData = [
     "word": "conductor",
     "phonetic": "[kənˈdəktər]",
     "meaning": "n.领队,(乐队)指挥;(电车等的)售票员,列车员;导体,导线",
-    "confusing": "【形似】conduct: n.行为,举动,品行;引导,实施vt.引... | 【形似】semiconductor: n.半导体... | 【形似】conjunction: n.连接,结合;连(接)词;(事件的)同... | 【同尾】editor: n.编辑,编者... | 【同尾】projector: n.放映机,幻灯机,投影仪..."
+    "confusing": "【形似】conduct: n.行为,举动,品行;引导,实施vt.引... | 【形似】semiconductor: n.半导体... | 【形似】conjunction: n.连接,结合;连(接)词;(事件的)同... | 【同尾】editor: n.编辑,编者... | 【同尾】projector: n.放映机,幻灯机,投影仪...",
+    "example": "Copper is a good conductor of electricity."
   },
   {
     "id": 201,
@@ -1605,7 +1805,8 @@ window.wordData = [
     "word": "neighborhood",
     "phonetic": "[ˈneɪbərˌhʊd]",
     "meaning": "n.邻居;四邻;街道,住宅区",
-    "confusing": "【同尾】mood: n.心情,情绪;语气... | 【同尾】likelihood: n.可能性..."
+    "confusing": "【同尾】mood: n.心情,情绪;语气... | 【同尾】likelihood: n.可能性...",
+    "example": "The neighborhood is quiet and friendly."
   },
   {
     "id": 202,
@@ -1613,7 +1814,8 @@ window.wordData = [
     "word": "halt",
     "phonetic": "[hɔlt]",
     "meaning": "n.止步,停步,停止前进v止步,(使)停止",
-    "confusing": "【形似】heal: v.(使)治愈,愈合... | 【形似】haul: v.拖曳,拖运,用力拖... | 【形似】hail: vi.下雹t.向...欢呼,欢迎n.冰雹..."
+    "confusing": "【形似】heal: v.(使)治愈,愈合... | 【形似】haul: v.拖曳,拖运,用力拖... | 【形似】hail: vi.下雹t.向...欢呼,欢迎n.冰雹...",
+    "example": "The guard ordered the car to halt."
   },
   {
     "id": 203,
@@ -1621,7 +1823,8 @@ window.wordData = [
     "word": "isle",
     "phonetic": "[aɪl]",
     "meaning": "n.小岛",
-    "confusing": "【形似】aisle: n.)过道,通道... | 【形似】tile: n.瓦片,瓷砖... | 【形似】sole: a.单独的,唯一的,专有的,独有的n.脚..."
+    "confusing": "【形似】aisle: n.)过道,通道... | 【形似】tile: n.瓦片,瓷砖... | 【形似】sole: a.单独的,唯一的,专有的,独有的n.脚...",
+    "example": "They spent the summer on a small isle."
   },
   {
     "id": 204,
@@ -1629,7 +1832,8 @@ window.wordData = [
     "word": "intrigue",
     "phonetic": "[ˌɪnˈtrig]",
     "meaning": "vi.密谋,施轨迹vt.引起极大兴趣,激起…的好奇心(或兴趣),迷住n.阴谋,诡计,密谋",
-    "confusing": "【形似】intrude: v.侵入,闯入,打扰,把(思想等}强加于... | 【形似】intricate: a.错综复杂的,复杂精细的... | 【形似】institute: vt.设立,设置,制定;开始,开创n.学... | 【同尾】vague: a.不明确的,含糊的;暧昧的... | 【同尾】argue: vi争论,辩论vt坚持,主张;说服,劝说..."
+    "confusing": "【形似】intrude: v.侵入,闯入,打扰,把(思想等}强加于... | 【形似】intricate: a.错综复杂的,复杂精细的... | 【形似】institute: vt.设立,设置,制定;开始,开创n.学... | 【同尾】vague: a.不明确的,含糊的;暧昧的... | 【同尾】argue: vi争论,辩论vt坚持,主张;说服,劝说...",
+    "example": "The mystery novel intrigued me from the first page."
   },
   {
     "id": 205,
@@ -1637,7 +1841,8 @@ window.wordData = [
     "word": "character",
     "phonetic": "[ˈkɛrɪktər]",
     "meaning": "n.性格,品质,特性;人物,角色;字符,(汉)字",
-    "confusing": "【形似】charter: v.租船,租车n.宪章,契约... | 【形似】characterize: v.(characterise)表示…的... | 【形似】characteristic: a.特有的,独特的n.特征,特性... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰..."
+    "confusing": "【形似】charter: v.租船,租车n.宪章,契约... | 【形似】characterize: v.(characterise)表示…的... | 【形似】characteristic: a.特有的,独特的n.特征,特性... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰...",
+    "example": "The main character changes a lot during the story."
   },
   {
     "id": 206,
@@ -1645,7 +1850,8 @@ window.wordData = [
     "word": "stoop",
     "phonetic": "[stup]",
     "meaning": "vi.弯腰,俯身n.弯腰,曲背",
-    "confusing": "【形似】troop: n.部队,军队;(一)群(一)队... | 【形似】stool: n.凳子... | 【同尾】loop: n.圈,环..."
+    "confusing": "【形似】troop: n.部队,军队;(一)群(一)队... | 【形似】stool: n.凳子... | 【同尾】loop: n.圈,环...",
+    "example": "He had to stoop to enter the low doorway."
   },
   {
     "id": 207,
@@ -1653,7 +1859,8 @@ window.wordData = [
     "word": "cater",
     "phonetic": "[ˈkeɪtər]",
     "meaning": "vi.迎合;提供饮食及服务",
-    "confusing": "【形似】scatter: v.(使人或动物)散开,驱散;散布,散播... | 【形似】charter: v.租船,租车n.宪章,契约... | 【形似】chapter: n.章([节)... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰..."
+    "confusing": "【形似】scatter: v.(使人或动物)散开,驱散;散布,散播... | 【形似】charter: v.租船,租车n.宪章,契约... | 【形似】chapter: n.章([节)... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰...",
+    "example": "The restaurant can cater for large parties."
   },
   {
     "id": 208,
@@ -1661,7 +1868,8 @@ window.wordData = [
     "word": "inertia",
     "phonetic": "[ˌɪˈnərʃə]",
     "meaning": "n.不活动,惰性;惯性",
-    "confusing": "【形似】invert: v.倒置,倒转,颠倒... | 【形似】insert: v插入,嵌入... | 【形似】interim: n.间歇;过渡期间a暂时的,临时的..."
+    "confusing": "【形似】invert: v.倒置,倒转,颠倒... | 【形似】insert: v插入,嵌入... | 【形似】interim: n.间歇;过渡期间a暂时的,临时的...",
+    "example": "Inertia kept the object moving in a straight line."
   },
   {
     "id": 209,
@@ -1669,7 +1877,8 @@ window.wordData = [
     "word": "deviate",
     "phonetic": "[ˈdiviˌeɪt]",
     "meaning": "vi.(from)背离,偏离",
-    "confusing": "【形似】delicate: a.纤弱的,精致的,微妙的,灵敏的... | 【形似】dedicate: vt.奉献;把…用在... | 【形似】devise: vt.设计,想出,发明... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】delicate: a.纤弱的,精致的,微妙的,灵敏的... | 【形似】dedicate: vt.奉献;把…用在... | 【形似】devise: vt.设计,想出,发明... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "Do not deviate from the approved route."
   },
   {
     "id": 210,
@@ -1677,7 +1886,8 @@ window.wordData = [
     "word": "drawer",
     "phonetic": "[drɔr]",
     "meaning": "n.抽屉",
-    "confusing": "【同尾】horsepower: n.马力... | 【同尾】lower: adj.较低的,下级的,下游的vt.&v..."
+    "confusing": "【同尾】horsepower: n.马力... | 【同尾】lower: adj.较低的,下级的,下游的vt.&v...",
+    "example": "She put the papers in the top drawer."
   },
   {
     "id": 211,
@@ -1685,7 +1895,8 @@ window.wordData = [
     "word": "closet",
     "phonetic": "[ˈklɑzət]",
     "meaning": "a.私下的;隐蔽的n.橱,壁橱vt.把…引进密室会谈",
-    "confusing": "【形似】enclose: t.围住,卷起,封入... | 【形似】consent: vi./n.(to)同意;赞成,答应... | 【形似】loose: a.松的,肥大的... | 【同尾】asset: n.资产,财产;优点;有用的东西... | 【同尾】outset: n.开始,开端..."
+    "confusing": "【形似】enclose: t.围住,卷起,封入... | 【形似】consent: vi./n.(to)同意;赞成,答应... | 【形似】loose: a.松的,肥大的... | 【同尾】asset: n.资产,财产;优点;有用的东西... | 【同尾】outset: n.开始,开端...",
+    "example": "He kept his old coats in the closet."
   },
   {
     "id": 212,
@@ -1693,7 +1904,8 @@ window.wordData = [
     "word": "deadly",
     "phonetic": "[ˈdɛdli]",
     "meaning": "a.致命的,致死的",
-    "confusing": "【形似】readily: ad.容易地;乐意地,欣然地... | 【形似】ideal: a.理想的;完美的\nn.完美典型,范例;... | 【形似】dread: vt./n.恐惧,担心..."
+    "confusing": "【形似】readily: ad.容易地;乐意地,欣然地... | 【形似】ideal: a.理想的;完美的\nn.完美典型,范例;... | 【形似】dread: vt./n.恐惧,担心...",
+    "example": "The poison can be deadly if swallowed."
   },
   {
     "id": 213,
@@ -1701,7 +1913,8 @@ window.wordData = [
     "word": "luggage",
     "phonetic": "[ˈləgɪʤ]",
     "meaning": "n.行李",
-    "confusing": "【形似】baggage: n.行李... | 【同尾】hostage: n.人质... | 【同尾】message: n.消息,信息,通讯;启示,要旨..."
+    "confusing": "【形似】baggage: n.行李... | 【同尾】hostage: n.人质... | 【同尾】message: n.消息,信息,通讯;启示,要旨...",
+    "example": "Her luggage was lost at the airport."
   },
   {
     "id": 214,
@@ -1709,7 +1922,8 @@ window.wordData = [
     "word": "plausible",
     "phonetic": "[ˈplɔzəbəl]",
     "meaning": "a.似乎合理的,似乎可信的",
-    "confusing": "【形似】feasible: a.可行的... | 【形似】applause: n.鼓掌,欢呼... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉..."
+    "confusing": "【形似】feasible: a.可行的... | 【形似】applause: n.鼓掌,欢呼... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉...",
+    "example": "His explanation sounded plausible but was false."
   },
   {
     "id": 215,
@@ -1717,7 +1931,8 @@ window.wordData = [
     "word": "vice",
     "phonetic": "[vaɪs]",
     "meaning": "n.邪恶;恶习;(pl.)台钳,老虎钳a.副的",
-    "confusing": "【形似】device: n.装置,设备,仪器;手段;策略;诡计... | 【形似】view: n.景象,风景;视点,见解;观察,观看;... | 【形似】vehicle: n.车辆,交通工具,媒介,载体..."
+    "confusing": "【形似】device: n.装置,设备,仪器;手段;策略;诡计... | 【形似】view: n.景象,风景;视点,见解;观察,观看;... | 【形似】vehicle: n.车辆,交通工具,媒介,载体...",
+    "example": "Greed is often described as a vice."
   },
   {
     "id": 216,
@@ -1725,7 +1940,8 @@ window.wordData = [
     "word": "repay",
     "phonetic": "[riˈpeɪ]",
     "meaning": "v.偿还,报答;报答,回报",
-    "confusing": "【形似】relay: t.中继,转播;接力传递n.接替人员;替... | 【形似】treaty: n.条约,协议,协商..."
+    "confusing": "【形似】relay: t.中继,转播;接力传递n.接替人员;替... | 【形似】treaty: n.条约,协议,协商...",
+    "example": "He promised to repay the loan by June."
   },
   {
     "id": 217,
@@ -1733,7 +1949,8 @@ window.wordData = [
     "word": "underneath",
     "phonetic": "[ˌəndərˈniθ]",
     "meaning": "prep.在…下面ad.在下面,在底下",
-    "confusing": "【形似】undermine: v.暗中破环,逐渐削弱;侵蚀...的基础... | 【形似】underline: t.在...下画线,强调... | 【形似】beneath: prep.在…下边,在…之下；不如ad.... | 【同尾】aftermath: n.(战争、事故、不快事情的)后果,创伤... | 【同尾】oath: n.誓言,誓约;咒骂,诅咒..."
+    "confusing": "【形似】undermine: v.暗中破环,逐渐削弱;侵蚀...的基础... | 【形似】underline: t.在...下画线,强调... | 【形似】beneath: prep.在…下边,在…之下；不如ad.... | 【同尾】aftermath: n.(战争、事故、不快事情的)后果,创伤... | 【同尾】oath: n.誓言,誓约;咒骂,诅咒...",
+    "example": "The cat was hiding underneath the bed."
   },
   {
     "id": 218,
@@ -1741,7 +1958,8 @@ window.wordData = [
     "word": "blur",
     "phonetic": "[blər]",
     "meaning": "n.模糊不清的事物;污点v.(使)模糊;涂污,污损",
-    "confusing": "【形似】lure: v.吸引，诱惑n. 诱惑物;诱饵，鱼饵... | 【形似】blunder: vi.踉踉跄跄地走;乱闯;(因无知、粗心..."
+    "confusing": "【形似】lure: v.吸引，诱惑n. 诱惑物;诱饵，鱼饵... | 【形似】blunder: vi.踉踉跄跄地走;乱闯;(因无知、粗心...",
+    "example": "The rain made the distant mountains blur."
   },
   {
     "id": 219,
@@ -1749,7 +1967,8 @@ window.wordData = [
     "word": "percentage",
     "phonetic": "[pərˈsɛnɪʤ]",
     "meaning": "n.百分数,百分率,百分比",
-    "confusing": "【同尾】hostage: n.人质... | 【同尾】message: n.消息,信息,通讯;启示,要旨..."
+    "confusing": "【同尾】hostage: n.人质... | 【同尾】message: n.消息,信息,通讯;启示,要旨...",
+    "example": "A high percentage of students passed the test."
   },
   {
     "id": 220,
@@ -1757,7 +1976,8 @@ window.wordData = [
     "word": "nucleus",
     "phonetic": "[ˈnukliəs]",
     "meaning": "n.(pl.nuclei)核,原子核;核心",
-    "confusing": "【形似】nuclear: a.核心的,中心的,原子核的,核能的..."
+    "confusing": "【形似】nuclear: a.核心的,中心的,原子核的,核能的...",
+    "example": "The nucleus controls many activities of the cell."
   },
   {
     "id": 221,
@@ -1765,7 +1985,8 @@ window.wordData = [
     "word": "ambiguous",
     "phonetic": "[æmˈbɪgjuəs]",
     "meaning": "a.模棱两可的",
-    "confusing": "【形似】ambitious: a.有雄心的,野心勃勃的... | 【形似】fabulous: a.寓言式的;极为巨大的;极好的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻..."
+    "confusing": "【形似】ambitious: a.有雄心的,野心勃勃的... | 【形似】fabulous: a.寓言式的;极为巨大的;极好的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻...",
+    "example": "The instructions were ambiguous and caused confusion."
   },
   {
     "id": 222,
@@ -1773,7 +1994,8 @@ window.wordData = [
     "word": "crust",
     "phonetic": "[krəst]",
     "meaning": "n.外皮,壳;地壳",
-    "confusing": "【形似】rust: n.铁锈u使生锈... | 【形似】crush: n.压碎,压环,vi.压碎,压坏,压服,... | 【形似】thrust: vt.插入;猛推n.插,推力vi刺,戳,... | 【同尾】exhaust: v.使筋疲力尽,耗尽;抽完,汲干n.排气... | 【同尾】robust: a.强健的,健康的；强烈的，坚定的，坚决..."
+    "confusing": "【形似】rust: n.铁锈u使生锈... | 【形似】crush: n.压碎,压环,vi.压碎,压坏,压服,... | 【形似】thrust: vt.插入;猛推n.插,推力vi刺,戳,... | 【同尾】exhaust: v.使筋疲力尽,耗尽;抽完,汲干n.排气... | 【同尾】robust: a.强健的,健康的；强烈的，坚定的，坚决...",
+    "example": "The earth's crust is made of many layers of rock."
   },
   {
     "id": 223,
@@ -1781,7 +2003,8 @@ window.wordData = [
     "word": "interference",
     "phonetic": "[ˌɪnərˈfɪrəns]",
     "meaning": "n.干涉,干预;妨碍,打扰",
-    "confusing": "【形似】interfere: v.(in)干涉,干预;(with)妨碍... | 【形似】inference: n.推理,推论,推断;推断结果,结论... | 【形似】reference: n.提及,涉及;参考,参考书目;证明书(... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优..."
+    "confusing": "【形似】interfere: v.(in)干涉,干预;(with)妨碍... | 【形似】inference: n.推理,推论,推断;推断结果,结论... | 【形似】reference: n.提及,涉及;参考,参考书目;证明书(... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优...",
+    "example": "Radio interference made the signal hard to hear."
   },
   {
     "id": 224,
@@ -1789,7 +2012,8 @@ window.wordData = [
     "word": "regardless",
     "phonetic": "[rəˈgɑrdləs]",
     "meaning": "a.不留心的,不注意的,不管",
-    "confusing": "【同尾】congress: n.(代表)大会;(美国等国的)国会,议... | 【同尾】princess: n.公主;王妃..."
+    "confusing": "【同尾】congress: n.(代表)大会;(美国等国的)国会,议... | 【同尾】princess: n.公主;王妃...",
+    "example": "She finished the race regardless of the pain."
   },
   {
     "id": 225,
@@ -1797,7 +2021,8 @@ window.wordData = [
     "word": "terror",
     "phonetic": "[ˈtɛrər]",
     "meaning": "n.恐怖,可怕的人(事）",
-    "confusing": "【形似】error: n.错误,过失;误差... | 【形似】territory: n.领土,版图,领域,范围... | 【形似】interior: a.内部的，里面的n.内部，内地... | 【同尾】mirror: n.镜子;反应,反射vt.反应,反射... | 【同尾】emperor: n.皇帝..."
+    "confusing": "【形似】error: n.错误,过失;误差... | 【形似】territory: n.领土,版图,领域,范围... | 【形似】interior: a.内部的，里面的n.内部，内地... | 【同尾】mirror: n.镜子;反应,反射vt.反应,反射... | 【同尾】emperor: n.皇帝...",
+    "example": "The loud explosion filled the crowd with terror."
   },
   {
     "id": 226,
@@ -1805,7 +2030,8 @@ window.wordData = [
     "word": "shelter",
     "phonetic": "[ˈʃɛltər]",
     "meaning": "n.掩蔽处,躲避处;掩蔽,保护v.掩蔽,躲避,庇护",
-    "confusing": "【形似】sheer: a.纯粹的,十足的,全然的;陡峭的,险峻... | 【形似】shutter: n.百叶窗;(照相机)快门;关闭装置... | 【形似】shatter: n.碎片;粉碎 v使..粉碎;使散开，使... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰..."
+    "confusing": "【形似】sheer: a.纯粹的,十足的,全然的;陡峭的,险峻... | 【形似】shutter: n.百叶窗;(照相机)快门;关闭装置... | 【形似】shatter: n.碎片;粉碎 v使..粉碎;使散开，使... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰...",
+    "example": "The hikers found shelter from the rain."
   },
   {
     "id": 227,
@@ -1813,7 +2039,8 @@ window.wordData = [
     "word": "lick",
     "phonetic": "[lɪk]",
     "meaning": "vt./n.舔",
-    "confusing": "【形似】click: n.咔嚓声，滴答声 v.（使）发出咔嚓声... | 【形似】tick: n.滴答声;勾号v滴答响;打勾号于... | 【形似】link: v连接,联系n.环节,链环..."
+    "confusing": "【形似】click: n.咔嚓声，滴答声 v.（使）发出咔嚓声... | 【形似】tick: n.滴答声;勾号v滴答响;打勾号于... | 【形似】link: v连接,联系n.环节,链环...",
+    "example": "The dog tried to lick the ice cream cone."
   },
   {
     "id": 228,
@@ -1821,7 +2048,8 @@ window.wordData = [
     "word": "lest",
     "phonetic": "[lɛst]",
     "meaning": "conj.惟恐,免得",
-    "confusing": "【形似】vest: n.背心,马甲;汗衫,内衣... | 【形似】pest: n.害虫;有害物... | 【形似】nest: n.窝,巢v.筑巢..."
+    "confusing": "【形似】vest: n.背心,马甲;汗衫,内衣... | 【形似】pest: n.害虫;有害物... | 【形似】nest: n.窝,巢v.筑巢...",
+    "example": "He spoke softly lest he wake the baby."
   },
   {
     "id": 229,
@@ -1829,7 +2057,8 @@ window.wordData = [
     "word": "confine",
     "phonetic": "[kənˈfaɪn]",
     "meaning": "vt.限制,局限于;管制,禁闭",
-    "confusing": "【形似】convince: v.(of)使信服,使确信... | 【形似】confer: vi.商谈,商议vt.授予,赋予... | 【形似】confusion: n.混乱,混淆... | 【同尾】discipline: n.纪律,规定;学科;训练;自制力... | 【同尾】dine: vi.吃饭,进餐..."
+    "confusing": "【形似】convince: v.(of)使信服,使确信... | 【形似】confer: vi.商谈,商议vt.授予,赋予... | 【形似】confusion: n.混乱,混淆... | 【同尾】discipline: n.纪律,规定;学科;训练;自制力... | 【同尾】dine: vi.吃饭,进餐...",
+    "example": "The prisoner was confined to a small room."
   },
   {
     "id": 230,
@@ -1837,7 +2066,8 @@ window.wordData = [
     "word": "textile",
     "phonetic": "[ˈtɛkˌstaɪl]",
     "meaning": "n.纺织品a.纺织的",
-    "confusing": "【形似】exile: n./vt.放逐，流放... | 【形似】tile: n.瓦片,瓷砖... | 【形似】texture: n.质地,纹理,结构... | 【同尾】reptile: n.爬行动物... | 【同尾】worthwhile: a.值得(做)的..."
+    "confusing": "【形似】exile: n./vt.放逐，流放... | 【形似】tile: n.瓦片,瓷砖... | 【形似】texture: n.质地,纹理,结构... | 【同尾】reptile: n.爬行动物... | 【同尾】worthwhile: a.值得(做)的...",
+    "example": "The factory produces cotton textile products."
   },
   {
     "id": 231,
@@ -1845,7 +2075,8 @@ window.wordData = [
     "word": "grieve",
     "phonetic": "[griv]",
     "meaning": "v.使悲伤,使伤心",
-    "confusing": "【形似】relieve: vt.减轻,解除,减少;换班,换岗... | 【形似】grief: n.悲伤,悲痛;悲伤的事,悲痛的缘由... | 【形似】grave: n.坟墓a.严肃的,庄重的... | 【同尾】retrieve: vt.重新得到,取回;挽回,补救;检索... | 【同尾】sleeve: n.袖子..."
+    "confusing": "【形似】relieve: vt.减轻,解除,减少;换班,换岗... | 【形似】grief: n.悲伤,悲痛;悲伤的事,悲痛的缘由... | 【形似】grave: n.坟墓a.严肃的,庄重的... | 【同尾】retrieve: vt.重新得到,取回;挽回,补救;检索... | 【同尾】sleeve: n.袖子...",
+    "example": "The loss of her friend made her grieve deeply."
   },
   {
     "id": 232,
@@ -1853,7 +2084,8 @@ window.wordData = [
     "word": "provision",
     "phonetic": "[prəˈvɪʒən]",
     "meaning": "n.供应,(一批)供应品;准备,预备;条款,规定;给养,口粮",
-    "confusing": "【形似】vision: n.视觉,视力;眼光,洞察力... | 【形似】poison: n.毒物,毒药;ut.放毒;<喻>毒害... | 【形似】promising: a.有希望的,有前途的... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】vision: n.视觉,视力;眼光,洞察力... | 【形似】poison: n.毒物,毒药;ut.放毒;<喻>毒害... | 【形似】promising: a.有希望的,有前途的... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "The contract includes a provision for late payment."
   },
   {
     "id": 233,
@@ -1861,7 +2093,8 @@ window.wordData = [
     "word": "contradict",
     "phonetic": "[ˌkɑntrəˈdɪkt]",
     "meaning": "v.反驳;同…矛盾,同…抵触",
-    "confusing": "【形似】contract: n.契约,合同;包工vi.缩小,收缩;订... | 【形似】contact: v./n.(使)接触,联系,交往... | 【形似】contrast: vt.使与…对比,使与…对照vi.和…形... | 【同尾】predict: v.预言,预测,预告... | 【同尾】restrict: v.限制,约束..."
+    "confusing": "【形似】contract: n.契约,合同;包工vi.缩小,收缩;订... | 【形似】contact: v./n.(使)接触,联系,交往... | 【形似】contrast: vt.使与…对比,使与…对照vi.和…形... | 【同尾】predict: v.预言,预测,预告... | 【同尾】restrict: v.限制,约束...",
+    "example": "The witness gave details that contradicted the first report."
   },
   {
     "id": 234,
@@ -1869,7 +2102,8 @@ window.wordData = [
     "word": "infectious",
     "phonetic": "[ˌɪnˈfɛkʃəs]",
     "meaning": "a.传染的,有传染性的,有感染力的",
-    "confusing": "【形似】infect: vt.(with)传染,感染;影响... | 【形似】ingenious: a.有独创性的;心灵手巧的;精致的... | 【形似】vicious: a.邪恶的,恶毒的,凶残的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻..."
+    "confusing": "【形似】infect: vt.(with)传染,感染;影响... | 【形似】ingenious: a.有独创性的;心灵手巧的;精致的... | 【形似】vicious: a.邪恶的,恶毒的,凶残的... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻...",
+    "example": "Her laughter was infectious and made everyone smile."
   },
   {
     "id": 235,
@@ -1877,7 +2111,8 @@ window.wordData = [
     "word": "mat",
     "phonetic": "[mæt]",
     "meaning": "n.席子,垫子",
-    "confusing": "【形似】mate: n.配偶;伙伴;同事..."
+    "confusing": "【形似】mate: n.配偶;伙伴;同事...",
+    "example": "Please wipe your shoes on the mat."
   },
   {
     "id": 236,
@@ -1885,7 +2120,8 @@ window.wordData = [
     "word": "union",
     "phonetic": "[ˈjunjən]",
     "meaning": "n.协会,工会,同盟;联合,合并;一致,融洽",
-    "confusing": "【形似】onion: n.洋葱... | 【形似】junction: n.连接,接合;交叉点,接合处,枢纽站... | 【形似】function: n.功能，作用；职责，职务；函数v.起作... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】onion: n.洋葱... | 【形似】junction: n.连接,接合;交叉点,接合处,枢纽站... | 【形似】function: n.功能，作用；职责，职务；函数v.起作... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "The workers joined a union to protect their rights."
   },
   {
     "id": 237,
@@ -1893,7 +2129,8 @@ window.wordData = [
     "word": "intelligible",
     "phonetic": "[ˌɪnˈtɛləʤəbəl]",
     "meaning": "a.可理解的,易领悟的;清楚的",
-    "confusing": "【形似】negligible: a.可以忽略的,微不足道的... | 【形似】eligible: a.有条件被选中的,有资格当选的;合格的... | 【形似】intelligent: a.聪明的,明智的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉..."
+    "confusing": "【形似】negligible: a.可以忽略的,微不足道的... | 【形似】eligible: a.有条件被选中的,有资格当选的;合格的... | 【形似】intelligent: a.聪明的,明智的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉...",
+    "example": "The speaker made the complex idea intelligible."
   },
   {
     "id": 238,
@@ -1901,7 +2138,8 @@ window.wordData = [
     "word": "supplement",
     "phonetic": "[ˌsəpləˈmɛnt]",
     "meaning": "n.增补(物),补充(物);增刊vt.增补,补充",
-    "confusing": "【形似】implement: n.(pl.)工具,器具v使生效；实施；... | 【形似】displacement: n.移置，转移；取代... | 【形似】supreme: a.极度的;最重要的;至高的,最高的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变..."
+    "confusing": "【形似】implement: n.(pl.)工具,器具v使生效；实施；... | 【形似】displacement: n.移置，转移；取代... | 【形似】supreme: a.极度的;最重要的;至高的,最高的... | 【同尾】torrent: n.激流,山流... | 【同尾】incident: n.事件;事变...",
+    "example": "She takes vitamins to supplement her diet."
   },
   {
     "id": 239,
@@ -1909,7 +2147,8 @@ window.wordData = [
     "word": "propel",
     "phonetic": "[prəˈpɛl]",
     "meaning": "vt.推进,推动;激励,驱使",
-    "confusing": "【形似】pope: n.(天主教)教皇,罗马主教... | 【形似】prosper: ×成功,兴隆,昌盛,使成功,使昌隆,繁荣... | 【形似】propose: vt.提议,建议;提名,推荐vi(向某人... | 【同尾】compel: v.强迫,迫使... | 【同尾】repel: vt.击退,抵制,拒绝,排斥,讨厌..."
+    "confusing": "【形似】pope: n.(天主教)教皇,罗马主教... | 【形似】prosper: ×成功,兴隆,昌盛,使成功,使昌隆,繁荣... | 【形似】propose: vt.提议,建议;提名,推荐vi(向某人... | 【同尾】compel: v.强迫,迫使... | 【同尾】repel: vt.击退,抵制,拒绝,排斥,讨厌...",
+    "example": "The engine can propel the boat across the lake."
   },
   {
     "id": 240,
@@ -1917,7 +2156,8 @@ window.wordData = [
     "word": "torch",
     "phonetic": "[tɔrʧ]",
     "meaning": "n.手电筒;火炬,火把",
-    "confusing": "【形似】porch: n.门廊... | 【形似】trench: n.沟,沟渠... | 【同尾】arch: n.拱门;弓形结构;桥拱洞vt.拱起,使... | 【同尾】monarch: n.帝王,君主..."
+    "confusing": "【形似】porch: n.门廊... | 【形似】trench: n.沟,沟渠... | 【同尾】arch: n.拱门;弓形结构;桥拱洞vt.拱起,使... | 【同尾】monarch: n.帝王,君主...",
+    "example": "He carried a torch through the dark cave."
   },
   {
     "id": 241,
@@ -1925,7 +2165,8 @@ window.wordData = [
     "word": "appal",
     "phonetic": "[appal*]",
     "meaning": "vt.使惊骇,使恐怖",
-    "confusing": "【形似】appeal: （to）vi.呼吁,恳求;申诉n.呼吁;... | 【形似】apply: vi.申请;请求;适用,应用,运用... | 【形似】approval: n.批准,通过;赞成,同意... | 【同尾】principal: a.最重要的,主要的n.负责人,校长;资... | 【同尾】municipal: a.市的,市政的,市立的..."
+    "confusing": "【形似】appeal: （to）vi.呼吁,恳求;申诉n.呼吁;... | 【形似】apply: vi.申请;请求;适用,应用,运用... | 【形似】approval: n.批准,通过;赞成,同意... | 【同尾】principal: a.最重要的,主要的n.负责人,校长;资... | 【同尾】municipal: a.市的,市政的,市立的...",
+    "example": "The images of the disaster appalled the viewers."
   },
   {
     "id": 242,
@@ -1933,7 +2174,8 @@ window.wordData = [
     "word": "algorithm",
     "phonetic": "[ˈælgərˌɪðəm]",
     "meaning": "n.演算法,计算程序",
-    "confusing": "【同尾】rhythm: n.节奏,韵律..."
+    "confusing": "【同尾】rhythm: n.节奏,韵律...",
+    "example": "The algorithm sorts the numbers from smallest to largest."
   },
   {
     "id": 243,
@@ -1941,7 +2183,8 @@ window.wordData = [
     "word": "dormitory",
     "phonetic": "[ˈdɔrməˌtɔri]",
     "meaning": "n.(dorm)(集体)宿舍",
-    "confusing": "【同尾】inventory: n.详细目录;存货清单,物品清单;库存物... | 【同尾】satisfactory: a.令人满意的..."
+    "confusing": "【同尾】inventory: n.详细目录;存货清单,物品清单;库存物... | 【同尾】satisfactory: a.令人满意的...",
+    "example": "The students live in a dormitory near campus."
   },
   {
     "id": 244,
@@ -1949,7 +2192,8 @@ window.wordData = [
     "word": "drain",
     "phonetic": "[dreɪn]",
     "meaning": "n.排水沟,阴沟;流出;消耗v.(使)液体排去,放干",
-    "confusing": "【形似】grain: n.谷物,谷类,粮食,颗粒,细粒... | 【形似】duration: n.期间;持久,持续时间... | 【形似】strain: n.过度的疲劳,紧张;张力,拉力vt.扭... | 【同尾】detain: vt.扣留,拘留;耽搁... | 【同尾】remain: v剩下,预留;仍然是,依旧是,保持不变n..."
+    "confusing": "【形似】grain: n.谷物,谷类,粮食,颗粒,细粒... | 【形似】duration: n.期间;持久,持续时间... | 【形似】strain: n.过度的疲劳,紧张;张力,拉力vt.扭... | 【同尾】detain: vt.扣留,拘留;耽搁... | 【同尾】remain: v剩下,预留;仍然是,依旧是,保持不变n...",
+    "example": "The sink drain was blocked by leaves."
   },
   {
     "id": 245,
@@ -1957,7 +2201,8 @@ window.wordData = [
     "word": "portrait",
     "phonetic": "[ˈpɔrtrət]",
     "meaning": "n.肖像,画像",
-    "confusing": "【形似】portray: ut.描写,描绘,扮演,饰演... | 【形似】trait: n.特征,特点,特性... | 【形似】porter: n.搬运工人,门房... | 【同尾】await: vt等候;期待... | 【同尾】bait: n.鱼饵，诱饵.v.装饵于..."
+    "confusing": "【形似】portray: ut.描写,描绘,扮演,饰演... | 【形似】trait: n.特征,特点,特性... | 【形似】porter: n.搬运工人,门房... | 【同尾】await: vt等候;期待... | 【同尾】bait: n.鱼饵，诱饵.v.装饵于...",
+    "example": "The artist painted a portrait of the old man."
   },
   {
     "id": 246,
@@ -1965,7 +2210,8 @@ window.wordData = [
     "word": "stationery",
     "phonetic": "[ˈsteɪʃəˌnɛri]",
     "meaning": "n.文具",
-    "confusing": "【形似】stationary: a.静止的;固定的... | 【同尾】nursery: n.托儿所... | 【同尾】surgery: n.外科,外科学;外科手术治疗;手术室,..."
+    "confusing": "【形似】stationary: a.静止的;固定的... | 【同尾】nursery: n.托儿所... | 【同尾】surgery: n.外科,外科学;外科手术治疗;手术室,...",
+    "example": "She bought stationery for the new school year."
   },
   {
     "id": 247,
@@ -1973,7 +2219,8 @@ window.wordData = [
     "word": "expand",
     "phonetic": "[ɪkˈspænd]",
     "meaning": "v.(使)膨胀,(使)扩张;张开,展开",
-    "confusing": "【形似】expend: v消费,花费... | 【同尾】grand: a.盛大的,豪华的;重大的,主要的;(计... | 【同尾】brand: n.商标,标记,牌子vt.使铭记;打火印..."
+    "confusing": "【形似】expend: v消费,花费... | 【同尾】grand: a.盛大的,豪华的;重大的,主要的;(计... | 【同尾】brand: n.商标,标记,牌子vt.使铭记;打火印...",
+    "example": "The company plans to expand into Asia."
   },
   {
     "id": 248,
@@ -1981,7 +2228,8 @@ window.wordData = [
     "word": "spade",
     "phonetic": "[speɪd]",
     "meaning": "n.铁锹,铲子",
-    "confusing": "【形似】pad: n.垫,衬垫;便笺簿;拍纸簿ut.填塞... | 【形似】spider: n.蜘蛛... | 【形似】saddle: n.鞍,马鞍,鞍状物... | 【同尾】invade: v.入侵,侵略,侵害... | 【同尾】parade: n./v.游行,夸耀n.检阅,闷兵式v使..."
+    "confusing": "【形似】pad: n.垫,衬垫;便笺簿;拍纸簿ut.填塞... | 【形似】spider: n.蜘蛛... | 【形似】saddle: n.鞍,马鞍,鞍状物... | 【同尾】invade: v.入侵,侵略,侵害... | 【同尾】parade: n./v.游行,夸耀n.检阅,闷兵式v使...",
+    "example": "He used a spade to dig a hole for the tree."
   },
   {
     "id": 249,
@@ -1989,7 +2237,8 @@ window.wordData = [
     "word": "visual",
     "phonetic": "[ˈvɪʒəwəl]",
     "meaning": "a.看的,视觉的",
-    "confusing": "【形似】visa: n.签证;维萨信用卡... | 【形似】virtual: a.实际上的,事实上的，虚的... | 【形似】vital: a.生死攸关的重大的;生命的,生机的... | 【同尾】intellectual: n.知识分子a.智力的;有智力的,显示智... | 【同尾】manual: a.体力的;手工做的;手的n.手册,指南..."
+    "confusing": "【形似】visa: n.签证;维萨信用卡... | 【形似】virtual: a.实际上的,事实上的，虚的... | 【形似】vital: a.生死攸关的重大的;生命的,生机的... | 【同尾】intellectual: n.知识分子a.智力的;有智力的,显示智... | 【同尾】manual: a.体力的;手工做的;手的n.手册,指南...",
+    "example": "The chart gives a visual explanation of the process."
   },
   {
     "id": 250,
@@ -1997,7 +2246,8 @@ window.wordData = [
     "word": "vocal",
     "phonetic": "[ˈvoʊkəl]",
     "meaning": "a.嗓音的,发声的;直言不讳的n.声乐节目",
-    "confusing": "【形似】local: a.地方的,当地的;局部的... | 【形似】social: a.社会的,交际的... | 【同尾】radical: a.基本的,重要的,根本的;激进的,极端... | 【同尾】critical: a.批评的,评论的;挑剔的;危急的,紧要..."
+    "confusing": "【形似】local: a.地方的,当地的;局部的... | 【形似】social: a.社会的,交际的... | 【同尾】radical: a.基本的,重要的,根本的;激进的,极端... | 【同尾】critical: a.批评的,评论的;挑剔的;危急的,紧要...",
+    "example": "She was vocal about her support for the plan."
   },
   {
     "id": 251,
@@ -2005,7 +2255,8 @@ window.wordData = [
     "word": "attribute",
     "phonetic": "[əˈtrɪˌbjut]",
     "meaning": "n.属性,品质,特征vt.把…归于,认为…是…所为",
-    "confusing": "【形似】tribute: n.贡品(表示敬意的)礼物;颂词,称赞... | 【形似】distribute: v分配;分布;配(电;（over）散布... | 【形似】contribute: v.(to)贡献,捐助,捐献;投稿,有助... | 【同尾】dilute: vt.冲淡,稀释a.冲淡的,稀释的... | 【同尾】constitute: vt.组成,构成..."
+    "confusing": "【形似】tribute: n.贡品(表示敬意的)礼物;颂词,称赞... | 【形似】distribute: v分配;分布;配(电;（over）散布... | 【形似】contribute: v.(to)贡献,捐助,捐献;投稿,有助... | 【同尾】dilute: vt.冲淡,稀释a.冲淡的,稀释的... | 【同尾】constitute: vt.组成,构成...",
+    "example": "Patience is an important attribute of a good teacher."
   },
   {
     "id": 252,
@@ -2013,7 +2264,8 @@ window.wordData = [
     "word": "occurrence",
     "phonetic": "[əˈkərəns]",
     "meaning": "n.发生,出现;事件,事故,发生的事情",
-    "confusing": "【形似】currency: n.通货,货币... | 【形似】current: n.电流;水流;气流;潮流，趋势 a.当... | 【形似】concurrent: a.并存的;同时发生的... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优..."
+    "confusing": "【形似】currency: n.通货,货币... | 【形似】current: n.电流;水流;气流;潮流，趋势 a.当... | 【形似】concurrent: a.并存的;同时发生的... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优...",
+    "example": "The occurrence of storms is common in summer."
   },
   {
     "id": 253,
@@ -2021,7 +2273,8 @@ window.wordData = [
     "word": "laptop",
     "phonetic": "[ˈlæpˌtɑp]",
     "meaning": "n.便携式电脑",
-    "confusing": ""
+    "confusing": "",
+    "example": "He carried his laptop to the library."
   },
   {
     "id": 254,
@@ -2029,7 +2282,8 @@ window.wordData = [
     "word": "attach",
     "phonetic": "[əˈtæʧ]",
     "meaning": "vt.缚上,系上,贴上;使依附,使隶属,使依恋",
-    "confusing": "【形似】attract: v吸引引诱;引起(注意等)... | 【形似】patch: n.补丁,斑点,碎片小块v补,修补,掩饰... | 【形似】hatch: vi.孵,孵出t.策划,图谋n.舱口,小... | 【同尾】reproach: vt.n.指责,责备... | 【同尾】detach: vt.分开,分离,分遣,派遣(军队)..."
+    "confusing": "【形似】attract: v吸引引诱;引起(注意等)... | 【形似】patch: n.补丁,斑点,碎片小块v补,修补,掩饰... | 【形似】hatch: vi.孵,孵出t.策划,图谋n.舱口,小... | 【同尾】reproach: vt.n.指责,责备... | 【同尾】detach: vt.分开,分离,分遣,派遣(军队)...",
+    "example": "Attach the file to your email before sending it."
   },
   {
     "id": 255,
@@ -2037,7 +2291,8 @@ window.wordData = [
     "word": "arch",
     "phonetic": "[ɑrʧ]",
     "meaning": "n.拱门;弓形结构;桥拱洞vt.拱起,使变成弓形",
-    "confusing": "【形似】monarch: n.帝王,君主... | 【形似】archive: n.档案，档案室 v.把…存档，把…归档..."
+    "confusing": "【形似】monarch: n.帝王,君主... | 【形似】archive: n.档案，档案室 v.把…存档，把…归档...",
+    "example": "The old stone arch still stands at the gate."
   },
   {
     "id": 256,
@@ -2045,7 +2300,8 @@ window.wordData = [
     "word": "available",
     "phonetic": "[əˈveɪləbəl]",
     "meaning": "a.可用的,可得到的;可以见到的",
-    "confusing": "【形似】variable: a.易变的,多变的;可变的,变量的n.变... | 【形似】viable: a.(想法或计划)切实可行的,可实施的... | 【形似】advisable: a.可取的,明智的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉..."
+    "confusing": "【形似】variable: a.易变的,多变的;可变的,变量的n.变... | 【形似】viable: a.(想法或计划)切实可行的,可实施的... | 【形似】advisable: a.可取的,明智的... | 【同尾】applicable: a.能应用的,适用的... | 【同尾】honorable: a.(honourable)可敬的;荣誉...",
+    "example": "The book is available in the school library."
   },
   {
     "id": 257,
@@ -2053,7 +2309,8 @@ window.wordData = [
     "word": "compound",
     "phonetic": "[ˈkɑmpaʊnd]",
     "meaning": "n.混合物,化合物a.混合的;化合的;复合的",
-    "confusing": "【形似】coupon: n.礼券，优惠券，配给券；票证... | 【形似】component: n.组成部分,成分;元件,部件a.组成的... | 【同尾】bound: vi./n.跳(跃)a.受约束的;有义务... | 【同尾】profound: a.深的，深刻的,意义深远的;渊博的,造..."
+    "confusing": "【形似】coupon: n.礼券，优惠券，配给券；票证... | 【形似】component: n.组成部分,成分;元件,部件a.组成的... | 【同尾】bound: vi./n.跳(跃)a.受约束的;有义务... | 【同尾】profound: a.深的，深刻的,意义深远的;渊博的,造...",
+    "example": "Water is a compound of hydrogen and oxygen."
   },
   {
     "id": 258,
@@ -2061,7 +2318,8 @@ window.wordData = [
     "word": "data",
     "phonetic": "[ˈdætə]",
     "meaning": "n.(datum的复数)资料,数据",
-    "confusing": ""
+    "confusing": "",
+    "example": "The researcher collected data from three cities."
   },
   {
     "id": 259,
@@ -2069,7 +2327,8 @@ window.wordData = [
     "word": "gown",
     "phonetic": "[gaʊn]",
     "meaning": "n.女士礼服,女裙服;(外科医生手术时穿的)罩衣;(法官等穿的)长袍",
-    "confusing": "【形似】glow: vi.发热,发光,发红n.光亮;光辉..."
+    "confusing": "【形似】glow: vi.发热,发光,发红n.光亮;光辉...",
+    "example": "She wore a blue gown to the ceremony."
   },
   {
     "id": 260,
@@ -2077,7 +2336,8 @@ window.wordData = [
     "word": "underestimate",
     "phonetic": "[ˈəndərˈɛstəˌmeɪt]",
     "meaning": "vt.低估",
-    "confusing": "【形似】estimate: t.估计vi估价,估算n.看法;评价;判... | 【形似】undertake: vt承担,担任;许诺,保证;着手,从事... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】estimate: t.估计vi估价,估算n.看法;评价;判... | 【形似】undertake: vt承担,担任;许诺,保证;着手,从事... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "Do not underestimate the difficulty of the task."
   },
   {
     "id": 261,
@@ -2085,7 +2345,8 @@ window.wordData = [
     "word": "vague",
     "phonetic": "[veɪg]",
     "meaning": "a.不明确的,含糊的;暧昧的",
-    "confusing": "【形似】argue: vi争论,辩论vt坚持,主张;说服,劝说... | 【形似】savage: a.野蛮的;凶恶的,残暴的n.野人,未开... | 【形似】plague: n.瘟疫;祸患,灾害... | 【同尾】intrigue: vi.密谋,施轨迹vt.引起极大兴趣,激... | 【同尾】fatigue: n.(使)疲劳..."
+    "confusing": "【形似】argue: vi争论,辩论vt坚持,主张;说服,劝说... | 【形似】savage: a.野蛮的;凶恶的,残暴的n.野人,未开... | 【形似】plague: n.瘟疫;祸患,灾害... | 【同尾】intrigue: vi.密谋,施轨迹vt.引起极大兴趣,激... | 【同尾】fatigue: n.(使)疲劳...",
+    "example": "His answer was vague and unhelpful."
   },
   {
     "id": 262,
@@ -2093,7 +2354,8 @@ window.wordData = [
     "word": "locomotive",
     "phonetic": "[ˌloʊkəˈmoʊtɪv]",
     "meaning": "n.机车,火车头a.运动的,移动的,运载的",
-    "confusing": "【形似】motive: n.动机目的a.发动的,运动的... | 【同尾】tentative: a.尝试的,试验(性)的;犹豫的,迟疑不... | 【同尾】revive: v.恢复;(使)复苏..."
+    "confusing": "【形似】motive: n.动机目的a.发动的,运动的... | 【同尾】tentative: a.尝试的,试验(性)的;犹豫的,迟疑不... | 【同尾】revive: v.恢复;(使)复苏...",
+    "example": "The locomotive pulled ten cars up the hill."
   },
   {
     "id": 263,
@@ -2101,7 +2363,8 @@ window.wordData = [
     "word": "tremendous",
     "phonetic": "[trɪˈmɛndəs]",
     "meaning": "a.巨大的,极大的",
-    "confusing": "【形似】strenuous: a.费力的,艰辛的;奋发的,努力的... | 【形似】tedious: a.乏味的,单调的,冗长的；使人厌烦的... | 【形似】greenhouse: n.温室... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻..."
+    "confusing": "【形似】strenuous: a.费力的,艰辛的;奋发的,努力的... | 【形似】tedious: a.乏味的,单调的,冗长的；使人厌烦的... | 【形似】greenhouse: n.温室... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻...",
+    "example": "The team made a tremendous effort to finish on time."
   },
   {
     "id": 264,
@@ -2109,7 +2372,8 @@ window.wordData = [
     "word": "deprive",
     "phonetic": "[dɪˈpraɪv]",
     "meaning": "vt.夺去,使丧失",
-    "confusing": "【形似】derive: v.收得;导出;引申;来自;源自;出自... | 【形似】dive: vi/n. 潜水；跳水；俯冲... | 【形似】despite: prep.不管，尽管... | 【同尾】tentative: a.尝试的,试验(性)的;犹豫的,迟疑不... | 【同尾】revive: v.恢复;(使)复苏..."
+    "confusing": "【形似】derive: v.收得;导出;引申;来自;源自;出自... | 【形似】dive: vi/n. 潜水；跳水；俯冲... | 【形似】despite: prep.不管，尽管... | 【同尾】tentative: a.尝试的,试验(性)的;犹豫的,迟疑不... | 【同尾】revive: v.恢复;(使)复苏...",
+    "example": "The law should not deprive people of basic rights."
   },
   {
     "id": 265,
@@ -2117,7 +2381,8 @@ window.wordData = [
     "word": "rape",
     "phonetic": "[reɪp]",
     "meaning": "n./vt.强奸",
-    "confusing": "【形似】grape: n.葡萄... | 【形似】rap: v敲击，急敲；责备，训斥. n敲击声，急... | 【形似】ape: n.猿vt.模仿..."
+    "confusing": "【形似】grape: n.葡萄... | 【形似】rap: v敲击，急敲；责备，训斥. n敲击声，急... | 【形似】ape: n.猿vt.模仿...",
+    "example": "The court heard evidence in a rape case."
   },
   {
     "id": 266,
@@ -2125,7 +2390,8 @@ window.wordData = [
     "word": "preparation",
     "phonetic": "[ˌprɛpərˈeɪʃən]",
     "meaning": "n.准备,预备;制剂,制备品",
-    "confusing": "【形似】reputation: n.名声,声望... | 【形似】recreation: n.娱乐,消遣... | 【形似】proportion: n.比例;部分,份儿;均衡,相称... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】reputation: n.名声,声望... | 【形似】recreation: n.娱乐,消遣... | 【形似】proportion: n.比例;部分,份儿;均衡,相称... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "Careful preparation helped us avoid mistakes."
   },
   {
     "id": 267,
@@ -2133,7 +2399,8 @@ window.wordData = [
     "word": "affirm",
     "phonetic": "[əˈfərm]",
     "meaning": "vt.断言,肯定;(在法庭上)证实,宣誓说实话",
-    "confusing": "【同尾】confirm: vt.证实;确认;批准;确认,巩固,加强..."
+    "confusing": "【同尾】confirm: vt.证实;确认;批准;确认,巩固,加强...",
+    "example": "The witness affirmed that the statement was true."
   },
   {
     "id": 268,
@@ -2141,7 +2408,8 @@ window.wordData = [
     "word": "petrol",
     "phonetic": "[ˈpɛtroʊl]",
     "meaning": "n.汽油",
-    "confusing": "【形似】patrol: v巡逻,巡查n.巡逻,巡查;巡逻队... | 【形似】petroleum: n.石油... | 【形似】pearl: n.珍珠..."
+    "confusing": "【形似】patrol: v巡逻,巡查n.巡逻,巡查;巡逻队... | 【形似】petroleum: n.石油... | 【形似】pearl: n.珍珠...",
+    "example": "The car ran out of petrol on the highway."
   },
   {
     "id": 269,
@@ -2149,7 +2417,8 @@ window.wordData = [
     "word": "seal",
     "phonetic": "[sil]",
     "meaning": "n.海豹;印,图章;封铅,封条vt.封,密封",
-    "confusing": "【形似】serial: n.连续剧;连载故事a.连续的,按顺序排... | 【形似】zeal: n.热情,热忱... | 【形似】seam: n.缝,接缝..."
+    "confusing": "【形似】serial: n.连续剧;连载故事a.连续的,按顺序排... | 【形似】zeal: n.热情,热忱... | 【形似】seam: n.缝,接缝...",
+    "example": "Seal the envelope before mailing it."
   },
   {
     "id": 270,
@@ -2157,7 +2426,8 @@ window.wordData = [
     "word": "confidence",
     "phonetic": "[ˈkɑnfədɛns]",
     "meaning": "n.(in)信任;信心,自信;秘密,机密",
-    "confusing": "【形似】confident: a.(about)确信的,自信的... | 【形似】confine: vt.限制,局限于;管制,禁闭... | 【形似】conscience: n.良心,良知... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优..."
+    "confusing": "【形似】confident: a.(about)确信的,自信的... | 【形似】confine: vt.限制,局限于;管制,禁闭... | 【形似】conscience: n.良心,良知... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优...",
+    "example": "She answered the question with confidence."
   },
   {
     "id": 271,
@@ -2165,7 +2435,8 @@ window.wordData = [
     "word": "simultaneous",
     "phonetic": "[ˌsaɪməlˈteɪniəs]",
     "meaning": "a.同时的,同时存在的",
-    "confusing": "【形似】simulate: t.模仿,模拟,假装,冒充... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻..."
+    "confusing": "【形似】simulate: t.模仿,模拟,假装,冒充... | 【同尾】enormous: a.巨大的,庞大的... | 【同尾】rigorous: a.严密的,缜密的;严格的,严厉的;严峻...",
+    "example": "The two events were simultaneous."
   },
   {
     "id": 272,
@@ -2173,7 +2444,8 @@ window.wordData = [
     "word": "specimen",
     "phonetic": "[ˈspɛsəmən]",
     "meaning": "n.标本,样本",
-    "confusing": "【形似】species: n.(物)种,种类... | 【形似】sentiment: n..思想感情,情绪,情操,[pl]意见... | 【同尾】abdomen: n.腹部..."
+    "confusing": "【形似】species: n.(物)种,种类... | 【形似】sentiment: n..思想感情,情绪,情操,[pl]意见... | 【同尾】abdomen: n.腹部...",
+    "example": "The scientist studied a specimen under the microscope."
   },
   {
     "id": 273,
@@ -2181,7 +2453,8 @@ window.wordData = [
     "word": "audience",
     "phonetic": "[ˈɔdiəns]",
     "meaning": "n.听众,观众,读者;谒见,会见",
-    "confusing": "【形似】patience: n.耐心,忍耐... | 【形似】obedience: n.服从,顺从... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优..."
+    "confusing": "【形似】patience: n.耐心,忍耐... | 【形似】obedience: n.服从,顺从... | 【同尾】appearance: n.出现,出场,露面;外表,外貌,外观... | 【同尾】preference: n.(for,to)偏爱,喜爱;优惠;优...",
+    "example": "The audience applauded after the speech."
   },
   {
     "id": 274,
@@ -2189,7 +2462,8 @@ window.wordData = [
     "word": "collision",
     "phonetic": "[kəˈlɪʒən]",
     "meaning": "n.碰撞,冲突",
-    "confusing": "【形似】coalition: n.结合体,同盟;结合,联合；联合政府... | 【形似】conclusion: n.结论,推论;结束，终结... | 【形似】commission: n.委员会;委任,委托(书).代办;佣金... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次..."
+    "confusing": "【形似】coalition: n.结合体,同盟;结合,联合；联合政府... | 【形似】conclusion: n.结论,推论;结束，终结... | 【形似】commission: n.委员会;委任,委托(书).代办;佣金... | 【同尾】qualification: n.资格,合格;技能;限定,条件;合格证... | 【同尾】edition: n.版,版本,版次...",
+    "example": "A collision between two trucks blocked the road."
   },
   {
     "id": 275,
@@ -2197,7 +2471,8 @@ window.wordData = [
     "word": "constitute",
     "phonetic": "[ˈkɑnstəˌtut]",
     "meaning": "vt.组成,构成",
-    "confusing": "【形似】constituent: n.选民;成分,要素a.组成的,构成的... | 【形似】institute: vt.设立,设置,制定;开始,开创n.学... | 【形似】constitution: n.构成,构造,组成(方式),成分;体格... | 【同尾】dilute: vt.冲淡,稀释a.冲淡的,稀释的... | 【同尾】attribute: n.属性,品质,特征vt.把…归于,认为..."
+    "confusing": "【形似】constituent: n.选民;成分,要素a.组成的,构成的... | 【形似】institute: vt.设立,设置,制定;开始,开创n.学... | 【形似】constitution: n.构成,构造,组成(方式),成分;体格... | 【同尾】dilute: vt.冲淡,稀释a.冲淡的,稀释的... | 【同尾】attribute: n.属性,品质,特征vt.把…归于,认为...",
+    "example": "These three parts constitute the main system."
   },
   {
     "id": 276,
@@ -2205,7 +2480,8 @@ window.wordData = [
     "word": "defer",
     "phonetic": "[dɪˈfər]",
     "meaning": "v.推迟,延期",
-    "confusing": "【形似】deter: v.威慑,阻止,使不敢... | 【形似】differ: vi.(from)与...不同,(wit... | 【形似】define: t.给...下定义,限定,规定... | 【同尾】confer: vi.商谈,商议vt.授予,赋予... | 【同尾】transfer: t.转移;转让,过户;调动,转职;n.转..."
+    "confusing": "【形似】deter: v.威慑,阻止,使不敢... | 【形似】differ: vi.(from)与...不同,(wit... | 【形似】define: t.给...下定义,限定,规定... | 【同尾】confer: vi.商谈,商议vt.授予,赋予... | 【同尾】transfer: t.转移;转让,过户;调动,转职;n.转...",
+    "example": "The university decided to defer the exam."
   },
   {
     "id": 277,
@@ -2213,7 +2489,8 @@ window.wordData = [
     "word": "headquarters",
     "phonetic": "[ˈhɛdˌkɔrtərz]",
     "meaning": "n.司令部,指挥部;总部,总局",
-    "confusing": "【形似】adequate: adj.充足的,足够的;适当的,胜任的..."
+    "confusing": "【形似】adequate: adj.充足的,足够的;适当的,胜任的...",
+    "example": "The company moved its headquarters to Shanghai."
   },
   {
     "id": 278,
@@ -2221,7 +2498,8 @@ window.wordData = [
     "word": "alert",
     "phonetic": "[əˈlərt]",
     "meaning": "a.警惕的,机灵的",
-    "confusing": "【形似】avert: vt.防止；转移（目光、注意力等）... | 【形似】alter: v.改变,变更;改(衣服使其更合身)... | 【形似】talent: n.才能,天资,人才... | 【同尾】exert: vt.尽(力);施加(压力等)... | 【同尾】divert: t.使转向,使改道;转移(注意力);使娱..."
+    "confusing": "【形似】avert: vt.防止；转移（目光、注意力等）... | 【形似】alter: v.改变,变更;改(衣服使其更合身)... | 【形似】talent: n.才能,天资,人才... | 【同尾】exert: vt.尽(力);施加(压力等)... | 【同尾】divert: t.使转向,使改道;转移(注意力);使娱...",
+    "example": "The driver stayed alert on the icy road."
   },
   {
     "id": 279,
@@ -2229,7 +2507,8 @@ window.wordData = [
     "word": "plentiful",
     "phonetic": "[ˈplɛnɪfəl]",
     "meaning": "a.富裕的,丰富的",
-    "confusing": "【同尾】fruitful: a.多产的;果实累累的,富有成效的... | 【同尾】powerful: a.强大的,有力的;有权的..."
+    "confusing": "【同尾】fruitful: a.多产的;果实累累的,富有成效的... | 【同尾】powerful: a.强大的,有力的;有权的...",
+    "example": "Food was plentiful after the harvest."
   },
   {
     "id": 280,
@@ -2237,7 +2516,8 @@ window.wordData = [
     "word": "congress",
     "phonetic": "[ˈkɑŋgrəs]",
     "meaning": "n.(代表)大会;(美国等国的)国会,议会",
-    "confusing": "【形似】confess: v.供认,承认,坦白,忏悔... | 【形似】compress: v.压缩,浓缩... | 【形似】caress: vt./n.爱抚,抚摸... | 【同尾】regardless: a.不留心的,不注意的,不管... | 【同尾】princess: n.公主;王妃..."
+    "confusing": "【形似】confess: v.供认,承认,坦白,忏悔... | 【形似】compress: v.压缩,浓缩... | 【形似】caress: vt./n.爱抚,抚摸... | 【同尾】regardless: a.不留心的,不注意的,不管... | 【同尾】princess: n.公主;王妃...",
+    "example": "The congress discussed the new education law."
   },
   {
     "id": 281,
@@ -2245,7 +2525,8 @@ window.wordData = [
     "word": "foremost",
     "phonetic": "[ˈfɔrˌmoʊst]",
     "meaning": "a.最重要的;最好的ad.首先,第一",
-    "confusing": "【形似】frost: n.霜,霜冻;严寒... | 【形似】forecast: v./n.预测,预报... | 【形似】remote: a.远的,长久的,偏僻的,关系疏远的,漠... | 【同尾】boost: n./ vt.提升;增加;抬高(价格);... | 【同尾】host: n.主人,旅店老板;节目主持人;一大群,..."
+    "confusing": "【形似】frost: n.霜,霜冻;严寒... | 【形似】forecast: v./n.预测,预报... | 【形似】remote: a.远的,长久的,偏僻的,关系疏远的,漠... | 【同尾】boost: n./ vt.提升;增加;抬高(价格);... | 【同尾】host: n.主人,旅店老板;节目主持人;一大群,...",
+    "example": "Safety is the foremost concern on this trip."
   },
   {
     "id": 282,
@@ -2253,7 +2534,8 @@ window.wordData = [
     "word": "arouse",
     "phonetic": "[əraʊz]",
     "meaning": "vt.唤醒,叫醒;唤起,激起",
-    "confusing": "【形似】rouse: vt./vi.唤醒,唤起;激励;激起... | 【形似】warehouse: n.仓库,货栈... | 【形似】route: n.路线,路程... | 【同尾】abuse: vt滥用;虐待;谩骂n.滥用;虐待... | 【同尾】diffuse: vi.扩散vt.传播,散布;宣泄,舒缓(..."
+    "confusing": "【形似】rouse: vt./vi.唤醒,唤起;激励;激起... | 【形似】warehouse: n.仓库,货栈... | 【形似】route: n.路线,路程... | 【同尾】abuse: vt滥用;虐待;谩骂n.滥用;虐待... | 【同尾】diffuse: vi.扩散vt.传播,散布;宣泄,舒缓(...",
+    "example": "The speech aroused strong emotions in the crowd."
   },
   {
     "id": 283,
@@ -2261,7 +2543,8 @@ window.wordData = [
     "word": "interact",
     "phonetic": "[ˌɪnərˈækt]",
     "meaning": "vi.互相作用,互相影响",
-    "confusing": "【形似】intact: a.完整无缺的,未经触动的,未受损伤的... | 【形似】interface: n.界面;分界面;接口... | 【形似】integrate: v.(into,with)(使)成为一体... | 【同尾】extract: vt.拔出,抽出;摘录n.提炼物,精华;... | 【同尾】pact: n.协定,条约,公约..."
+    "confusing": "【形似】intact: a.完整无缺的,未经触动的,未受损伤的... | 【形似】interface: n.界面;分界面;接口... | 【形似】integrate: v.(into,with)(使)成为一体... | 【同尾】extract: vt.拔出,抽出;摘录n.提炼物,精华;... | 【同尾】pact: n.协定,条约,公约...",
+    "example": "Students interact with the software during class."
   },
   {
     "id": 284,
@@ -2269,7 +2552,8 @@ window.wordData = [
     "word": "utter",
     "phonetic": "[ˈətər]",
     "meaning": "vt.说,发出(声音)a.彻底的,完全的",
-    "confusing": "【形似】mutter: v./n.小声说(话);小声抱怨,啮哝... | 【形似】shutter: n.百叶窗;(照相机)快门;关闭装置... | 【形似】outer: a.外部的,外面的,外层的... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰..."
+    "confusing": "【形似】mutter: v./n.小声说(话);小声抱怨,啮哝... | 【形似】shutter: n.百叶窗;(照相机)快门;关闭装置... | 【形似】outer: a.外部的,外面的,外层的... | 【同尾】alter: v.改变,变更;改(衣服使其更合身)... | 【同尾】slaughter: n./vt.屠杀,杀戮,屠宰...",
+    "example": "He did not utter a word during the meeting."
   },
   {
     "id": 285,
@@ -2277,7 +2561,8 @@ window.wordData = [
     "word": "chill",
     "phonetic": "[ʧɪl]",
     "meaning": "n.寒冷,寒气,寒战vt.使寒冷",
-    "confusing": "【形似】thrill: n.令人激动的事vt.使激动,使兴奋;使... | 【同尾】distill: vt.蒸馏;用蒸馏法提取;吸取,提炼... | 【同尾】mill: n.磨粉机；磨坊;作坊,工厂..."
+    "confusing": "【形似】thrill: n.令人激动的事vt.使激动,使兴奋;使... | 【同尾】distill: vt.蒸馏;用蒸馏法提取;吸取,提炼... | 【同尾】mill: n.磨粉机；磨坊;作坊,工厂...",
+    "example": "A sudden chill filled the room."
   },
   {
     "id": 286,
@@ -2285,7 +2570,8 @@ window.wordData = [
     "word": "salad",
     "phonetic": "[ˈsæləd]",
     "meaning": "n.色拉,凉拌菜",
-    "confusing": "【形似】lad: n.男孩,小伙子... | 【形似】salary: n.薪金,薪水..."
+    "confusing": "【形似】lad: n.男孩,小伙子... | 【形似】salary: n.薪金,薪水...",
+    "example": "She made a salad with tomatoes and lettuce."
   },
   {
     "id": 287,
@@ -2293,7 +2579,8 @@ window.wordData = [
     "word": "yell",
     "phonetic": "[jɛl]",
     "meaning": "vi.呼喊",
-    "confusing": "【形似】hell: n.地狱,阴间;苦境,极大痛苦... | 【形似】fell: t.砍倒,砍伐... | 【形似】cell: n.细胞;小囚房;蜂房;电池..."
+    "confusing": "【形似】hell: n.地狱,阴间;苦境,极大痛苦... | 【形似】fell: t.砍倒,砍伐... | 【形似】cell: n.细胞;小囚房;蜂房;电池...",
+    "example": "The child began to yell for help."
   },
   {
     "id": 288,
@@ -2301,7 +2588,8 @@ window.wordData = [
     "word": "tomb",
     "phonetic": "[tum]",
     "meaning": "n.坟,冢",
-    "confusing": "【形似】bomb: n.炸弹vt.投弹于,轰炸... | 【形似】atom: n.原子;微粒,微量..."
+    "confusing": "【形似】bomb: n.炸弹vt.投弹于,轰炸... | 【形似】atom: n.原子;微粒,微量...",
+    "example": "Visitors placed flowers near the ancient tomb."
   },
   {
     "id": 289,
@@ -2309,7 +2597,8 @@ window.wordData = [
     "word": "keen",
     "phonetic": "[kin]",
     "meaning": "a.(on)热心的,渴望的;敏锐的;头脑敏捷的;锋利的",
-    "confusing": ""
+    "confusing": "",
+    "example": "He is keen to learn a new language."
   },
   {
     "id": 290,
@@ -2317,7 +2606,8 @@ window.wordData = [
     "word": "topic",
     "phonetic": "[ˈtɑpɪk]",
     "meaning": "n.话题,主题,题目",
-    "confusing": "【形似】tropic: n.回归线;热带... | 【形似】toxic: a.有毒的;中毒的... | 【形似】tropical: a.热带的... | 【同尾】epic: n.史诗；史诗般的电影（或书籍）；壮举；..."
+    "confusing": "【形似】tropic: n.回归线;热带... | 【形似】toxic: a.有毒的;中毒的... | 【形似】tropical: a.热带的... | 【同尾】epic: n.史诗；史诗般的电影（或书籍）；壮举；...",
+    "example": "Today's topic is environmental protection."
   },
   {
     "id": 291,
@@ -2325,7 +2615,8 @@ window.wordData = [
     "word": "growth",
     "phonetic": "[groʊθ]",
     "meaning": "n.生长,发展,增长",
-    "confusing": ""
+    "confusing": "",
+    "example": "The company reported steady growth this year."
   },
   {
     "id": 292,
@@ -2333,7 +2624,8 @@ window.wordData = [
     "word": "aboard",
     "phonetic": "[əˈbɔrd]",
     "meaning": "ad.在船(飞机,车)上,上船(飞机,车)prep.在(船,飞机,车)上,上(船,飞机,车)",
-    "confusing": "【形似】abroad: ad.到国外,在国外;到处... | 【形似】award: n.奖品,t.授予,奖给... | 【形似】keyboard: n.键盘... | 【同尾】straightforward: a.正直的,坦率的;简单的;易懂的ad.... | 【同尾】backward: a.向后的,倒行的;迟钝的ad.向后,朝..."
+    "confusing": "【形似】abroad: ad.到国外,在国外;到处... | 【形似】award: n.奖品,t.授予,奖给... | 【形似】keyboard: n.键盘... | 【同尾】straightforward: a.正直的,坦率的;简单的;易懂的ad.... | 【同尾】backward: a.向后的,倒行的;迟钝的ad.向后,朝...",
+    "example": "All passengers were aboard the plane before noon."
   },
   {
     "id": 293,
@@ -2341,7 +2633,8 @@ window.wordData = [
     "word": "describe",
     "phonetic": "[dɪˈskraɪb]",
     "meaning": "v.描述,形容",
-    "confusing": "【形似】prescribe: v.指示,规定;开处方,开(药)... | 【形似】ascribe: v.把…归因于... | 【形似】derive: v.收得;导出;引申;来自;源自;出自... | 【同尾】subscribe: vi.(to)订购,订阅;预定;赞成... | 【同尾】tribe: n.部落;宗族..."
+    "confusing": "【形似】prescribe: v.指示,规定;开处方,开(药)... | 【形似】ascribe: v.把…归因于... | 【形似】derive: v.收得;导出;引申;来自;源自;出自... | 【同尾】subscribe: vi.(to)订购,订阅;预定;赞成... | 【同尾】tribe: n.部落;宗族...",
+    "example": "Can you describe the picture in detail?"
   },
   {
     "id": 294,
@@ -2349,7 +2642,8 @@ window.wordData = [
     "word": "aware",
     "phonetic": "[əˈwɛr]",
     "meaning": "a.知道的,意识到的",
-    "confusing": "【形似】award: n.奖品,t.授予,奖给... | 【形似】hardware: n.五金,金属制品;硬件... | 【形似】awe: n.敬畏,惊惧vt.使敬畏,使惊惧... | 【同尾】beware: vi谨防,当心... | 【同尾】software: n.软件..."
+    "confusing": "【形似】award: n.奖品,t.授予,奖给... | 【形似】hardware: n.五金,金属制品;硬件... | 【形似】awe: n.敬畏,惊惧vt.使敬畏,使惊惧... | 【同尾】beware: vi谨防,当心... | 【同尾】software: n.软件...",
+    "example": "She was aware of the risks involved."
   },
   {
     "id": 295,
@@ -2357,7 +2651,8 @@ window.wordData = [
     "word": "eradicate",
     "phonetic": "[ɪˈrædəˌkeɪt]",
     "meaning": "vt.根除,消灭,杜绝",
-    "confusing": "【形似】radiate: v.放射,辐射;散布,传播... | 【形似】dedicate: vt.奉献;把…用在... | 【形似】verdict: n.(陪审团的)裁决,判决;定论，意见... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练..."
+    "confusing": "【形似】radiate: v.放射,辐射;散布,传播... | 【形似】dedicate: vt.奉献;把…用在... | 【形似】verdict: n.(陪审团的)裁决,判决;定论，意见... | 【同尾】dictate: v.口述;(使)听写;命令;... | 【同尾】educate: vt.教育,培养,训练...",
+    "example": "The campaign aims to eradicate the disease."
   },
   {
     "id": 296,
