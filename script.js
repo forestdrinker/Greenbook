@@ -912,14 +912,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isRepeatMode) {
             const currentUnitText = currentWord ? currentWord.unit : '-';
             progressText.textContent = `当前单元：${currentUnitText} · ${modeLabel} · 收藏 ${favoriteCount} · 熟词 ${knownCount}${favoriteLabel}${hideKnownLabel}`;
-            heroProgress.textContent = `循环练习 · 熟词 ${knownCount}`;
+            if (heroProgress) {
+                heroProgress.textContent = `循环练习 · 熟词 ${knownCount}`;
+            }
             progressFill.style.width = currentQueue.length ? '100%' : '0%';
             return;
         }
 
         const current = currentQueue.length === 0 ? 0 : Math.min(currentIndex + 1, currentQueue.length);
         progressText.textContent = `进度：${current} / ${currentQueue.length} · 收藏 ${favoriteCount} · 熟词 ${knownCount}${favoriteLabel}${hideKnownLabel}`;
-        heroProgress.textContent = `${current} / ${currentQueue.length}`;
+        if (heroProgress) {
+            heroProgress.textContent = `${current} / ${currentQueue.length}`;
+        }
         const percent = currentQueue.length === 0 ? 0 : (current / currentQueue.length) * 100;
         progressFill.style.width = `${percent}%`;
     }
@@ -936,12 +940,18 @@ document.addEventListener('DOMContentLoaded', () => {
             modeParts.push('不看熟词');
         }
 
-        heroMode.textContent = modeParts.join(' · ');
-        heroUnit.textContent = unitLabel;
+        if (heroMode) {
+            heroMode.textContent = modeParts.join(' · ');
+        }
+        if (heroUnit) {
+            heroUnit.textContent = unitLabel;
+        }
         currentUnitPill.textContent = currentWord ? currentWord.unit : unitLabel;
 
         if (!currentWord && currentQueue.length === 0) {
-            heroProgress.textContent = '0 / 0';
+            if (heroProgress) {
+                heroProgress.textContent = '0 / 0';
+            }
         }
     }
 
