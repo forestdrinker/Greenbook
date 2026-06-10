@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerDurationSeconds = 25 * 60;
     let timerRemainingSeconds = timerDurationSeconds;
     let timerIntervalId = null;
+    let timerAlarmIntervalId = null;
     let isTimerRunning = false;
+    let isTimerAlarmActive = false;
+    let timerAudioContext = null;
 
     const unitSelect = document.getElementById('unit-select');
     const repeatToggle = document.getElementById('repeat-toggle');
@@ -52,11 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroUnit = document.getElementById('hero-unit');
     const heroProgress = document.getElementById('hero-progress');
     const currentUnitPill = document.getElementById('current-unit-pill');
+    const timerPanel = document.querySelector('.timer-panel');
     const timerDisplay = document.getElementById('timer-display');
     const timerState = document.getElementById('timer-state');
     const timerMinutesInput = document.getElementById('timer-minutes');
     const timerToggleBtn = document.getElementById('timer-toggle-btn');
     const timerResetBtn = document.getElementById('timer-reset-btn');
+    const timerDismissBtn = document.getElementById('timer-dismiss-btn');
 
     function bind(el, eventName, handler) {
         if (el) {
@@ -141,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bind(knownBtn, 'click', toggleCurrentKnown);
     bind(timerToggleBtn, 'click', toggleTimer);
     bind(timerResetBtn, 'click', resetTimer);
+    bind(timerDismissBtn, 'click', dismissTimerAlarm);
     bind(timerMinutesInput, 'change', applyTimerMinutes);
     bind(timerMinutesInput, 'input', () => {
         if (!isTimerRunning) {
@@ -674,6 +680,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateKnownButton();
         updateProgress();
         updateDashboardMeta();
+        updateTimerDismissButton();
     }
 
     function showEmptyState() {
@@ -699,6 +706,7 @@ document.addEventListener('DOMContentLoaded', () => {
         wordMeaning.classList.remove('hidden');
         updateFavoriteButton();
         updateKnownButton();
+        updateTimerDismissButton();
     }
 
     function showFinished() {
@@ -723,6 +731,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateKnownButton();
         updateProgress();
         updateDashboardMeta();
+        updateTimerDismissButton();
     }
 
     function updateFavoriteButton() {
@@ -1005,6 +1014,14 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        if (isTimerAlarmActive) {
+            showStatus(canDismissTimerAlarm()
+                ? '请先关闭当前提示音'
+                : '请翻到本单元最后一页关闭提示');
+            return;
+        }
+
+        primeTimerAudio();
         if (timerRemainingSeconds <= 0) {
             timerRemainingSeconds = timerDurationSeconds;
         }
@@ -1034,7 +1051,7 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTimerMinutes(false);
         timerRemainingSeconds = timerDurationSeconds;
         renderTimer();
-        showStatus('计时器已重置');
+        showStatus(isTimerAlarmActive ? '请翻到本单元最后一页关闭提示' : '计时器已重置');
     }
 
     function tickTimer() {
@@ -1047,8 +1064,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 timerIntervalId = null;
             }
             isTimerRunning = false;
+            startTimerAlarm();
             renderTimer();
-            showStatus('计时结束，休息一下吧');
+            showStatus(canDismissTimerAlarm() ? '计时结束，可关闭提示' : '计时结束，请翻到本单元最后一页关闭提示');
         }
     }
 
@@ -1084,8 +1102,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         timerDisplay.textContent = formatTimerTime(timerRemainingSeconds);
         timerToggleBtn.textContent = isTimerRunning ? '暂停' : '开始';
+        if (timerPanel) {
+            timerPanel.classList.toggle('timer-alarm', isTimerAlarmActive);
+        }
+        updateTimerDismissButton();
 
-        if (isTimerRunning) {
+        if (isTimerAlarmActive) {
+            timerState.textContent = canDismissTimerAlarm()
+                ? '计时结束，可关闭提示'
+                : '计时结束，翻到最后一页关闭';
+        } else if (isTimerRunning) {
             timerState.textContent = '专注计时中';
         } else if (timerRemainingSeconds === 0) {
             timerState.textContent = '本轮计时完成';
@@ -1101,6 +1127,115 @@ document.addEventListener('DOMContentLoaded', () => {
         const minutes = Math.floor(safeSeconds / 60);
         const seconds = safeSeconds % 60;
         return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function startTimerAlarm() {
+        isTimerAlarmActive = true;
+        playTimerBeep();
+
+        if (timerAlarmIntervalId) {
+            window.clearInterval(timerAlarmIntervalId);
+        }
+
+        timerAlarmIntervalId = window.setInterval(() => {
+            if (isTimerAlarmActive) {
+                playTimerBeep();
+            }
+        }, 2500);
+
+        updateTimerDismissButton();
+    }
+
+    function dismissTimerAlarm() {
+        if (!isTimerAlarmActive) {
+            return;
+        }
+
+        if (!canDismissTimerAlarm()) {
+            showStatus('只有翻到本单元最后一页才能关闭提示');
+            return;
+        }
+
+        stopTimerAlarm(true);
+        showStatus('提示音已关闭');
+    }
+
+    function stopTimerAlarm(shouldRender = true) {
+        if (timerAlarmIntervalId) {
+            window.clearInterval(timerAlarmIntervalId);
+            timerAlarmIntervalId = null;
+        }
+        isTimerAlarmActive = false;
+
+        if (shouldRender) {
+            renderTimer();
+        } else {
+            updateTimerDismissButton();
+        }
+    }
+
+    function updateTimerDismissButton() {
+        if (!timerDismissBtn) {
+            return;
+        }
+
+        const canDismiss = canDismissTimerAlarm();
+        timerDismissBtn.classList.toggle('hidden', !canDismiss);
+    }
+
+    function canDismissTimerAlarm() {
+        return Boolean(
+            isTimerAlarmActive
+            && (
+                currentQueue.length === 0
+                || isRepeatMode
+                || currentIndex >= currentQueue.length - 1
+            )
+        );
+    }
+
+    function primeTimerAudio() {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) {
+            return;
+        }
+
+        try {
+            if (!timerAudioContext) {
+                timerAudioContext = new AudioContextClass();
+            }
+            if (timerAudioContext.state === 'suspended') {
+                timerAudioContext.resume();
+            }
+        } catch (error) {
+            timerAudioContext = null;
+        }
+    }
+
+    function playTimerBeep() {
+        primeTimerAudio();
+        if (!timerAudioContext) {
+            return;
+        }
+
+        try {
+            const oscillator = timerAudioContext.createOscillator();
+            const gainNode = timerAudioContext.createGain();
+            const now = timerAudioContext.currentTime;
+
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(880, now);
+            gainNode.gain.setValueAtTime(0.0001, now);
+            gainNode.gain.exponentialRampToValueAtTime(0.18, now + 0.02);
+            gainNode.gain.exponentialRampToValueAtTime(0.0001, now + 0.18);
+
+            oscillator.connect(gainNode);
+            gainNode.connect(timerAudioContext.destination);
+            oscillator.start(now);
+            oscillator.stop(now + 0.2);
+        } catch (error) {
+            // Browsers can block audio in some contexts; the visual timer still works.
+        }
     }
 
     function shuffleArray(array) {

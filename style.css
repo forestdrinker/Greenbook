@@ -678,6 +678,11 @@ button:disabled {
         linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(240, 249, 255, 0.94));
 }
 
+.timer-panel.timer-alarm {
+    border-color: rgba(245, 158, 11, 0.46);
+    box-shadow: 0 20px 42px rgba(245, 158, 11, 0.16);
+}
+
 .timer-copy {
     display: grid;
     gap: 5px;
@@ -727,6 +732,12 @@ button:disabled {
 .timer-controls button {
     min-height: 44px;
     padding-inline: 18px;
+}
+
+.timer-dismiss-btn {
+    color: #92400e;
+    border-color: rgba(245, 158, 11, 0.42);
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
 }
 
 .progress-copy {
