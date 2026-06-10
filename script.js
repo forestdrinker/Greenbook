@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let favoriteStore = loadFavoriteStore();
     let knownStore = loadKnownStore();
+    let timerDurationSeconds = 25 * 60;
+    let timerRemainingSeconds = timerDurationSeconds;
+    let timerIntervalId = null;
+    let isTimerRunning = false;
 
     const unitSelect = document.getElementById('unit-select');
     const repeatToggle = document.getElementById('repeat-toggle');
@@ -48,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroUnit = document.getElementById('hero-unit');
     const heroProgress = document.getElementById('hero-progress');
     const currentUnitPill = document.getElementById('current-unit-pill');
+    const timerDisplay = document.getElementById('timer-display');
+    const timerState = document.getElementById('timer-state');
+    const timerMinutesInput = document.getElementById('timer-minutes');
+    const timerToggleBtn = document.getElementById('timer-toggle-btn');
+    const timerResetBtn = document.getElementById('timer-reset-btn');
 
     function bind(el, eventName, handler) {
         if (el) {
@@ -130,6 +139,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bind(favoriteBtn, 'click', toggleCurrentFavorite);
     bind(knownBtn, 'click', toggleCurrentKnown);
+    bind(timerToggleBtn, 'click', toggleTimer);
+    bind(timerResetBtn, 'click', resetTimer);
+    bind(timerMinutesInput, 'change', applyTimerMinutes);
+    bind(timerMinutesInput, 'input', () => {
+        if (!isTimerRunning) {
+            applyTimerMinutes(false);
+        }
+    });
+
+    renderTimer();
 
     document.addEventListener('keydown', (event) => {
         const tag = String(event.target?.tagName || '').toLowerCase();
@@ -978,6 +997,110 @@ document.addEventListener('DOMContentLoaded', () => {
     function showStatus(text) {
         statusMsg.textContent = text || '';
         statusMsg.style.visibility = text ? 'visible' : 'hidden';
+    }
+
+    function toggleTimer() {
+        if (isTimerRunning) {
+            pauseTimer();
+            return;
+        }
+
+        if (timerRemainingSeconds <= 0) {
+            timerRemainingSeconds = timerDurationSeconds;
+        }
+
+        isTimerRunning = true;
+        timerIntervalId = window.setInterval(tickTimer, 1000);
+        renderTimer();
+        showStatus('计时已开始');
+    }
+
+    function pauseTimer() {
+        if (timerIntervalId) {
+            window.clearInterval(timerIntervalId);
+            timerIntervalId = null;
+        }
+        isTimerRunning = false;
+        renderTimer();
+        showStatus('计时已暂停');
+    }
+
+    function resetTimer() {
+        if (timerIntervalId) {
+            window.clearInterval(timerIntervalId);
+            timerIntervalId = null;
+        }
+        isTimerRunning = false;
+        applyTimerMinutes(false);
+        timerRemainingSeconds = timerDurationSeconds;
+        renderTimer();
+        showStatus('计时器已重置');
+    }
+
+    function tickTimer() {
+        timerRemainingSeconds = Math.max(0, timerRemainingSeconds - 1);
+        renderTimer();
+
+        if (timerRemainingSeconds === 0) {
+            if (timerIntervalId) {
+                window.clearInterval(timerIntervalId);
+                timerIntervalId = null;
+            }
+            isTimerRunning = false;
+            renderTimer();
+            showStatus('计时结束，休息一下吧');
+        }
+    }
+
+    function applyTimerMinutes(shouldRender = true) {
+        const minutes = clampTimerMinutes(timerMinutesInput?.value);
+        timerDurationSeconds = minutes * 60;
+
+        if (timerMinutesInput && String(timerMinutesInput.value) !== String(minutes)) {
+            timerMinutesInput.value = String(minutes);
+        }
+
+        if (!isTimerRunning) {
+            timerRemainingSeconds = timerDurationSeconds;
+        }
+
+        if (shouldRender) {
+            renderTimer();
+        }
+    }
+
+    function clampTimerMinutes(value) {
+        const parsed = Number.parseInt(String(value || ''), 10);
+        if (!Number.isFinite(parsed)) {
+            return 25;
+        }
+        return Math.min(180, Math.max(1, parsed));
+    }
+
+    function renderTimer() {
+        if (!timerDisplay || !timerState || !timerToggleBtn) {
+            return;
+        }
+
+        timerDisplay.textContent = formatTimerTime(timerRemainingSeconds);
+        timerToggleBtn.textContent = isTimerRunning ? '暂停' : '开始';
+
+        if (isTimerRunning) {
+            timerState.textContent = '专注计时中';
+        } else if (timerRemainingSeconds === 0) {
+            timerState.textContent = '本轮计时完成';
+        } else if (timerRemainingSeconds < timerDurationSeconds) {
+            timerState.textContent = '计时已暂停';
+        } else {
+            timerState.textContent = '设置时长后开始计时';
+        }
+    }
+
+    function formatTimerTime(totalSeconds) {
+        const safeSeconds = Math.max(0, Number(totalSeconds) || 0);
+        const minutes = Math.floor(safeSeconds / 60);
+        const seconds = safeSeconds % 60;
+        return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     }
 
     function shuffleArray(array) {

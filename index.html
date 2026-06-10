@@ -132,6 +132,22 @@
                         <div id="status-msg" class="status-badge"></div>
                     </div>
 
+                    <section class="timer-panel surface-card" aria-label="学习计时器">
+                        <div class="timer-copy">
+                            <span class="progress-label">Focus Timer</span>
+                            <strong id="timer-display">25:00</strong>
+                            <span id="timer-state" class="timer-state">设置时长后开始计时</span>
+                        </div>
+                        <div class="timer-controls">
+                            <label class="timer-input-wrap" for="timer-minutes">
+                                <span>分钟</span>
+                                <input id="timer-minutes" type="number" min="1" max="180" step="1" value="25">
+                            </label>
+                            <button id="timer-toggle-btn" class="secondary-btn" type="button">开始</button>
+                            <button id="timer-reset-btn" class="ghost-btn" type="button">重置</button>
+                        </div>
+                    </section>
+
                     <div class="card-container" id="card-container">
                         <article class="word-card" id="word-card">
                             <div class="word-card-inner">
@@ -194,6 +210,6 @@
     </div>
 
     <script src="words.js?v=20260610_memory_l3_l4"></script>
-    <script src="script.js?v=20260610_memory_l3_l4"></script>
+    <script src="script.js?v=20260610_timer"></script>
 </body>
 </html>
