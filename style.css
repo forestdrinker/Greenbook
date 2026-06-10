@@ -605,6 +605,22 @@ button:disabled {
     line-height: 1.75;
 }
 
+.memory-section {
+    width: min(100%, 720px);
+    text-align: left;
+    padding: 18px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #eef2ff 0%, #e0e7ff 100%);
+    border: 1px solid #b7c4ff;
+}
+
+.memory-section p {
+    margin: 0;
+    color: #312e81;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
 .confusing-section {
     width: min(100%, 720px);
     text-align: left;

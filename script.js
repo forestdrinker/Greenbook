@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const exampleBtn = document.getElementById('example-btn');
     const exampleSection = document.getElementById('example-section');
     const exampleText = document.getElementById('example-text');
+    const memoryBtn = document.getElementById('memory-btn');
+    const memorySection = document.getElementById('memory-section');
+    const memoryText = document.getElementById('memory-text');
     const confusingSection = document.getElementById('confusing-section');
     const confusingText = document.getElementById('confusing-text');
     const progressText = document.getElementById('progress-text');
@@ -123,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bind(confusingBtn, 'click', toggleConfusingSection);
     bind(exampleBtn, 'click', toggleExampleSection);
+    bind(memoryBtn, 'click', toggleMemorySection);
 
     bind(favoriteBtn, 'click', toggleCurrentFavorite);
     bind(knownBtn, 'click', toggleCurrentKnown);
@@ -157,6 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (key === 'n') {
             event.preventDefault();
             toggleExampleSection();
+            return;
+        }
+        if (key === 'm') {
+            event.preventDefault();
+            toggleMemorySection();
             return;
         }
         if (key === 'l') {
@@ -542,6 +551,16 @@ document.addEventListener('DOMContentLoaded', () => {
         showStatus(exampleSection.classList.contains('hidden') ? '\u5df2\u6536\u8d77\u4f8b\u53e5' : '\u5df2\u5c55\u5f00\u4f8b\u53e5');
     }
 
+    function toggleMemorySection() {
+        if (!currentWord || !currentWord.memory) {
+            showStatus('\u5f53\u524d\u5355\u8bcd\u6682\u65e0\u8bb0\u5fc6\u6cd5');
+            return;
+        }
+
+        memorySection.classList.toggle('hidden');
+        showStatus(memorySection.classList.contains('hidden') ? '\u5df2\u6536\u8d77\u8bb0\u5fc6\u6cd5' : '\u5df2\u5c55\u5f00\u8bb0\u5fc6\u6cd5');
+    }
+
     function applyRepeatModeChange() {
         isRepeatMode = repeatToggle.checked;
         if (isRepeatMode && currentQueue.length === 0 && allWords.length > 0) {
@@ -606,6 +625,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         exampleSection.classList.add('hidden');
 
+        const memory = String(currentWord.memory || '').trim();
+        if (memory) {
+            memoryText.textContent = memory;
+            memoryBtn.classList.remove('hidden');
+        } else {
+            memoryText.textContent = '';
+            memoryBtn.classList.add('hidden');
+        }
+        memorySection.classList.add('hidden');
+
         if (currentWord.confusing && String(currentWord.confusing).trim()) {
             const confusingItems = String(currentWord.confusing)
                 .split('|')
@@ -641,6 +670,9 @@ document.addEventListener('DOMContentLoaded', () => {
         exampleText.textContent = '';
         exampleBtn.classList.add('hidden');
         exampleSection.classList.add('hidden');
+        memoryText.textContent = '';
+        memoryBtn.classList.add('hidden');
+        memorySection.classList.add('hidden');
 
         wordMeaning.textContent = getEmptyStateMessage(selectedUnit);
 
@@ -660,6 +692,12 @@ document.addEventListener('DOMContentLoaded', () => {
         confusingText.innerHTML = '';
         confusingBtn.classList.add('hidden');
         confusingSection.classList.add('hidden');
+        exampleText.textContent = '';
+        exampleBtn.classList.add('hidden');
+        exampleSection.classList.add('hidden');
+        memoryText.textContent = '';
+        memoryBtn.classList.add('hidden');
+        memorySection.classList.add('hidden');
         currentUnitPill.textContent = '已完成';
         showStatus('恭喜，当前学习队列已完成');
         updateFavoriteButton();
