@@ -29471,5 +29471,197 @@ window.wordData = [
     "phonetic": "[ˈmaɪkrəˌskoʊp]",
     "meaning": "n.显微镜",
     "confusing": "【形似】microphone: n.话简,扩音器... | 【同尾】pope: n.(天主教)教皇,罗马主教... | 【同尾】slope: n.斜坡,斜面;慎斜,斜度;vt.(使)..."
+  },
+  {
+    "id": 3620,
+    "unit": "六级翻译常见词",
+    "word": "位于 / 地处 / 大部分位于",
+    "meaning": "be located in / be situated in / lie in"
+  },
+  {
+    "id": 3621,
+    "unit": "六级翻译常见词",
+    "word": "平均海拔",
+    "meaning": "have an average altitude of ... / stand at an average altitude of ..."
+  },
+  {
+    "id": 3622,
+    "unit": "六级翻译常见词",
+    "word": "随着……的发展 / 到来 / 实施 / 深入",
+    "meaning": "with the development / arrival / implementation / deepening of ..."
+  },
+  {
+    "id": 3623,
+    "unit": "六级翻译常见词",
+    "word": "面积约 / 总建筑面积约 / 总面积",
+    "meaning": "cover an area of about ... / have a total floor area of ..."
+  },
+  {
+    "id": 3624,
+    "unit": "六级翻译常见词",
+    "word": "资源丰富 / 盛产 / 发源地 / 源头 / 居住着 / 拥有资源",
+    "meaning": "be rich in / have abundant resources / abound in / be home to / be the source of ..."
+  },
+  {
+    "id": 3625,
+    "unit": "六级翻译常见词",
+    "word": "作为 / 成为基地、枢纽、象征、组成部分",
+    "meaning": "serve as / act as / be used as / be an important part of ..."
+  },
+  {
+    "id": 3626,
+    "unit": "六级翻译常见词",
+    "word": "……之一 / 首个 / 最大 / 最早 / 少数几个 / 成为重要平台、基地、窗口",
+    "meaning": "be one of ... / be the first ... / be the largest ... / be the earliest ... / be among the few ... / become an important platform, base, or window"
+  },
+  {
+    "id": 3627,
+    "unit": "六级翻译常见词",
+    "word": "推进 / 推动 / 促进",
+    "meaning": "promote / advance / drive the development of ..."
+  },
+  {
+    "id": 3628,
+    "unit": "六级翻译常见词",
+    "word": "建于 / 建成 / 开工建设",
+    "meaning": "be built / be constructed in ... / be completed in ... / construction began in ..."
+  },
+  {
+    "id": 3629,
+    "unit": "六级翻译常见词",
+    "word": "自古以来 / ……以来 / 几千年来",
+    "meaning": "since ancient times / since ... / over the past ... years / for thousands of years"
+  },
+  {
+    "id": 3630,
+    "unit": "六级翻译常见词",
+    "word": "发挥重要作用 / 具有重要地位 / 重要基石",
+    "meaning": "play an important role in / be vital to / be of strategic importance / be an important cornerstone of ..."
+  },
+  {
+    "id": 3631,
+    "unit": "六级翻译常见词",
+    "word": "改善 / 提高 / 提升 / 改进 / 升级 / 完善",
+    "meaning": "improve / enhance / raise / upgrade / refine ..."
+  },
+  {
+    "id": 3632,
+    "unit": "六级翻译常见词",
+    "word": "提供条件、服务、资源、保障 / 给……带来",
+    "meaning": "provide ... for ... / provide sb. with ... / bring ... to ..."
+  },
+  {
+    "id": 3633,
+    "unit": "六级翻译常见词",
+    "word": "以……闻名 / 因……而闻名",
+    "meaning": "be famous for / be known for / be renowned for"
+  },
+  {
+    "id": 3634,
+    "unit": "六级翻译常见词",
+    "word": "取得突破 / 攻克难题 / 实现覆盖 / 实现、取得、达到",
+    "meaning": "make breakthroughs in ... / overcome difficulties / achieve coverage / achieve / realize / reach ..."
+  },
+  {
+    "id": 3635,
+    "unit": "六级翻译常见词",
+    "word": "象征 / 体现 / 凸显 / 展现 / 代表",
+    "meaning": "symbolize / reflect / represent / embody / highlight / showcase ..."
+  },
+  {
+    "id": 3636,
+    "unit": "六级翻译常见词",
+    "word": "被誉为 / 被称为 / 享有美誉",
+    "meaning": "be known as / be called / be hailed as / enjoy a reputation as ..."
+  },
+  {
+    "id": 3637,
+    "unit": "六级翻译常见词",
+    "word": "应用于 / 用于 / 使用",
+    "meaning": "be used in / be used for / be applied in / be applied to / the use of ..."
+  },
+  {
+    "id": 3638,
+    "unit": "六级翻译常见词",
+    "word": "吸引大量游客 / 受到青睐",
+    "meaning": "attract large numbers of tourists / be favored by ..."
+  },
+  {
+    "id": 3639,
+    "unit": "六级翻译常见词",
+    "word": "广泛应用 / 广泛认可 / 广泛传承 / 分布广泛",
+    "meaning": "be widely applied / used / recognized / passed down / distributed"
+  },
+  {
+    "id": 3640,
+    "unit": "六级翻译常见词",
+    "word": "做出贡献 / 作出重大贡献",
+    "meaning": "make great / significant / major contributions to ..."
+  },
+  {
+    "id": 3641,
+    "unit": "六级翻译常见词",
+    "word": "长 / 宽 / 跨度 / 距离",
+    "meaning": "be ... meters long / wide / have a span of ... / be ... kilometers from ..."
+  },
+  {
+    "id": 3642,
+    "unit": "六级翻译常见词",
+    "word": "保护 / 修复 / 改善生态 / 保障权益",
+    "meaning": "protect / restore / improve the ecosystem / safeguard rights and interests"
+  },
+  {
+    "id": 3643,
+    "unit": "六级翻译常见词",
+    "word": "出台政策 / 颁布标准 / 采取措施",
+    "meaning": "introduce policies / issue standards / take measures"
+  },
+  {
+    "id": 3644,
+    "unit": "六级翻译常见词",
+    "word": "表达祝福 / 抒发愿望 / 寓意精神",
+    "meaning": "express good wishes / express sincere aspirations / symbolize or imply ..."
+  },
+  {
+    "id": 3645,
+    "unit": "六级翻译常见词",
+    "word": "开通 / 开拓 / 开辟 / 走出国门",
+    "meaning": "open / open up / blaze a path / enter overseas markets / go global"
+  },
+  {
+    "id": 3646,
+    "unit": "六级翻译常见词",
+    "word": "深植于 / 植根于",
+    "meaning": "be deeply rooted in ..."
+  },
+  {
+    "id": 3647,
+    "unit": "六级翻译常见词",
+    "word": "由……组成 / 由……构成 / 分为……",
+    "meaning": "be composed of / consist of / be made up of / be divided into ..."
+  },
+  {
+    "id": 3648,
+    "unit": "六级翻译常见词",
+    "word": "克服困难 / 攻克技术难题 / 解决问题",
+    "meaning": "overcome difficulties / tackle technical problems / solve problems"
+  },
+  {
+    "id": 3649,
+    "unit": "六级翻译常见词",
+    "word": "标志着 / 意味着",
+    "meaning": "mark / signal a major step, leap, or advance"
+  },
+  {
+    "id": 3650,
+    "unit": "六级翻译常见词",
+    "word": "有利于 / 提供有利条件 / 有助于",
+    "meaning": "be conducive to / provide favorable conditions for / help (to) ..."
+  },
+  {
+    "id": 3651,
+    "unit": "六级翻译常见词",
+    "word": "近年来",
+    "meaning": "in recent years"
   }
 ];
