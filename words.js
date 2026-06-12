@@ -29663,5 +29663,161 @@ window.wordData = [
     "unit": "六级翻译常见词",
     "word": "近年来",
     "meaning": "in recent years"
+  },
+  {
+    "id": 3652,
+    "unit": "六级阅读26对同义替换",
+    "word": "改变/重塑：alter 的同义替换是什么？",
+    "meaning": "reshape；补充：change, transform, modify, reform, restructure, adjust"
+  },
+  {
+    "id": 3653,
+    "unit": "六级阅读26对同义替换",
+    "word": "限制/受限：constrain 的同义替换是什么？",
+    "meaning": "limited；补充：restrict, limit, confine, curb, narrow, hamper"
+  },
+  {
+    "id": 3654,
+    "unit": "六级阅读26对同义替换",
+    "word": "减少/降低：reduce 的同义替换是什么？",
+    "meaning": "lower；补充：decrease, decline, drop, cut, curb, slash, plummet"
+  },
+  {
+    "id": 3655,
+    "unit": "六级阅读26对同义替换",
+    "word": "可预测/可预料：predictable 的同义替换是什么？",
+    "meaning": "anticipated；补充：foreseeable, expected, projected"
+  },
+  {
+    "id": 3656,
+    "unit": "六级阅读26对同义替换",
+    "word": "持续争论：going on for decades 的同义替换是什么？",
+    "meaning": "enduring；补充：long-running, lasting, persistent, prolonged"
+  },
+  {
+    "id": 3657,
+    "unit": "六级阅读26对同义替换",
+    "word": "考试/学业表现：exam performance 的同义替换是什么？",
+    "meaning": "academic performance；补充：scholastic performance, learning outcomes, educational achievement"
+  },
+  {
+    "id": 3658,
+    "unit": "六级阅读26对同义替换",
+    "word": "成功/见效：pay off 的同义替换是什么？",
+    "meaning": "turn out to be a success；补充：work, prove successful, bear fruit, produce results"
+  },
+  {
+    "id": 3659,
+    "unit": "六级阅读26对同义替换",
+    "word": "分心/注意力转移：diversion 的同义替换是什么？",
+    "meaning": "distracting；补充：distraction, distract, draw attention away"
+  },
+  {
+    "id": 3660,
+    "unit": "六级阅读26对同义替换",
+    "word": "专注倾听：complete attention 的同义替换是什么？",
+    "meaning": "attentive；补充：focused, concentrated, absorbed"
+  },
+  {
+    "id": 3661,
+    "unit": "六级阅读26对同义替换",
+    "word": "不赞成/批评：deplored 的同义替换是什么？",
+    "meaning": "disapproved of；补充：criticize, oppose, object to, condemn"
+  },
+  {
+    "id": 3662,
+    "unit": "六级阅读26对同义替换",
+    "word": "切断/脱离：break with 的同义替换是什么？",
+    "meaning": "cut off from；补充：sever ties with, disconnect from"
+  },
+  {
+    "id": 3663,
+    "unit": "六级阅读26对同义替换",
+    "word": "令人不舒服：foster discomfort 的同义替换是什么？",
+    "meaning": "make people feel uncomfortable；补充：cause discomfort, trigger uneasiness"
+  },
+  {
+    "id": 3664,
+    "unit": "六级阅读26对同义替换",
+    "word": "加强/增强：strengthen 的同义替换是什么？",
+    "meaning": "enhance；补充：boost, reinforce, deepen"
+  },
+  {
+    "id": 3665,
+    "unit": "六级阅读26对同义替换",
+    "word": "可获得/可接近：available 的同义替换是什么？",
+    "meaning": "accessible；补充：within reach, easy to obtain, obtainable"
+  },
+  {
+    "id": 3666,
+    "unit": "六级阅读26对同义替换",
+    "word": "经济负担：unaffordable 的同义替换是什么？",
+    "meaning": "financial burden；补充：economic pressure, financial stress"
+  },
+  {
+    "id": 3667,
+    "unit": "六级阅读26对同义替换",
+    "word": "上升/增加：on the rise 的同义替换是什么？",
+    "meaning": "increasing；补充：rise, grow, increase, expand, surge"
+  },
+  {
+    "id": 3668,
+    "unit": "六级阅读26对同义替换",
+    "word": "跟不上/落后：lag behind 的同义替换是什么？",
+    "meaning": "fall behind；补充：trail behind, fail to keep pace with"
+  },
+  {
+    "id": 3669,
+    "unit": "六级阅读26对同义替换",
+    "word": "区分/分辨：distinguish 的同义替换是什么？",
+    "meaning": "differentiate；补充：tell apart, separate, discriminate between"
+  },
+  {
+    "id": 3670,
+    "unit": "六级阅读26对同义替换",
+    "word": "缓解压力：alleviate 的同义替换是什么？",
+    "meaning": "reduce；补充：relieve, ease, lessen, mitigate"
+  },
+  {
+    "id": 3671,
+    "unit": "六级阅读26对同义替换",
+    "word": "低估/不重视：undervalued 的同义替换是什么？",
+    "meaning": "underestimate；补充：underappreciate, overlook, fail to value"
+  },
+  {
+    "id": 3672,
+    "unit": "六级阅读26对同义替换",
+    "word": "缩小差距：bridge the divide 的同义替换是什么？",
+    "meaning": "narrow the gap；补充：close the gap, reduce the divide"
+  },
+  {
+    "id": 3673,
+    "unit": "六级阅读26对同义替换",
+    "word": "重要/关键：essential 的同义替换是什么？",
+    "meaning": "indispensable；补充：crucial, vital, necessary, fundamental"
+  },
+  {
+    "id": 3674,
+    "unit": "六级阅读26对同义替换",
+    "word": "超过/超越：surpass 的同义替换是什么？",
+    "meaning": "exceed；补充：outdo, outperform, overtake"
+  },
+  {
+    "id": 3675,
+    "unit": "六级阅读26对同义替换",
+    "word": "产出/生成：generate 的同义替换是什么？",
+    "meaning": "produce；补充：create, yield"
+  },
+  {
+    "id": 3676,
+    "unit": "六级阅读26对同义替换",
+    "word": "普通人买得起：affordable 的同义替换是什么？",
+    "meaning": "possible to buy；补充：within reach, reasonably priced, inexpensive enough"
+  },
+  {
+    "id": 3677,
+    "unit": "六级阅读26对同义替换",
+    "word": "经济贡献/纳税：financial contribution 的具体替换是什么？",
+    "meaning": "pay tourist tax；补充：tourist levy, visitor fee, local service contribution"
   }
 ];
