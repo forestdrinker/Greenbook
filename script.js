@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isTimerRunning = false;
     let isTimerAlarmActive = false;
     let timerAudioContext = null;
+    const examTargetDate = new Date('2026-12-19T00:00:00+08:00');
 
     const unitSelect = document.getElementById('unit-select');
     const repeatToggle = document.getElementById('repeat-toggle');
@@ -54,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroMode = document.getElementById('hero-mode');
     const heroUnit = document.getElementById('hero-unit');
     const heroProgress = document.getElementById('hero-progress');
+    const examCountdown = document.getElementById('exam-countdown');
+    const examCountdownHelp = document.getElementById('exam-countdown-help');
     const currentUnitPill = document.getElementById('current-unit-pill');
     const timerPanel = document.querySelector('.timer-panel');
     const timerDisplay = document.getElementById('timer-display');
@@ -155,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     renderTimer();
+    updateExamCountdown();
+    window.setInterval(updateExamCountdown, 60 * 60 * 1000);
 
     document.addEventListener('keydown', (event) => {
         const tag = String(event.target?.tagName || '').toLowerCase();
@@ -1006,6 +1011,28 @@ document.addEventListener('DOMContentLoaded', () => {
     function showStatus(text) {
         statusMsg.textContent = text || '';
         statusMsg.style.visibility = text ? 'visible' : 'hidden';
+    }
+
+    function updateExamCountdown() {
+        if (!examCountdown || !examCountdownHelp) {
+            return;
+        }
+
+        const now = new Date();
+        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        const target = new Date(examTargetDate.getFullYear(), examTargetDate.getMonth(), examTargetDate.getDate());
+        const diffMs = target.getTime() - today.getTime();
+        const diffDays = Math.max(0, Math.ceil(diffMs / (24 * 60 * 60 * 1000)));
+
+        examCountdown.textContent = `${diffDays} 天`;
+
+        if (diffDays === 0) {
+            examCountdownHelp.textContent = '今天是预计初试日';
+        } else if (diffDays === 1) {
+            examCountdownHelp.textContent = '距离预计初试还有 1 天';
+        } else {
+            examCountdownHelp.textContent = '2027考研预计初试';
+        }
     }
 
     function toggleTimer() {
