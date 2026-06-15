@@ -72,6 +72,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    height: calc(100vh - 18px - 36px);
+    min-height: 0;
 }
 
 .hero-panel {
@@ -193,7 +195,9 @@ body {
     display: grid;
     grid-template-columns: 360px minmax(0, 1fr);
     gap: 22px;
-    align-items: start;
+    align-items: stretch;
+    flex: 1;
+    min-height: 0;
 }
 
 .surface-card,
@@ -209,6 +213,25 @@ body {
     padding: 26px 22px;
     position: sticky;
     top: 20px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+}
+
+.control-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.control-panel::-webkit-scrollbar-track {
+    background: rgba(215, 228, 245, 0.52);
+    border-radius: 999px;
+}
+
+.control-panel::-webkit-scrollbar-thumb {
+    background: rgba(105, 129, 157, 0.34);
+    border-radius: 999px;
 }
 
 .panel-heading h2,
@@ -451,6 +474,8 @@ button:disabled {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    height: 100%;
+    min-height: 0;
 }
 
 .stage-topbar {
@@ -478,12 +503,15 @@ button:disabled {
 }
 
 .card-container {
-    min-height: 520px;
+    min-height: 0;
+    flex: 1;
+    display: flex;
 }
 
 .word-card {
     width: 100%;
-    min-height: 520px;
+    height: 100%;
+    min-height: 0;
     background:
         radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 30%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 248, 255, 0.96));
@@ -494,7 +522,9 @@ button:disabled {
 }
 
 .word-card-inner {
-    min-height: 520px;
+    height: 100%;
+    min-height: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -791,10 +821,20 @@ button:disabled {
 
     .workspace-grid {
         grid-template-columns: 1fr;
+        min-height: 0;
+        flex: none;
     }
 
     .control-panel {
         position: static;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .dashboard,
+    .learning-stage {
+        height: auto;
     }
 }
 
