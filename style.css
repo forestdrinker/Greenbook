@@ -220,16 +220,19 @@ body {
     scrollbar-gutter: stable;
 }
 
-.control-panel::-webkit-scrollbar {
+.control-panel::-webkit-scrollbar,
+.learning-stage::-webkit-scrollbar {
     width: 8px;
 }
 
-.control-panel::-webkit-scrollbar-track {
+.control-panel::-webkit-scrollbar-track,
+.learning-stage::-webkit-scrollbar-track {
     background: rgba(215, 228, 245, 0.52);
     border-radius: 999px;
 }
 
-.control-panel::-webkit-scrollbar-thumb {
+.control-panel::-webkit-scrollbar-thumb,
+.learning-stage::-webkit-scrollbar-thumb {
     background: rgba(105, 129, 157, 0.34);
     border-radius: 999px;
 }
@@ -476,6 +479,10 @@ button:disabled {
     gap: 18px;
     height: 100%;
     min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 4px;
+    scrollbar-gutter: stable;
 }
 
 .stage-topbar {
@@ -835,6 +842,11 @@ button:disabled {
     .dashboard,
     .learning-stage {
         height: auto;
+    }
+
+    .learning-stage {
+        overflow: visible;
+        padding-right: 0;
     }
 }
 
